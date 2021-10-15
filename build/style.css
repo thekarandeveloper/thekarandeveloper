@@ -29,11 +29,12 @@
     --color-l2: #ABCBD2;
     --color-l1: #E8F5F7;
 }
-
+a{
+    text-decoration: none;
+}
 body {
     overflow-x: hidden;
     font-family: 'Gilroy-medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .navbar a {
@@ -46,9 +47,10 @@ body {
 
 .clean-navbar .navbar-nav .nav-item .nav-link {
     line-height: 3;
+    font-size: 1.1rem;
 }
 
-.banner {
+.about {
     height: 80vh;
 
 }
@@ -64,6 +66,7 @@ body {
 
 .intro-desc {
     padding-top: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .contact-btn {
@@ -97,13 +100,79 @@ body {
     background-repeat: no-repeat;
 }
 
-.projects {
-    margin-top: 18rem;
+#projects {
+    margin-top: 12rem;
     justify-items: center;
     justify-content: center;
-    font-family: 'Gilroy-bold';
-}
-.section-heading{
-    line-height: 5;
 
+    padding: 0;
+}
+
+.section-heading {
+    line-height: 5;
+    padding: 0;
+    font-family: 'Gilroy-bold';
+    font-size: 3rem;
+}
+.profile-footer-img{
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/img/profileIcon.webp');
+    background-position: center;
+    background-size: contain;
+}
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    padding: 0;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.blog-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featurette-heading {
+    font-size: 3rem;
+    padding: 2rem 0;
+
+}
+
+.contact-label {
+    height: 40rem;
+    align-items: center;
+}
+
+.contact-heading {
+    line-height: 1;
+    padding: 0;
+    font-family: 'Gilroy-bold';
+    font-size: 3rem;
+}
+
+.messageInputBox {
+    background-color: var(--color-l1);
+    padding: 40px;
+    border-radius: 20px;
 }
