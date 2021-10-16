@@ -25,16 +25,42 @@
 
 :root {
     --color-l4: #243D42;
-    --color-l3: #438898;
+    --color-l3: #0090b1;
     --color-l2: #ABCBD2;
     --color-l1: #E8F5F7;
 }
-a{
+
+* {
+    line-height: 1.5;
+}
+
+a {
     text-decoration: none;
 }
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 350px;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Gilroy-medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+    color: var(--color-l4);
+}
+
+a:hover {
+    color: var(--color-l3);
+
+}
+
+.demoBtn {
+    background-color: var(--color-l3);
 }
 
 .navbar a {
@@ -50,9 +76,30 @@ body {
     font-size: 1.1rem;
 }
 
+.clean-navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-l3);
+}
+
 .about {
     height: 80vh;
 
+
+}
+
+.about,
+#projects,
+#blogs {
+    color: var(--color-l4);
+}
+
+.lgBtn {
+    background-color: var(--color-l4);
+
+}
+.lgBtn:hover{
+    background-color: var(--color-l3);
+    border-color: var(--color-l3);
+    
 }
 
 .intro-label {
@@ -67,6 +114,7 @@ body {
 .intro-desc {
     padding-top: 1.5rem;
     font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .contact-btn {
@@ -114,13 +162,15 @@ body {
     font-family: 'Gilroy-bold';
     font-size: 3rem;
 }
-.profile-footer-img{
+
+.profile-footer-img {
     width: 40px;
     height: 40px;
     background-image: url('./assets/img/profileIcon.webp');
     background-position: center;
     background-size: contain;
 }
+
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
@@ -160,7 +210,7 @@ body {
 }
 
 .contact-label {
-    height: 40rem;
+    height: 35rem;
     align-items: center;
 }
 
@@ -175,4 +225,12 @@ body {
     background-color: var(--color-l1);
     padding: 40px;
     border-radius: 20px;
+}
+
+.card-img-top {
+    margin-top: 10px;
+}
+
+.bd-footer {
+    color: var(--color-l4);
 }
