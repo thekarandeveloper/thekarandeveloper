@@ -141,7 +141,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: var(--color-l1);
-    background-image: url('./assets/img/profile.png');
+    background-image: url('./assets/img/profile2.png');
     background-size: 90%;
     background-position: -5rem;
     border-radius: 230rem;
@@ -222,11 +222,20 @@ a:hover {
 }
 
 .messageInputBox {
-    background-color: var(--color-l1);
+    background-color: var(--color-l4);
     padding: 40px;
     border-radius: 20px;
+    color: var(--color-l1);
 }
+.messageInputBox .lgBtn{
+    background-color: var(--color-l1);
+    color: var(--color-l4);
+}
+.messageInputBox .lgBtn:hover{
+    background-color: var(--color-l3);
+    color: var(--color-l1);
 
+}
 .card-img-top {
     margin-top: 10px;
 }
