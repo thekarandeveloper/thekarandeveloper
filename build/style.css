@@ -223,7 +223,7 @@ a:hover {
 
 .messageInputBox {
     background-color: var(--color-l4);
-    padding: 40px;
+    padding: 80px 40px;
     border-radius: 20px;
     color: var(--color-l1);
 }
