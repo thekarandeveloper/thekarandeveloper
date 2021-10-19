@@ -210,9 +210,12 @@ a:hover {
 
 .messageInputBox {
     background-color: var(--color-l4);
-    padding: 80px 40px;
+    margin-top: 2rem;
+    padding: 30px 40px;
     border-radius: 20px;
     color: var(--color-l1);
+    align-items: center;
+    justify-content: center;
 }
 
 .messageInputBox .lgBtn {
