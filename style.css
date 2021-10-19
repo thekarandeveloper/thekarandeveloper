@@ -248,7 +248,7 @@ a:hover {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        height: 600px;
+        height: 620px;
         overflow: hidden;
         margin: 0;
     }
@@ -283,7 +283,7 @@ a:hover {
         bottom: -0rem;
         background-position: -3rem;
         width: 100%;
-        height: 480px;
+        height: 510px;
         border-radius: 0;
         background-size: 120%;
         background-color: transparent;
