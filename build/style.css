@@ -1,33 +1,36 @@
 @font-face {
-    font-family: 'Gilroy-regular';
-    src: url('./assets/fonts/Gilroy-Regular.woff') format('woff');
+    font-family: "Gilroy-regular";
+    src: url("./assets/fonts/Gilroy-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-medium';
-    src: url('./assets/fonts/Gilroy-Medium.woff') format('woff');
+    font-family: "Gilroy-medium";
+    src: url("./assets/fonts/Gilroy-Medium.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-bold';
-    src: url('./assets/fonts/Gilroy-Bold.woff') format('woff');
+    font-family: "Gilroy-bold";
+    src: url("./assets/fonts/Gilroy-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
+::-webkit-scrollbar {
+    display: hidden;
+}
 
 :root {
-    --color-l4: #243D42;
+    --color-l4: #243d42;
     --color-l3: #0090b1;
-    --color-l2: #ABCBD2;
-    --color-l1: #E8F5F7;
+    --color-l2: #abcbd2;
+    --color-l1: #e8f5f7;
 }
 
 * {
@@ -46,8 +49,7 @@ textarea {
 
 body {
     overflow-x: hidden;
-    font-family: 'Gilroy-medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: "Gilroy-medium", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -56,7 +58,6 @@ a {
 
 a:hover {
     color: var(--color-l3);
-
 }
 
 .demoBtn {
@@ -80,13 +81,7 @@ a:hover {
     color: var(--color-l3);
 }
 
-.about {
-    height: 80vh;
-
-
-}
-
-.about,
+#about,
 #projects,
 #blogs {
     color: var(--color-l4);
@@ -94,39 +89,38 @@ a:hover {
 
 .lgBtn {
     background-color: var(--color-l4);
-
 }
-.lgBtn:hover{
+
+.lgBtn:hover {
     background-color: var(--color-l3);
     border-color: var(--color-l3);
-    
 }
 
-.intro-label {
-    margin-top: 10rem
+.introBannerLabel {
+    margin-top: 10rem;
 }
 
-.intro-heading {
+.introBannerLabelHeading {
     font-size: 3rem;
     line-height: 1.4;
 }
 
-.intro-desc {
+.introBannerLabelDesc {
     padding-top: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.5;
 }
 
-.contact-btn {
+#introBannerLabelBtn {
     margin: 3rem 0;
 }
 
-.contact-btn button {
+#introBannerLabelBtn button {
     background-color: var(--color-l4);
     color: var(--color-l1);
 }
 
-.intro-profile {
+.profileBannerImg {
     width: 60rem;
     height: 60rem;
     border-radius: 50%;
@@ -135,13 +129,8 @@ a:hover {
     right: -17rem;
     z-index: -1;
 
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
     background-color: var(--color-l1);
-    background-image: url('./assets/img/profile2.png');
+    background-image: url("./assets/img/profile2.png");
     background-size: 90%;
     background-position: -5rem;
     border-radius: 230rem;
@@ -156,17 +145,16 @@ a:hover {
     padding: 0;
 }
 
-.section-heading {
-    line-height: 5;
-    padding: 0;
-    font-family: 'Gilroy-bold';
+.sectionHeading {
+    padding: 7rem 0;
+    font-family: "Gilroy-bold";
     font-size: 3rem;
 }
 
 .profile-footer-img {
     width: 40px;
     height: 40px;
-    background-image: url('./assets/img/profileIcon.webp');
+    background-image: url("./assets/img/profileIcon.webp");
     background-position: center;
     background-size: contain;
 }
@@ -206,7 +194,6 @@ a:hover {
 .featurette-heading {
     font-size: 3rem;
     padding: 2rem 0;
-
 }
 
 .contact-label {
@@ -217,7 +204,7 @@ a:hover {
 .contact-heading {
     line-height: 1;
     padding: 0;
-    font-family: 'Gilroy-bold';
+    font-family: "Gilroy-bold";
     font-size: 3rem;
 }
 
@@ -227,15 +214,17 @@ a:hover {
     border-radius: 20px;
     color: var(--color-l1);
 }
-.messageInputBox .lgBtn{
+
+.messageInputBox .lgBtn {
     background-color: var(--color-l1);
     color: var(--color-l4);
 }
-.messageInputBox .lgBtn:hover{
+
+.messageInputBox .lgBtn:hover {
     background-color: var(--color-l3);
     color: var(--color-l1);
-
 }
+
 .card-img-top {
     margin-top: 10px;
 }
@@ -243,3 +232,9 @@ a:hover {
 .bd-footer {
     color: var(--color-l4);
 }
+
+.featurette-image {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {}
