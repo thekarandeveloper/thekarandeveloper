@@ -1,7 +1,11 @@
 /* *******************Default******************************************* */
+html {
+	scroll-behavior: smooth;
+  };
 @font-face {
 	font-family: "Gilroy Medium";
 	src: url("/02-assets/fonts/gilroy-medium.woff");
+	
 }
 
 @font-face {
@@ -9,15 +13,15 @@
 	src: url("/02-assets/fonts/gilroy-bold.woff");
 }
 @font-face {
-	font-family: "Bebas Neue Bold";
-	src: url("/02-assets/fonts/bebas-bold.woff");
+	font-family: "Bebas Bold";
+	src: url("./02-assets/fonts/bebas-bold.woff");
 }
 :root {
 	--font-primary: "Gilroy Medium", "San Francisco", "SF Pro Text", -apple-system,
 		system-ui, sans-serif;
 	--font-secondary: "Gilroy Bold", "San Francisco", "SF Pro Text", -apple-system,
 		system-ui, sans-serif;
-	--font-tertiary: "Bebas Neue Bold", "San Francisco", "SF Pro Text",
+	--font-tertiary: "Bebas Neue", "San Francisco", "SF Pro Text",
 		-apple-system, system-ui, sans-serif;
 	--color-level-1: #ffffff;
 	--color-level-2: #6befaa;
@@ -123,10 +127,11 @@ header nav {
 #banner .banner-text {
 	max-width: 40%;
 }
+
 #banner .section-title span {
 	font-size: 5rem;
 	color: var(--color-level-2);
-	/* font-weight: 700; */
+	font-weight: 700;
 	text-transform: uppercase;
 	font-family: var(--font-tertiary);
 	line-height: 1.2;
@@ -461,4 +466,7 @@ footer .container .footer-about-section .footer-about-title{
 	justify-content: space-between;
 	align-items: center;
 	height: 50px;
+}
+#banner .section-title{
+	font-family: var(--font-tertiary);
 }
