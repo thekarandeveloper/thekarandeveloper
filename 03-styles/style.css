@@ -494,7 +494,7 @@ footer .container .footer-about-section .footer-about-title {
 	}
 	
 	header nav .brand-name{
-		width: 75vw;
+		width: 80vw;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -508,7 +508,6 @@ footer .container .footer-about-section .footer-about-title {
 		background-image: url('/02-assets/img/profileIcon-v7.1.webp');
 		background-position: 0;
 		background-size: contain;
-		/* right: 0; */
 		/* margin-left: 35%; */
 
 	}
