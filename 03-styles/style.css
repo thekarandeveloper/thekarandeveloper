@@ -545,6 +545,7 @@ footer .container .footer-about-section .footer-about-title {
 	}
 	#about .section-body {
 		flex-direction: column;
+		font-size: var(--fz-md);
 	}
 	#about .section-img {
 		order: -3;
@@ -568,11 +569,11 @@ footer .container .footer-about-section .footer-about-title {
 		flex-direction: column;
 	}
 	#projects .card .card-body {
-		font-size: var(--fz-lg);
+		font-size: var(--fz-sm);
 	}
 	#projects .card .card-title {
 		font-family: var(--font-secondary);
-		font-size: var(--fz-xl);
+		font-size: var(--fz-lg);
 	}
 	#projects .card-btn {
 		width: fit-content;
@@ -604,6 +605,7 @@ footer .container .footer-about-section .footer-about-title {
 	.section-left-content .section-body {
 		width: 90%;
 		text-align: center;
+		font-size: var(--fz-sm);
 	}
 	.section-right-container form {
 		display: flex;
@@ -625,7 +627,8 @@ footer .container .footer-about-section .footer-about-title {
 		/* align-items: center; */
 	}
 	footer .container .footer-about-section .footer-about-body {
-		/* text-align: center; */
+		font-size: var(--fz-sm);
+
 	}
 	.footer-link {
 		margin-right: 0;
@@ -638,7 +641,7 @@ footer .container .footer-about-section .footer-about-title {
 
 	}
 	.footer-link-group {
-		width: 45vw;
+		width: 40vw;
 		margin-bottom: 20px;
 	}
 	.footer-link-group-title {
