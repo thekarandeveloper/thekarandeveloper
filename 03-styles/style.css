@@ -68,7 +68,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	height: auto;
-	padding: 40px 4vw;
+	padding: 40px 3vw;
 	margin: 40px 0px;
 	box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ header {
 	height: 100px;
 	border-bottom: 2px var(--color-level-2) solid;
 	width: 100%;
-	padding: 30px 40px;
+	padding: 30px 3vw;
 }
 header nav {
 	display: flex;
@@ -444,6 +444,9 @@ footer .container .footer-about-section .footer-about-title {
 }
 .footer-link-group-title {
 	font-size: var(--fz-lg);
+	font-family: var(--font-secondary);
+	color: var(--color-level-2);
+	font-weight: 600;
 	font-family: var(--font-secondary);
 }
 .footer-link-group-items ul {
