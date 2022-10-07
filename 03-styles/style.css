@@ -483,12 +483,13 @@ footer .container .footer-about-section .footer-about-title {
 
 /* Small Devices (potrait phones, less then 320px) */
 @media screen and (max-width: 420px) {
-	body {
-		/* m-left: 30px; */
+	section {
+	padding: 40px 6vw;
+
 	}
 
 	header {
-		padding: 30px 20px;
+		padding: 30px 30px;
 		
 	}
 	
