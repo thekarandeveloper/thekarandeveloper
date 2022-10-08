@@ -250,6 +250,7 @@ header nav {
 	flex-direction: column;
 	justify-content: space-between;
 	grid-column: 1 / span 2;
+	width: 60%;
 }
 .section-body ul {
 	padding-left: 20px;
