@@ -12,5 +12,3 @@
 
 ⦿ My area of expertise lies in Frontend Development, which perfectly aligns with my interests, as it covers all aspects that I am passionate about.
 <hr></hr>
-
-<p align="center"> <img src="/02-assets/Explore-button.png" alt="Explore Resume" /> </p>
