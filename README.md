@@ -13,4 +13,4 @@
 ⦿ My area of expertise lies in Frontend Development, which perfectly aligns with my interests, as it covers all aspects that I am passionate about.
 <hr></hr>
 
-<p align="center"> <img src="https://raw.githubusercontent.com/thekarandeveloper/thekarandeveloper/997585e6bc827c89314477e7b893ecc13b401b7d/02-assets/Explore-button.png" alt="karandeveloper" /> </p>
+<p align="center"> <img src="https://github.com/thekarandeveloper/thekarandeveloper/blob/997585e6bc827c89314477e7b893ecc13b401b7d/02-assets/Explore-button.png" alt="karandeveloper" /> </p>
