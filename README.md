@@ -1,7 +1,7 @@
 <h1 align="left">Hi 👋, I'm Karan Kumar</h1>
 <hr></hr>
 
-<p align="left"> <img src="/02-assets/Github-banner.webp" alt="karandeveloper" /> </p>
+<p align="left"> <img src="/02-assets/Github-Banner.webp" alt="karandeveloper" /> </p>
 
 <p align="left"><b>Hello, I'm Karan Kumar, an Full Stack Web Developer based in India.</b></p>
 
