@@ -102,16 +102,20 @@ section {
   body {
     margin: 13px;
   }
+  
   section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 2vh 0px;
-    height: 80vh;
+    height: 62vh;
     gap:3vh;
   }
   .heading-large {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .body-normal{
+    font-size: 16px;
   }
 }

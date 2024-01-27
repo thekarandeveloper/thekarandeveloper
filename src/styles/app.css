@@ -11,11 +11,14 @@
 .nav-brand a {
   color: var(--base);
 }
+.nav-items{
+  display: flex;
 
+}
 .nav-item {
   color: var(--base);
   padding: 10px 1.7vw;
-  line-height: 2.5;
+  line-height: 1.75;
 }
 .nav-item {
   opacity: 0.7;
@@ -40,6 +43,11 @@
   background-color: var(--primary);
   color: var(--base);
 }
+.nav.cta-btn:hover {
+  color: var(--primary);
+  background-color: var(--base);
+}
+
 
 .nav-toggle {
   max-width: 30%;
@@ -49,14 +57,17 @@
   align-items: center;
   background-color: var(--primary);
   color: var(--base);
-  font-size: 40px;
+  font-size: 30px;
   padding: 0 25px;
   display: none;
 }
+
 .nav-items.responsive_nav {
   transform: translateX(0);
 }
-
+.nav-item-icon{
+  display: none;
+}
 /* ----------------Intro Card------------------------ */
 
 .card-container.intro {
@@ -126,33 +137,48 @@
 /* -------------------------------------------- */
 /* Tablet and lower screens than tablets */
 @media only screen and (max-width: 1200px) {
+  .navbar-container{
+    background-color:var(--light-bg);
+  }
+  .nav-brand a{
+    color:var(--dark-bg);
+    font-weight:700;
+  }
   .nav-toggle {
     display: flex;
     cursor: pointer;
   }
   .nav-items {
-    width: 100%;
-    position: absolute;
-    top: 17vh;
+    width: 94%;
+    position: fixed;
+    bottom: 0vh;
     background-color: var(--dark-bg);
-    height: 80vh;
+    height: 8vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     left: 0;
-    transform: translateX(120%);
     transition: 1s;
-    padding: 20px 0px;
+    margin: 13px 13px 13px 13px;
+    align-self: center;
   }
   .nav-item {
     width: 90%;
-    display: block;
     line-height: 1.3;
   }
-  .cta-btn {
-    width: 90%;
+  .nav-item-label{
+    display: none;
   }
+  .nav-item-icon{
+    display: block;
+  }
+  .nav.cta-btn {
+    width: 90%;
+    display: none;
+
+  }
+  
   .card-container.intro{
     order: 2;
     padding: 20px;
@@ -162,11 +188,11 @@
   }
   .image-container{
     width: 100%;
-    height: 100%;
+    height: 40%;
     align-items: start;
   }
   .image-container img{
-    width: 60%;
+    width: 40%;
   }
   
 .icon-bars .icon-container:hover {
@@ -176,5 +202,13 @@
   .icon-bars .icon-container .icon-label{
     display: none;
   }
-
+  .icon-bars{
+    /* display: none; */ 
+  }
+  .nav-items{
+    display: none;
+  }
+  section{
+    height: 70vh;
+  }
 }
