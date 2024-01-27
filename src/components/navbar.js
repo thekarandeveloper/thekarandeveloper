@@ -22,12 +22,12 @@ function Navbar() {
           <Link className="label nav-item active" to="/">
             Home
           </Link>
-          <Link className="label nav-item" to="/projects">
+          {/* <Link className="label nav-item" to="/projects">
             Projects
           </Link>
           <Link className="label nav-item" to="/">
             Experince
-          </Link>
+          </Link> */}
 
           <Link className="label nav cta-btn" to="/">
             Resume{" "}
