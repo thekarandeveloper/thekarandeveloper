@@ -42,6 +42,7 @@
 .nav.cta-btn {
   background-color: var(--primary);
   color: var(--base);
+  
 }
 .nav.cta-btn:hover {
   color: var(--primary);
