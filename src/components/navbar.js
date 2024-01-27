@@ -29,12 +29,12 @@ function Navbar() {
             Experince
           </Link> */}
 
-          <Link className="label nav cta-btn" to="/">
+          <a className="label nav cta-btn" href="../assets/KARAN_KUMAR_RESUME.pdf" download={true}>
             Resume{" "}
             <span>
               <MdFileDownload />
             </span>
-          </Link>
+          </a>
         </div>
         <div className="nav-toggle" ref={btnRef} onClick={showNavbar}>
           {" "}
