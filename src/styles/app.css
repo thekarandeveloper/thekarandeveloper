@@ -1,0 +1,180 @@
+.navbar-container {
+  width: 100%;
+  height: 104px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-bg);
+  padding: 25px;
+}
+.nav-brand a {
+  color: var(--base);
+}
+
+.nav-item {
+  color: var(--base);
+  padding: 10px 1.7vw;
+  line-height: 2.5;
+}
+.nav-item {
+  opacity: 0.7;
+}
+.nav-item:hover {
+  background-color: var(--highlight);
+  color: var(--primary);
+  opacity: 1;
+}
+.nav-items a.active {
+  color: var(--base);
+  opacity: 1;
+}
+.nav-items a.active:hover {
+  background-color: transparent;
+
+  color: var(--base);
+  opacity: 1;
+}
+
+.nav.cta-btn {
+  background-color: var(--primary);
+  color: var(--base);
+}
+
+.nav-toggle {
+  max-width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--base);
+  font-size: 40px;
+  padding: 0 25px;
+  display: none;
+}
+.nav-items.responsive_nav {
+  transform: translateX(0);
+}
+
+/* ----------------Intro Card------------------------ */
+
+.card-container.intro {
+  background-color: var(--primary);
+  color: var(--base);
+  justify-content: end;
+  padding: 0px 30px 50px 30px;
+}
+
+.card-container.intro div {
+  margin-bottom: 20px;
+}
+
+.icon-bars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  gap: 20px;
+}
+.icon-bars .icon-container {
+  color: var(--primary);
+  background-color: var(--base);
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 40px auto;
+  font-weight: 600;
+  width: 60px;
+  height: 100%;
+  align-items: center;
+  line-height: 1;
+  transition: 2.5s;
+  white-space: nowrap;
+}
+.icon-bars .icon-container div {
+  padding-left: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 0;
+}
+.icon-bars .icon-container:hover {
+  width: 220px;
+  transition: 1s;
+}
+
+/* --------------Profile-------------------------- */
+
+.image-container{
+  background-color: var(--highlight);
+  width: 80%;
+  height: 100%;
+  padding-top:10px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.image-container img{
+  object-fit: cover;
+  width: 90%;
+}
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* Tablet and lower screens than tablets */
+@media only screen and (max-width: 1200px) {
+  .nav-toggle {
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-items {
+    width: 100%;
+    position: absolute;
+    top: 17vh;
+    background-color: var(--dark-bg);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    transform: translateX(120%);
+    transition: 1s;
+    padding: 20px 0px;
+  }
+  .nav-item {
+    width: 90%;
+    display: block;
+    line-height: 1.3;
+  }
+  .cta-btn {
+    width: 90%;
+  }
+  .card-container.intro{
+    order: 2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .image-container{
+    width: 100%;
+    height: 100%;
+    align-items: start;
+  }
+  .image-container img{
+    width: 60%;
+  }
+  
+.icon-bars .icon-container:hover {
+  width: 60px;
+  transform: scale(1.2);
+}
+  .icon-bars .icon-container .icon-label{
+    display: none;
+  }
+
+}
