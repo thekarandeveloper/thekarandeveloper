@@ -35,7 +35,7 @@ function Navbar() {
             download={true}
           >
             Resume{" "}
-            <span>
+            <span className="label cta-btn-icon">
               <MdFileDownload />
             </span>
           </a>

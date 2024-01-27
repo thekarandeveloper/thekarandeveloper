@@ -13,19 +13,19 @@ function InfoCard() {
         experiences is my expertise.
       </div>
       <div className="icon-bars">
-        <a className="icon-container label" href="mailto:contact@karankumar.dev">
+        <a className="icon-container label" target="_blank" href="mailto:contact@karankumar.dev">
           <div><IoMail /></div>
           <div className="icon-label"><span>Mail Me</span></div>
         </a>
-        <a className="icon-container label" href="https://twitter.com/home">
+        <a className="icon-container label" target="_blank" href="https://twitter.com/home">
           <div><FaXTwitter /></div>
           <div className="icon-label"><span>Thoughts</span></div>
         </a>
-        <a className="icon-container label" href="https://www.linkedin.com/in/thekarandeveloper/">
+        <a className="icon-container label" target="_blank" href="https://www.linkedin.com/in/thekarandeveloper/">
           <div><IoLogoLinkedin /></div>
           <div className="icon-label"><span>Work Life</span></div>
         </a>
-        <a className="icon-container label" href="https://www.instagram.com/karandeveloper/">
+        <a className="icon-container label" target="_blank" href="https://www.instagram.com/karandeveloper/">
           <div><RiInstagramFill /></div>
           <div className="icon-label"><span>Social Life</span></div>
         </a>
