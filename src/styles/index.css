@@ -1,0 +1,121 @@
+:root {
+  --base: #ffffff;
+  --primary: #0051ed;
+  --highlight: #d0e0ff;
+  --light-bg: #eef1f5;
+  --dark-bg: #041c4e;
+  --accent: linear-gradient(96deg, var(--dark-bg) -29%, var(var(--primary)) 28.11%, var(--dark-bg) 135.78%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", "Roboto";
+  border-radius: 1rem;
+  -webkit-tap-highlight-color: transparent; /* For Safari and older versions of Chrome */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Set to fully transparent */
+  tap-highlight-color: rgba(0, 0, 0, 0); /* Standard property for newer browsers */
+  -moz-tap-highlight-color: transparent; /* For Mozilla Firefox */
+}
+*:hover {
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+svg {
+  border-radius: 0;
+}
+body {
+  margin: 35px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 100%;
+  height: 70vh;
+  margin: 5vh 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  font-size: 27.697px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.heading-large {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139%; /* 102.058px */
+}
+.body-normal {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37.8px; /* 171.818% */
+}
+.label {
+  text-align: center;
+  font-size: 23.21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cta-btn {
+  width: 196px;
+  margin: 0 20px;
+  padding: 0px 20px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5;
+}
+.cta-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+/* Tablet and lower screens than tablets */
+@media only screen and (max-width: 1200px) {
+  body {
+    margin: 13px;
+  }
+  
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vh 0px;
+    height: 62vh;
+    gap:3vh;
+  }
+  .heading-large {
+    font-size: 32px;
+  }
+  .body-normal{
+    font-size: 16px;
+  }
+}
