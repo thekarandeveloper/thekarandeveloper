@@ -17,7 +17,7 @@ function InfoCard() {
           <div><IoMail /></div>
           <div className="icon-label"><span>Mail Me</span></div>
         </a>
-        <a className="icon-container label" target="_blank" href="https://twitter.com/home">
+        <a className="icon-container label" target="_blank" href="https://twitter.com/karan_developer">
           <div><FaXTwitter /></div>
           <div className="icon-label"><span>Thoughts</span></div>
         </a>
