@@ -42,6 +42,8 @@
 .nav.cta-btn {
   background-color: var(--primary);
   color: var(--base);
+  transition: 0.5s;
+
   
 }
 .nav.cta-btn:hover {
@@ -61,6 +63,7 @@
   font-size: 30px;
   padding: 0 25px;
   display: none;
+  cursor: pointer;
 }
 
 .nav-items.responsive_nav {
@@ -147,7 +150,6 @@
   }
   .nav-toggle {
     display: flex;
-    cursor: pointer;
   }
   .nav-items {
     width: 94%;

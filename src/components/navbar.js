@@ -4,7 +4,7 @@ import { MdFileDownload } from "react-icons/md";
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import { AiFillHome } from "react-icons/ai";
-import { BiSolidFilePdf } from "react-icons/bi";
+import { FaSearch } from "react-icons/fa";
 function Navbar() {
   const navRef = useRef();
   const btnRef = useRef();
@@ -46,7 +46,7 @@ function Navbar() {
           href={resumeFilePath}
         >
           {" "}
-          <BiSolidFilePdf />
+          <FaSearch />
         </a>
       </navbar>
     </header>
