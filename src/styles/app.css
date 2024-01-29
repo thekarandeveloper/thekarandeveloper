@@ -61,6 +61,8 @@
   font-size: 30px;
   padding: 0 25px;
   display: none;
+  cursor: pointer;
+
 }
 
 .nav-items.responsive_nav {
@@ -147,7 +149,6 @@
   }
   .nav-toggle {
     display: flex;
-    cursor: pointer;
   }
   .nav-items {
     width: 94%;
