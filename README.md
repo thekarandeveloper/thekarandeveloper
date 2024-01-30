@@ -1,5 +1,3 @@
-<h1 align="left">Hi 👋, I'm Karan Kumar</h1>
-<hr></hr>
 <p align="left"> <img src="/src/assets/github-banner.webp" alt="karandeveloper" /> </p>
 
 <p align="left"><b>Hello, I'm Karan Kumar, an aspiring Full Stack Web Developer based in India.</b></p>
@@ -17,11 +15,6 @@
 
 <hr></hr>
 
-<hr></hr>
-
 💼 Let's Collaborate:
 
 📧 Feel free to reach out to me at my email mentioned above for business project inquiries, collaboration opportunities, or just to say hello. Let's bring your Business ideas to life! 🚀
-
-#WebDeveloper #FrontendSpecialist #businessDeveloper #WebDesign #ReactJS #VueJS #JavaScript #UserExperience
-
