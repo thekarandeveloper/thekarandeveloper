@@ -7,13 +7,15 @@
   align-items: center;
   background-color: var(--dark-bg);
   padding: 25px;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .nav-brand a {
   color: var(--base);
 }
-.nav-items{
+.nav-items {
   display: flex;
-
 }
 .nav-item {
   color: var(--base);
@@ -43,14 +45,15 @@
   background-color: var(--primary);
   color: var(--base);
   transition: 0.5s;
-
-  
+  width: 150px;
+  margin: 0 20px;
+  padding: 0px 10px;
+  border-radius: 11px;
 }
 .nav.cta-btn:hover {
   color: var(--primary);
   background-color: var(--base);
 }
-
 
 .nav-toggle {
   max-width: 30%;
@@ -69,22 +72,37 @@
 .nav-items.responsive_nav {
   transform: translateX(0);
 }
-.nav-item-icon{
+.nav-item-icon {
   display: none;
+}
+
+/* --------------------Home Section------------------------ */
+
+.home {
+  height: 70vh;
 }
 /* ----------------Intro Card------------------------ */
 
 .card-container.intro {
   background-color: var(--primary);
   color: var(--base);
+  padding: 0px 6rem 5rem 2rem;
   justify-content: end;
-  padding: 0px 30px 50px 30px;
+  height: 100%;
 }
 
 .card-container.intro div {
-  margin:10px 0;
+  margin-bottom: 30px;
 }
-
+.card-container.intro .body-normal {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.info.cta-btn:hover {
+  color: var(--primary);
+  background-color: var(--base);
+}
 .icon-bars {
   display: flex;
   flex-direction: row;
@@ -119,34 +137,189 @@
   width: 220px;
   transition: 1s;
 }
+.info.cta-btn {
+  border: 2px var(--base) solid;
+  margin: 0;
+  color: var(--base);
+}
 
 /* --------------Profile-------------------------- */
 
-.image-container{
-  background-color: var(--highlight);
+.image-container {
+  background-color: #ebebeb;
   width: 80%;
   height: 100%;
-  padding-top:10px ;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.image-container img{
+.image-container img {
   object-fit: cover;
   width: 90%;
 }
+/* ----------------Project Card------------------------ */
+.section-container.project {
+  background-color: var(--highlight);
+}
+.section-body.project {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+/* ---------------Project Big Card-------------------- */
+
+.big-card-container {
+  background-color: var(--base);
+  width: 100%;
+  grid-column: span 2;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.big-card-img {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.big-card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.big-card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: 30px;
+  padding-right: 30px;
+  row-gap: 2rem;
+}
+.big-card-title {
+  padding-top: 2rem;
+}
+.big-card-desc {
+  color: var(--dark-bg);
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 23px; /* 171.818% */
+  text-align: justify;
+}
+.big-card-tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+  column-gap: 0.7rem;
+  opacity: 0.7;
+}
+.big-card-tag-item {
+  width: 30%;
+  padding: 0 10px;
+  line-height: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-bg);
+  font-size: 14px;
+}
+.big-card-Button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.big-card.cta-btn {
+  color: var(--primary);
+  padding: 0;
+}
+
+/* ---------------Project small Card-------------------- */
+
+.small-card-container {
+  background-color: var(--base);
+  
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.small-card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.small-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  row-gap: 1rem;
+}
+.small-card-title {
+  padding-top: 10px;
+}
+.small-card-desc {
+  color: var(--dark-bg);
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 23px; /* 171.818% */
+  text-align: center;
+}
+
+.small-card-Button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.small-card.cta-btn {
+  color: var(--primary);
+  padding: 0;
+}
+
+/* -----------------Review Section-------------------- */
+
+.section-container.review{
+  background-color: var(--dark-bg);
+}
+
+
+
 
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* Tablet and lower screens than tablets */
 @media only screen and (max-width: 1200px) {
-  .navbar-container{
-    background-color:var(--light-bg);
+  .navbar-container {
+    background-color: var(--light-bg);
   }
-  .nav-brand a{
-    color:var(--dark-bg);
-    font-weight:700;
+  .nav-brand a {
+    color: var(--dark-bg);
+    font-weight: 700;
   }
   .nav-toggle {
     display: flex;
@@ -170,48 +343,47 @@
     width: 90%;
     line-height: 1.3;
   }
-  .nav-item-label{
+  .nav-item-label {
     display: none;
   }
-  .nav-item-icon{
+  .nav-item-icon {
     display: block;
   }
   .nav.cta-btn {
     width: 90%;
     display: none;
-
   }
-  
-  .card-container.intro{
+
+  .card-container.intro {
     order: 2;
     padding: 20px;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
-  .image-container{
+  .image-container {
     width: 100%;
     height: 40%;
     align-items: start;
   }
-  .image-container img{
+  .image-container img {
     width: 40%;
   }
-  
-.icon-bars .icon-container:hover {
-  width: 60px;
-  transform: scale(1.2);
-}
-  .icon-bars .icon-container .icon-label{
+
+  .icon-bars .icon-container:hover {
+    width: 60px;
+    transform: scale(1.2);
+  }
+  .icon-bars .icon-container .icon-label {
     display: none;
   }
-  .icon-bars{
-    /* display: none; */ 
+  .icon-bars {
+    /* display: none; */
   }
-  .nav-items{
+  .nav-items {
     display: none;
   }
-  section{
+  section {
     height: 70vh;
   }
 }

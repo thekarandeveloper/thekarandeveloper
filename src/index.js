@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import "./styles/app.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/home";
+import App from "./App";
 import Projects from "./pages/projects"
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <React.Fragment>
-        <Home />
+        <App />
       </React.Fragment>
     ),
   },
