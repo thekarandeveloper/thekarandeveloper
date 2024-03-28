@@ -1,6 +1,11 @@
-import React from "react";
-import { MdFileDownload } from "react-icons/md";
+import React,{useState} from "react";
+import { MdKeyboardArrowRight } from "react-icons/md";
 function InfoCard() {
+  const [modal,setModal] = useState(false);
+  const toggleModal = ()=>{
+    setModal(!modal)
+
+  }
   return (
     <div className="card-container intro">
       <div className="heading-large">Hello,</div>
@@ -13,10 +18,11 @@ function InfoCard() {
             className="label info cta-btn"
             href={"/"}
             download={true}
+            onClick={toggleModal}
           >
-            Download Resume{" "}
-            <span className="label cta-btn-icon">
-            <MdFileDownload />
+            View Resume{" "}
+            <span className="heading cta-btn-icon">
+            <MdKeyboardArrowRight />
             </span>
           </a>
     </div>

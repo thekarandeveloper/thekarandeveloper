@@ -16,19 +16,25 @@
 }
 .nav-items {
   display: flex;
+  column-gap: 10px;
 }
 .nav-item {
-  color: var(--base);
-  padding: 10px 1.7vw;
+  width: 7vw;
+  color: var(--light-bg);
+  padding: 10px 1.5vw;
   line-height: 1.75;
-}
-.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.7;
 }
+
 .nav-item:hover {
-  background-color: var(--highlight);
-  color: var(--primary);
   opacity: 1;
+  transition: 0.2s;
+  color: var(--primary);
+
+  background-color: var(--base);
 }
 .nav-items a.active {
   color: var(--base);
@@ -76,7 +82,7 @@
   display: none;
 }
 
-/* --------------------Home Section------------------------ */
+/* --------------------Home Section------------------- */
 
 .home {
   height: 70vh;
@@ -610,9 +616,6 @@
   padding: 0;
   height: 60vh;
   column-gap: 5vh;
-
-
-
 }
 .section-container.contact .section-body-start {
   background-color: var(--highlight);
@@ -620,18 +623,18 @@
   justify-content: center;
   width: 60%;
 }
-.section-container.contact .section-body-start .heading{
+.section-container.contact .section-body-start .heading {
   color: var(--primary);
 }
 .section-container.contact .section-body-start .body-normal {
   width: 80%;
 }
-.section-container.contact .section-body-end{
+.section-container.contact .section-body-end {
   width: 37%;
   display: flex;
   flex-direction: column;
 }
-form{
+form {
   width: 100%;
   height: 100%;
   display: flex;
@@ -640,17 +643,19 @@ form{
   align-items: center;
   row-gap: 2rem;
 }
-form input, form textarea, form button{
+form input,
+form textarea,
+form button {
   width: 100%;
   background-color: transparent;
   border: 2px var(--dark-bg) solid;
   font-size: 18px;
   padding: 15px;
 }
-form textarea{
+form textarea {
   height: 40%;
 }
-form button{
+form button {
   background-color: var(--primary);
   color: var(--base);
   border: none;
@@ -658,7 +663,7 @@ form button{
 
 /* ------------------Socials------------------- */
 
-.section-container.social{
+.section-container.social {
   background-color: var(--dark-bg);
   height: 60vh;
   color: var(--base);
@@ -668,12 +673,11 @@ form button{
   align-items: center;
   row-gap: 1.5rem;
 }
-.section-container.social .label{
+.section-container.social .label {
   font-family: "Gilroy-Light";
   font-size: 20px;
-
 }
-.section-container.copy{
+.section-container.copy {
   background-color: var(--dark-bg);
   width: 100%;
   height: 12vh;
@@ -683,9 +687,12 @@ form button{
   align-items: center;
   padding: 0;
 }
-.section-container.copy .label{
+.section-container.copy .label {
   line-height: 1.2;
 }
+
+
+
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* Tablet and lower screens than tablets */

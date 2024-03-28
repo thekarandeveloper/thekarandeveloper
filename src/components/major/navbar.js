@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
-import { MdFileDownload } from "react-icons/md";
-import { IoIosMenu } from "react-icons/io";
-import { IoCloseOutline } from "react-icons/io5";
 import { AiFillHome } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 function Navbar() {
+
+  // Calendly Location
+
+
+
   const navRef = useRef();
   const btnRef = useRef();
   const [isClosed, setIsClosed] = useState(true);
@@ -14,7 +16,7 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
     setIsClosed((prevIsClosed) => !prevIsClosed);
   };
-  const resumeFilePath = process.env.PUBLIC_URL + "/KARAN_KUMAR_RESUME.pdf";
+
 
   return (
     <header>
@@ -44,9 +46,8 @@ function Navbar() {
 
           <a
             className="label nav cta-btn"
-            href={resumeFilePath}
-            download={true}
-          >
+            href="https://calendly.com/karankumarcv/30min"
+           target="blank">
             Contact{" "}
             <span className="label cta-btn-icon">
             <IoMdCall />
@@ -54,10 +55,10 @@ function Navbar() {
           </a>
         
         </div>
-        <a className="nav-toggle" download={true} href={resumeFilePath}>
+        {/* <a className="nav-toggle" download={true} href={resumeFilePath}>
           {" "}
           <FaSearch />
-        </a>
+        </a> */}
       </navbar>
     </header>
   );

@@ -9,10 +9,13 @@ import ArticleCard from "./components/major/ArticleCard.js";
 import ContactCard from "./components/major/ContactCard.js";
 import SocialCard from "./components/major/SocialCard.js";
 import CopyrightBar from "./components/major/CopyrightBar.js";
+import ModalBox from "./components/major/modalBox.js";
 
 function Home() {
   return (
     <React.Fragment>
+      {/* <ModalBox></ModalBox>
+      <div className="modal-overlay"></div> */}
       <Navbar></Navbar>
       <section className="home">
         <InfoCard></InfoCard>
