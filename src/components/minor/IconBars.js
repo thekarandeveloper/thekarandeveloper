@@ -8,51 +8,49 @@ function IconBars() {
   return (
     <div className="icon-bars">
       <a
-        className="icon-container label"
+        className="icon-container sub-heading"
         target="_blank"
         href="mailto:contact@karankumar.dev"
       >
         <div>
           <IoMail />
         </div>
-        <div className="icon-label">
-          <span>Mail Me</span>
+        <div className="icon-sub-heading">
+         
         </div>
       </a>
       <a
-        className="icon-container label"
+        className="icon-container sub-heading"
         target="_blank"
         href="https://twitter.com/karankumarcv"
       >
         <div>
           <FaXTwitter />
         </div>
-        <div className="icon-label">
-          <span>Thoughts</span>
-        </div>
+       
       </a>
       <a
-        className="icon-container label"
+        className="icon-container sub-heading"
         target="_blank"
         href="https://www.linkedin.com/in/karankumarcv/"
       >
         <div>
           <IoLogoLinkedin />
         </div>
-        <div className="icon-label">
-          <span>Work Life</span>
+        <div className="icon-sub-heading">
+         
         </div>
       </a>
       <a
-        className="icon-container label"
+        className="icon-container sub-heading"
         target="_blank"
         href="https://www.instagram.com/karankumarcv/"
       >
         <div>
           <RiInstagramFill />
         </div>
-        <div className="icon-label">
-          <span>Social Life</span>
+        <div className="icon-sub-heading">
+         
         </div>
       </a>
     </div>
