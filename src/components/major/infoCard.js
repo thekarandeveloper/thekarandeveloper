@@ -1,11 +1,6 @@
-import React,{useState} from "react";
+import React, { useState, useContext } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 function InfoCard() {
-  const [modal,setModal] = useState(false);
-  const toggleModal = ()=>{
-    setModal(!modal)
-
-  }
   return (
     <div className="card-container intro">
       <div className="heading-large">Hello,</div>
@@ -15,16 +10,15 @@ function InfoCard() {
         experiences is my expertise.
       </div>
       <a
-            className="label info cta-btn"
-            href={"/"}
-            download={true}
-            onClick={toggleModal}
-          >
-            View Resume{" "}
-            <span className="heading cta-btn-icon">
-            <MdKeyboardArrowRight />
-            </span>
-          </a>
+        className="label info cta-btn"
+        href={"/"}
+        // onClick={}
+      >
+        View Resume{" "}
+        <span className="heading cta-btn-icon">
+          <MdKeyboardArrowRight />
+        </span>
+      </a>
     </div>
   );
 }

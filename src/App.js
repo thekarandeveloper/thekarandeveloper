@@ -10,12 +10,12 @@ import ContactCard from "./components/major/ContactCard.js";
 import SocialCard from "./components/major/SocialCard.js";
 import CopyrightBar from "./components/major/CopyrightBar.js";
 import ModalBox from "./components/major/modalBox.js";
+import ModalContextProvider from "./context/modalContext.js";
 
-function Home() {
+function App() {
   return (
     <React.Fragment>
-      {/* <ModalBox></ModalBox>
-      <div className="modal-overlay"></div> */}
+      <ModalBox></ModalBox>
       <Navbar></Navbar>
       <section className="home">
         <InfoCard></InfoCard>
@@ -46,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;
