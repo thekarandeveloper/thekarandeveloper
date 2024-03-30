@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import {Link} from 'react-router-dom';
+
 import { IoOpenOutline } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -27,12 +29,12 @@ function Services({ toggle }) {
   }
 
   return (
-    <div className="section-container services">
+    <section className="section-container services">
       <div className="section-header">
         <div className="section-title heading services">What I Offer ?</div>
-        <div className="section-navigation">
+        <Link to='https://www.instagram.com/karankumarrcv/' target="_blank" rel="noopener noreferrer" className="section-navigation">
           <IoOpenOutline className="card-title" />
-        </div>
+        </Link>
       </div>
       <div className="section-body services">
         <div className="section-body-start">
@@ -130,7 +132,7 @@ function Services({ toggle }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

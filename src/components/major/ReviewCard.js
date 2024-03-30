@@ -20,7 +20,7 @@ function ReviewCard({ toggle }) {
   setInterval(autoScroll, 30);
 
   return (
-    <div className="section-container review">
+    <section className="section-container review">
       <div className="section-body review">
         <div className="section-body-start">
           <div className="heading">What They Have To Say</div>
@@ -69,7 +69,7 @@ function ReviewCard({ toggle }) {
           ></TestimonialCard>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

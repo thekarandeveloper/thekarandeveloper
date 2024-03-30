@@ -31,6 +31,7 @@ function Navbar({toggle}) {
             </div>
             <div className="nav-item-label">Home</div>
           </Link>
+          
           <Link className="label nav-item" to="/">
             <div className="nav-item-icon heading">
               <AiFillHome />

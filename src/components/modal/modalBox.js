@@ -7,6 +7,8 @@ import ServicesContent from "./ServicesContent";
 import ArticleContent from "./ArticleContent";
 import ContactFormContent from "./ContactFormContent";
 function ModalBox({ toggle, setToggle, elements }) {
+
+
   const modalRef = useRef(null);
 
   // For the Clicked Element

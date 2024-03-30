@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactCard({ toggle }) {
   return (
-    <div className="section-container contact">
+    <section className="section-container contact">
       <div className="section-body-start">
         <div className="heading">Have Something in Mind ?</div>
         <div className="body-normal">
@@ -37,7 +37,7 @@ function ContactCard({ toggle }) {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 

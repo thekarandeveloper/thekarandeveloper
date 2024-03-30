@@ -119,9 +119,6 @@
 .icon-bars .icon-container {
   background-color: var(--primary);
   color: var(--base);
-  padding-left: 10px;
-  display: grid;
-  grid-template-columns: 40px auto;
   font-weight: 600;
   width: 60px;
   height: 100%;
@@ -129,20 +126,25 @@
   line-height: 1;
   transition: 0.5s;
   white-space: nowrap;
+  border: 2px transparent solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .icon-bars .icon-container div {
-  padding-left: 10px;
   margin: 0;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  white-space: nowrap;
   border-radius: 0;
 }
 .icon-bars .icon-container:hover {
   transition: 0.5s;
-  transform: scale(1.2);
-  margin: 0 10px;
+  /* transform: scale(1.2); */
+  /* margin: 0 10px; */
+  border: 2px var(--base) solid;
+
 }
 .info.cta-btn {
   border: 2px var(--base) solid;
@@ -871,6 +873,7 @@ form button {
     width: 100%;
     height: 40%;
     align-items: start;
+
   }
   .image-container img {
     width: 40%;

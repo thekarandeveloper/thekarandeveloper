@@ -1,16 +1,18 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import { IoOpenOutline } from "react-icons/io5";
 import ProjectCardBig from "../minor/projectCardBig";
 import ProjectCardSmall from "../minor/projectCardSmall";
 import profilePhoto from "../../assets/media/bg.png";
+
 function ProjectCard({toggle}) {
   return (
-    <div className="section-container project">
+    <section className="section-container project">
       <div className="section-header">
         <div className="section-title heading">Explore My Work</div>
-        <div className="section-navigation project">
+        <Link to='https://github.com/karankumarcv' target="_blank" rel="noopener noreferrer" className="section-navigation project">
           <IoOpenOutline className="card-title" />
-        </div>
+        </Link>
       </div>
       <div className="section-body project">
         <ProjectCardBig
@@ -44,7 +46,7 @@ function ProjectCard({toggle}) {
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ProjectCardSmall>
       </div>
-    </div>
+    </section>
   );
 }
 
