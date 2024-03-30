@@ -1,6 +1,7 @@
-import React from "react";
+import React,{useRef} from "react";
 import { FaStar } from "react-icons/fa6";
-function testimonialCard({ profileImg, userName, category, desc }) {
+function TestimonialCard({ profileImg, userName, category, desc }) {
+
   return (
     <div className="test-card-container">
       <div className="test-card-profile">
@@ -12,7 +13,7 @@ function testimonialCard({ profileImg, userName, category, desc }) {
             <div className="user-name">{userName}</div>
             <div className="user-category">{category}</div>
           </div>
-          <div className="ratings">
+          <div className="ratings" >
             <div className="star">
               <FaStar />
             </div>
@@ -33,4 +34,4 @@ function testimonialCard({ profileImg, userName, category, desc }) {
   );
 }
 
-export default testimonialCard;
+export default TestimonialCard;

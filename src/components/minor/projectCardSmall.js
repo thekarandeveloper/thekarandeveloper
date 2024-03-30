@@ -1,12 +1,13 @@
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 function projectCardSmall({
+  subToggle,
   imgname,
   title,
   desc
 }) {
   return (
-    <div className="small-card-container">
+    <div className="small-card-container" onClick={subToggle}>
       <div className="small-card-img">
         <img src={imgname} alt={imgname}></img>
       </div>

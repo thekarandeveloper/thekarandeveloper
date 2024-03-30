@@ -1,11 +1,12 @@
 import React from "react";
 function ArticleCardSmall({
+  subToggle,
   imgname,
   title,
   desc
 }) {
   return (
-    <div className="small-card-container">
+    <div className="small-card-container" onClick={subToggle}>
       <div className="small-card-img">
         <img src={imgname} alt={imgname}></img>
       </div>

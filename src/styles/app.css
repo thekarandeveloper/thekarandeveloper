@@ -147,13 +147,14 @@
 .info.cta-btn {
   border: 2px var(--base) solid;
   margin: 0;
+  background-color: transparent;
   color: var(--base);
 }
 
 /* --------------Profile-------------------------- */
 
 .image-container {
-  background-color: #ebebeb;
+  background-color: var(--light-bg);
   width: 80%;
   height: 100%;
   padding-top: 10px;
@@ -161,6 +162,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-image: url("../assets/media/profilePhoto.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .image-container img {
   object-fit: cover;
@@ -175,6 +180,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
+
+
 /* ---------------Project Big Card-------------------- */
 
 .section-container.project .big-card-container {
@@ -187,6 +194,8 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
+
 }
 .section-container.project .big-card-img {
   width: 60%;
@@ -208,7 +217,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: end;
+  justify-content: center;
   padding: 30px;
   padding-right: 30px;
   row-gap: 2rem;
@@ -263,7 +272,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
+
 }
+
 .section-container.project .small-card-img {
   width: 100%;
   height: 100%;
@@ -335,7 +347,6 @@
   row-gap: 2rem;
   overflow-y: scroll;
 }
-
 .test-card-container {
   background-color: #072b74;
   width: 60%;
@@ -388,6 +399,9 @@
   justify-content: center;
   column-gap: 0.5rem;
 }
+.section-body-end.test::-webkit-scrollbar {
+  display: none;
+}
 .ratings .star {
   background-color: var(--primary);
   padding: 5px;
@@ -414,9 +428,13 @@
 .section-title.heading.services {
   color: var(--base);
 }
+.section-body.services {
+  align-items: center;
+}
 .section-container.services .section-body-start {
   color: var(--base);
   row-gap: 2rem;
+  height: 100%;
 }
 .service-category {
   display: grid;
@@ -432,8 +450,14 @@
   display: flex;
   justify-content: center;
   border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px transparent solid;
+
 }
-.service-category-item.active {
+.service-category-item:hover{
+  border: 2px var(--base) solid;
+}
+.service-category-item.active-category-item {
   background-color: var(--base);
   color: var(--primary);
 }
@@ -470,7 +494,9 @@
   width: fit-content;
   color: var(--primary);
 }
-
+.feature-list-cta-btn .cta-btn:hover{
+  background-color: var(--light-bg);
+}
 /* ----------------article Card------------------------ */
 .section-container.article {
   background-color: var(--highlight);
@@ -643,7 +669,7 @@ form {
   align-items: center;
   row-gap: 2rem;
 }
-form input,
+form input,form select,
 form textarea,
 form button {
   width: 100%;
@@ -652,15 +678,33 @@ form button {
   font-size: 18px;
   padding: 15px;
 }
+
+form input::placeholder,
+form input::placeholder
+{
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
 form textarea {
   height: 40%;
+  font-family: "Gilroy-Medium";
+
+
 }
 form button {
   background-color: var(--primary);
   color: var(--base);
   border: none;
 }
+.submit-button{
+  cursor: pointer;
+  border: 2px transparent solid;
+}
+.submit-button:hover{
+  border: 2px var(--dark-bg) solid;
 
+}
 /* ------------------Socials------------------- */
 
 .section-container.social {
@@ -691,8 +735,87 @@ form button {
   line-height: 1.2;
 }
 
+/* ----------------Project Content---------------------- */
 
+.modal-body-banner{
+  background-color: var(--light-bg);
+  width: 100%;
+  min-height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body-section{
+  width: 100%;
+  background-color: var(--light-bg);
+  min-height:fit-content;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 
+}
+.modal-body-section-title{
+  font-family: "Gilroy-Semibold";
+  font-size: 20px;
+  color: #222c3b;
+
+}
+.modal-body-section-desc{
+  font-size: 16px;
+  line-height: 1.5;
+  color: #485D7A;
+}
+.modal-body-section-tags{
+  display: flex;
+  column-gap:4%;
+
+}
+.modal-body-section-tag-item{
+  background-color: #D5DDE6;
+  padding: 2% 3%;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.date-set{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: 10vh;
+}
+.date-set .date{
+  background-color: #D5DDE6;
+  padding: 2% 3%;
+  border-radius: 8px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-desc{
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modal-body-section-cta-btn{
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-bg);
+  color: var(--base);
+  cursor: pointer;
+}
+.modal-body-section-cta-btn:hover{
+  background-color: var(--primary);
+  color: var(--base);
+}
+
+.contactForm .modal-body{
+  justify-content: center;
+  align-items: center;
+}
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* Tablet and lower screens than tablets */

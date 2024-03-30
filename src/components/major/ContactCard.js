@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactCard() {
+function ContactCard({ toggle }) {
   return (
     <div className="section-container contact">
       <div className="section-body-start">
@@ -18,16 +18,23 @@ function ContactCard() {
             type="email"
             placeholder="YourEmail@gmail.com"
           ></input>
-          <input
+          <select
             className="user-topic"
-            type="text"
-            placeholder="What topic you want to talk ?"
-          ></input>
+          >
+            <option value={""}>What topic you want to talk ?</option>
+            <option value={"Website"}>Website</option>
+            <option value={"App"}>App</option>
+            <option value={"Desktop Apps"}>Desktop Apps</option>
+            <option value={"iOS Apps"}>iOS Apps</option>
+          </select>
           <textarea
             className="user-message"
             placeholder="How I can help you ?"
+            spellCheck={false}
           ></textarea>
-          <button className="submit-button">Send</button>
+          <button className="submit-button" onClick={toggle}>
+            Send
+          </button>
         </form>
       </div>
     </div>

@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
+
 import TestimonialCard from "../minor/testimonialCard";
 import ProfileImg from "../../assets/media/bg.png";
 
-function ReviewCard() {
+function ReviewCard({ toggle }) {
+  const ratingsRef = useRef(null);
+
+  function autoScroll() {
+    if (ratingsRef.current) {
+      const ratingContainer = ratingsRef.current;
+      ratingContainer.scrollTop++;
+    }
+  }
+
+  function generateReviews(params) {
+    // dynamic generate reviews using json
+  }
+
+  setInterval(autoScroll, 30);
+
   return (
     <div className="section-container review">
       <div className="section-body review">
@@ -15,7 +31,7 @@ function ReviewCard() {
             samajh ke saath,
           </div>
         </div>
-        <div className="section-body-end test">
+        <div className="section-body-end test" ref={ratingsRef}>
           <TestimonialCard
             profileImg={ProfileImg}
             userName="Omani Yova"

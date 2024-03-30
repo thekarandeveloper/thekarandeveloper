@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
-function Navbar() {
+function Navbar({toggle}) {
 
   // Calendly Location
 
@@ -44,15 +44,16 @@ function Navbar() {
             <div className="nav-item-label">Services</div>
           </Link>
 
-          <a
+          <button
             className="label nav cta-btn"
-            href="https://calendly.com/karankumarcv/30min"
-           target="blank">
+            
+           onClick={toggle}
+           >
             Contact{" "}
             <span className="label cta-btn-icon">
             <IoMdCall />
             </span>
-          </a>
+          </button>
         
         </div>
         {/* <a className="nav-toggle" download={true} href={resumeFilePath}>

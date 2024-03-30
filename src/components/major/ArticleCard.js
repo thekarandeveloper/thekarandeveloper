@@ -3,7 +3,7 @@ import { IoOpenOutline } from "react-icons/io5";
 import ArticleCardBig from "../minor/ArticleCardBig";
 import ArticleCardSmall from "../minor/ArticleCardSmall";
 import profilePhoto from "../../assets/media/bg.png";
-function ArticleCard() {
+function ArticleCard({toggle}) {
   return (
     <div className="section-container article">
       <div className="section-header">
@@ -14,6 +14,7 @@ function ArticleCard() {
       </div>
       <div className="section-body article">
         <ArticleCardBig
+          subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise. Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise."
@@ -22,17 +23,17 @@ function ArticleCard() {
           tag3="Mobile Apps"
           tag4="Mobile Apps"
         ></ArticleCardBig>
-        <ArticleCardSmall
+         <ArticleCardSmall subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ArticleCardSmall>
-        <ArticleCardSmall
+         <ArticleCardSmall subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ArticleCardSmall>
-        <ArticleCardSmall
+         <ArticleCardSmall subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."

@@ -1,6 +1,5 @@
-import React, { useState, useContext } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-function InfoCard() {
+function InfoCard({toggle}) {
   return (
     <div className="card-container intro">
       <div className="heading-large">Hello,</div>
@@ -9,16 +8,16 @@ function InfoCard() {
         with a focus on quality. Transforming ideas into seamless digital
         experiences is my expertise.
       </div>
-      <a
+      <button
         className="label info cta-btn"
-        href={"/"}
-        // onClick={}
+        // href={""}
+        onClick={toggle}
       >
         View Resume{" "}
         <span className="heading cta-btn-icon">
           <MdKeyboardArrowRight />
         </span>
-      </a>
+      </button>
     </div>
   );
 }

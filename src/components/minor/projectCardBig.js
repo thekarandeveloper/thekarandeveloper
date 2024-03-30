@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 function projectCardBig({
+  subToggle,
   imgname,
   title,
   desc,
@@ -12,7 +13,7 @@ function projectCardBig({
   tag6,
 }) {
   return (
-    <div className="big-card-container">
+    <div className="big-card-container" onClick={subToggle}>
       <div className="big-card-img">
         <img src={imgname} alt={imgname}></img>
       </div>

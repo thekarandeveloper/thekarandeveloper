@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import Navbar from "./components/major/navbar.js";
 import InfoCard from "./components/major/infoCard.js";
 import ProfileCard from "./components/major/profileCard.js";
@@ -9,32 +9,42 @@ import ArticleCard from "./components/major/ArticleCard.js";
 import ContactCard from "./components/major/ContactCard.js";
 import SocialCard from "./components/major/SocialCard.js";
 import CopyrightBar from "./components/major/CopyrightBar.js";
-import ModalBox from "./components/major/modalBox.js";
-import ModalContextProvider from "./context/modalContext.js";
+import ModalBox from "./components/modal/modalBox.js";
 
 function App() {
+
+  // Modal Function 
+
+  const [modal, setModal] = useState(true);
+  const [element, setElement] = useState(null);
+  const toggleModal = (event) => {
+    setModal(!modal);
+    setElement(event)
+  };
+
+
   return (
     <React.Fragment>
-      <ModalBox></ModalBox>
-      <Navbar></Navbar>
+      <ModalBox toggle={modal} setToggle={toggleModal} elements={element}></ModalBox>
+      <Navbar toggle={toggleModal}></Navbar>
       <section className="home">
-        <InfoCard></InfoCard>
+        <InfoCard toggle={toggleModal}></InfoCard>
         <ProfileCard></ProfileCard>
       </section>
       <section className="project">
-        <ProjectCard></ProjectCard>
+        <ProjectCard toggle={toggleModal}></ProjectCard>
       </section>
       <section className="review">
-        <ReviewCard></ReviewCard>
+        <ReviewCard toggle={toggleModal}></ReviewCard>
       </section>
       <section className="services">
-        <ServiceCard></ServiceCard>
+        <ServiceCard toggle={toggleModal}></ServiceCard>
       </section>
       <section className="article">
-        <ArticleCard></ArticleCard>
+        <ArticleCard toggle={toggleModal}></ArticleCard>
       </section>
       <section className="contact">
-        <ContactCard></ContactCard>
+        <ContactCard toggle={toggleModal}></ContactCard>
       </section>
       <section className="social">
         <SocialCard></SocialCard>
