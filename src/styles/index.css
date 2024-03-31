@@ -1,4 +1,7 @@
 @import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --base: #ffffff;
   --primary: #0051ed;

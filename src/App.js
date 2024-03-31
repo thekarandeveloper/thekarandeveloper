@@ -11,6 +11,7 @@ import ModalBox from "./components/modal/modalBox.js";
 import Introduction from "./components/major/Introduction.js";
 
 function App() {
+  
   // Modal Function
   const [modal, setModal] = useState(true);
   const [element, setElement] = useState(null);
