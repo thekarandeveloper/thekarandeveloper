@@ -7,7 +7,7 @@ import profilePhoto from "../../assets/media/bg.png";
 
 function ProjectCard({toggle}) {
   return (
-    <section className="section-container project">
+    <section className="section-container project" id="project">
       <div className="section-header">
         <div className="section-title heading">Explore My Work</div>
         <Link to='https://github.com/karankumarcv' target="_blank" rel="noopener noreferrer" className="section-navigation project">
