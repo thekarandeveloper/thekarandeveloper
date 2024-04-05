@@ -1,16 +1,58 @@
 @font-face {
-    font-family: "Gilroy-Light";
-    src: local("Gilroy-Light"), url("../assets/fonts/Gilroy-Light.otf");
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"), url("../assets/fonts/Gilroy-Light.otf");
 }
 @font-face {
-    font-family: "Gilroy-Medium";
-    src: local("Gilroy-Medium"), url("../assets/fonts/Gilroy-Medium.otf");
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"), url("../assets/fonts/Gilroy-Medium.otf");
 }
 @font-face {
-    font-family: "Gilroy-Semibold";
-    src: local("Gilroy-Semibold"), url("../assets/fonts/Gilroy-Semibold.otf");
+  font-family: "Gilroy-Semibold";
+  src: local("Gilroy-Semibold"), url("../assets/fonts/Gilroy-Semibold.otf");
 }
 @font-face {
-    font-family: "Gilroy-Bold";
-    src: local("Gilroy-Bold"), url("../assets/fonts/Gilroy-Bold.otf");
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url("../assets/fonts/Gilroy-Bold.otf");
+}
+
+:root {
+}
+
+.heading-large {
+  font-family: "Gilroy-Bold";
+  font-size: 4.5vw;
+  font-style: normal;
+}
+
+.heading {
+  font-family: "Gilroy-Bold";
+  font-size: 2.2vw;
+  font-style: normal;
+  line-height: normal;
+}
+.sub-heading {
+  font-family: "Gilroy-Semibold";
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 139%; /* 55.6px */
+}
+.label {
+  font-family: "Gilroy-Medium";
+  font-size: 1.3vw;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.body-normal {
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+.card-title {
+  font-family: "Gilroy-Bold";
+  font-size: 28px;
+  font-style: normal;
+  line-height: 139%; /* 55.6px */
+  letter-spacing: 2px;
 }

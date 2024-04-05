@@ -12,7 +12,7 @@ function ArticleCardBig({
       </div>
       <div className="big-card-body w-full flex flex-col items-start justify-center gap-y-4">
         <div className="big-card-title sub-heading pt-4">{title}</div>
-        <div className=" body-normal big-card-desc opacity-60">{desc}</div>
+        <div className=" label big-card-desc opacity-60">{desc}</div>
       </div>
     </div>
   );

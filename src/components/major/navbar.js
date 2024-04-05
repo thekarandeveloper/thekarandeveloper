@@ -53,7 +53,7 @@ function Navbar({ toggle }) {
           <button className="label nav cta-btn q-36 mx-5 px-4 rounded-lg" onClick={toggle}>
             Contact{" "}
             <span className="label cta-btn-icon">
-              <IoMdCall />
+              <IoMdCall className="label"/>
             </span>
           </button>
         </div>

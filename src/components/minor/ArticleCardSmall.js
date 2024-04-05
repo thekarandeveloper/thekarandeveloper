@@ -11,7 +11,7 @@ function ArticleCardSmall({
       </div>
       <div className="small-card-body w-full h-full flex flex-col justify-center items-start p-4 gap-y-1">
         <div className="sub-heading small-card-title pt-1">{title}</div>
-        <div className="small-card-desc opacity-60 text-xs">{desc}</div>
+        <div className="text-xs small-card-desc opacity-60 ">{desc}</div>
       </div>
     </div>
   );
