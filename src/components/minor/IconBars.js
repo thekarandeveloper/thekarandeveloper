@@ -8,48 +8,48 @@ function IconBars() {
   return (
     <div className="icon-bars flex flex-row items-center gap-10">
       <a
-        className="icon-container sub-heading"
+        className="icon-container title"
         target="_blank"
         href="mailto:contact@karankumar.dev"
       >
-        <div>
+        <div className="label">
           <IoMail />
         </div>
-        <div className="icon-sub-heading">
+        <div className="icon-title">
          
         </div>
       </a>
       <a
-        className="icon-container sub-heading"
+        className="icon-container title"
         target="_blank"
         href="https://twitter.com/karankumarcv"
       >
-        <div>
+        <div className="label">
           <FaXTwitter />
         </div>
        
       </a>
       <a
-        className="icon-container sub-heading"
+        className="icon-container title"
         target="_blank"
         href="https://www.linkedin.com/in/karankumarcv/"
       >
-        <div>
+        <div className="label">
           <IoLogoLinkedin />
         </div>
-        <div className="icon-sub-heading">
+        <div className="icon-title">
          
         </div>
       </a>
       <a
-        className="icon-container sub-heading"
+        className="icon-container title"
         target="_blank"
         href="https://www.instagram.com/karankumarcv/"
       >
-        <div>
+        <div className="label">
           <RiInstagramFill />
         </div>
-        <div className="icon-sub-heading">
+        <div className="icon-title">
          
         </div>
       </a>

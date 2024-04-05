@@ -14,7 +14,7 @@ function ProjectCard({ toggle }) {
         </div>
         <div onClick={toggle} className="section-navigation label">
           More Projects&emsp;
-          <MdKeyboardArrowRight className="sub-heading" />
+          <MdKeyboardArrowRight className="title" />
         </div>
       </div>
       <div className="w-full h-full project grid grid-cols-3 gap-12">
@@ -34,6 +34,7 @@ function ProjectCard({ toggle }) {
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ProjectCardSmall>
+        
         <ProjectCardSmall
           subToggle={toggle}
           imgname={profilePhoto}

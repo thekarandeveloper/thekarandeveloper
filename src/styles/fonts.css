@@ -15,44 +15,132 @@
   src: local("Gilroy-Bold"), url("../assets/fonts/Gilroy-Bold.otf");
 }
 
-:root {
-}
-
-.heading-large {
+.large-heading {
   font-family: "Gilroy-Bold";
-  font-size: 4.5vw;
-  font-style: normal;
-}
-
-.heading {
-  font-family: "Gilroy-Bold";
-  font-size: 2.2vw;
+  font-size: 4rem;
   font-style: normal;
   line-height: normal;
 }
-.sub-heading {
+.heading {
+  font-family: "Gilroy-Bold";
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title {
   font-family: "Gilroy-Semibold";
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-style: normal;
   line-height: 139%; /* 55.6px */
 }
+
 .label {
   font-family: "Gilroy-Medium";
-  font-size: 1.3vw;
+  font-size: 1.25rem;
   font-style: normal;
   line-height: 1.5;
 }
 
 .body-normal {
   font-family: "Gilroy-Medium";
-  font-size: 16px;
+  font-size: 1.3rem;
   font-style: normal;
-  line-height: 28px;
+  line-height: 1.8;
 }
-.card-title {
-  font-family: "Gilroy-Bold";
-  font-size: 28px;
-  font-style: normal;
-  line-height: 139%; /* 55.6px */
-  letter-spacing: 2px;
+/* sm */
+@media (min-width: 640px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .label {
+    font-size: 0.875rem;
+  }
+
+  .body-normal {
+    font-size: 0.75rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .large-heading {
+    font-size: 2.9rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .body-normal {
+    font-size: 0.8rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .large-heading {
+    font-size: 2.9rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .body-normal {
+    font-size: 0.8rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .large-heading {
+    font-size: 3rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .label {
+    font-size: 1rem;
+  }
+
+  .body-normal {
+    font-size: 0.9rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .large-heading {
+    font-size: 4rem;
+  }
+  .heading {
+    font-size: 2.4rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .label {
+    font-size: 1.4rem;
+  }
+
+  .body-normal {
+    font-size: 1.1rem;
+  }
 }

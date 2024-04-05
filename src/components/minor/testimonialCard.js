@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { FaStar } from "react-icons/fa6";
 function TestimonialCard({ profileImg, userName, category, desc }) {
   return (
-    <div className="test-card-container w-3/5 p-5 flex flex-row gap-x-3">
+    <div className="test-card-container xl:w-3/5 lg:4/5 p-5 flex flex-row gap-x-3">
       <div
         className="test-card-profile w-11 h-10 overflow-hidden flex justify-center items-center"
         style={{ backgroundImage: `url(${profileImg})` }}
@@ -28,7 +28,7 @@ function TestimonialCard({ profileImg, userName, category, desc }) {
             </div>
           </div>
         </div>
-        <div className="test-card-desc text-sm leading-smug">{desc}</div>
+        <div className="test-card-desc body-normal">{desc}</div>
       </div>
     </div>
   );

@@ -49,7 +49,7 @@ function ReviewCard({ toggle }) {
       <div className="section-body review flex flex-row">
         <div className="section-body-start test w-5 flex flex-col justify-center gap-y-1">
           <div className="heading">What They Have To Say</div>
-          <div className="body-normal">
+          <div className="label">
             Mai ek freelance e-commerce expert aur website developer hoon, jo
             dynamic aur user-friendly online platforms banane mein specialized
             hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri

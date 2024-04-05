@@ -11,28 +11,6 @@
   --light-bg: #eef1f5;
   --dark-bg: #041c4e;
   --dark-gray: #485d7a;
-   --accent: linear-gradient(96deg, var(--dark-bg) -29%, var(var(--primary)) 28.11%, var(--dark-bg) 135.78%);
-
-    --font-heading-2xl: 2.5rem; /* Example: 40px */
-    --font-heading-xl: 2rem;   /* Example: 32px */
-    --font-heading-lg: 1.75rem; /* Example: 28px */
-    --font-heading-md: 1.5rem;  /* Example: 24px */
-    --font-heading-sm: 1.25rem; /* Example: 20px */
-    --font-title-2xl: 2rem;     /* Example: 32px */
-    --font-title-xl: 1.75rem;   /* Example: 28px */
-    --font-title-lg: 1.5rem;    /* Example: 24px */
-    --font-title-md: 1.25rem;   /* Example: 20px */
-    --font-title-sm: 1rem;      /* Example: 16px */
-    --font-label-2xl: 1.75rem;  /* Example: 28px */
-    --font-label-xl: 1.5rem;    /* Example: 24px */
-    --font-label-lg: 1.25rem;   /* Example: 20px */
-    --font-label-md: 1rem;      /* Example: 16px */
-    --font-label-sm: 0.875rem;  /* Example: 14px */
-    --font-body-2xl: 1.5rem;    /* Example: 24px */
-    --font-body-xl: 1.25rem;    /* Example: 20px */
-    --font-body-lg: 1rem;       /* Example: 16px */
-    --font-body-md: 0.875rem;   /* Example: 14px */
-    --font-body-sm: 0.75rem;    /* Example: 12px */
 
 }
 
@@ -319,7 +297,7 @@ section {
   text-align: center;
   padding: 20% 10%;
 }
-.meeting-body .sub-heading {
+.meeting-body .title {
   display: flex;
   line-height: 2;
   flex-direction: column;
@@ -486,8 +464,7 @@ section {
 .image-container {
   background-color: var(--light-bg);
 }
-.image-container  div{
-}
+
 /* ----------------Project Card------------------------ */
 .section-container.project {
   background-color: var(--highlight);
@@ -501,7 +478,7 @@ section {
 .section-container.project .big-card-desc {
   color: var(--dark-bg);
 }
-.section-container.project .big-card-tag-item {
+.big-card-tag-item {
   width: 30%;
   padding: 0 10px;
   line-height: 3;
@@ -509,7 +486,6 @@ section {
   justify-content: center;
   align-items: center;
   background-color: var(--light-bg);
-  font-size: 14px;
 }
 
 .section-container.project .big-card.cta-btn {
@@ -619,12 +595,9 @@ section {
 .section-container.article {
   background-color: var(--highlight);
 }
-.article-body {
-  grid-template-columns: 2fr 1fr;
-}
+
 .section-container.article .big-card-container {
   background-color: var(--base);
-  grid-row: span 3;
 }
 .section-container.article .big-card-body {
   width: 100%;

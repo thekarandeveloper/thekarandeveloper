@@ -12,10 +12,10 @@ function ArticleCard({ toggle }) {
         <div className="section-title heading">What I have to Say ?</div>
         <div onClick={toggle} className="section-navigation label">
           More Articles&emsp;
-          <MdKeyboardArrowRight className="sub-heading" />
+          <MdKeyboardArrowRight className="title" />
         </div>
       </div>
-      <div className="h-4/5 article-body grid grid-rows-3 gap-12">
+      <div className="grid grid-rows-2 grid-cols-3 gap-8">
         <ArticleCardBig
           subToggle={toggle}
           imgname={profilePhoto}
@@ -26,12 +26,7 @@ function ArticleCard({ toggle }) {
           tag3="Mobile Apps"
           tag4="Mobile Apps"
         ></ArticleCardBig>
-        <ArticleCardSmall
-          subToggle={toggle}
-          imgname={profilePhoto}
-          title="Covid Tracker"
-          desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
-        ></ArticleCardSmall>
+       
         <ArticleCardSmall
           subToggle={toggle}
           imgname={profilePhoto}
@@ -39,6 +34,18 @@ function ArticleCard({ toggle }) {
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ArticleCardSmall>
        <ArticleCardSmall
+          subToggle={toggle}
+          imgname={profilePhoto}
+          title="Covid Tracker"
+          desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
+        ></ArticleCardSmall>
+        <ArticleCardSmall
+          subToggle={toggle}
+          imgname={profilePhoto}
+          title="Covid Tracker"
+          desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
+        ></ArticleCardSmall>
+        <ArticleCardSmall
           subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"

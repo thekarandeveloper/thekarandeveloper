@@ -3,7 +3,7 @@ import { IoOpenOutline } from "react-icons/io5";
 function MessageWithIcon({ description }) {
   return (
     <div className="meeting-body">
-      <div className="sub-heading">
+      <div className="title">
         <IoOpenOutline className="heading" />
         {description}
       </div>

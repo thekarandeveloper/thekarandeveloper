@@ -70,8 +70,8 @@ function Services({ toggle }) {
           </div>
         </div>
         <div className="section-body-end justify-end">
-          <div className="feature-list-container w-4/5 p-6 flex flex-col gap-y-6" ref={descriptionRef}>
-            <div className="feature-list-heading sub-heading">
+          <div className="feature-list-container lg:5/5 xl:w-4/5 p-6 flex flex-col gap-y-6" ref={descriptionRef}>
+            <div className="feature-list-heading title pt-4">
               Website Features
             </div>
             <div className="feature-list-desc body-normal">

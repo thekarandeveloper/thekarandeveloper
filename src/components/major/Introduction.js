@@ -5,8 +5,8 @@ function Introduction({ toggle }) {
   return (
     <section className="home h-[70vh]">
       <div className="card-container intro h-full justify-end p-0 px-8 py-14 gap-y-6">
-        <div className="heading-large ">Hello,</div>
-        <div className="intro xl:text-lg text-md font-normal leading-7">
+        <div className="large-heading intro">Hello,</div>
+        <div className="intro label w-11/12">
           I'm Karan, a meticulous full-stack developer, harmonizes design and
           code with a focus on quality. Transforming ideas into seamless digital
           experiences is my expertise.
