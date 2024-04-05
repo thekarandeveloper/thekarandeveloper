@@ -487,6 +487,9 @@ section {
   background-color: var(--primary);
   color: var(--base);
 }
+.info.cta-btn{
+  border: 2px var(--base) solid;
+}
 .info.cta-btn:hover {
   color: var(--primary);
   background-color: var(--base);
