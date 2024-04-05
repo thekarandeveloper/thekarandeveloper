@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IoOpenOutline } from "react-icons/io5";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import ArticleCardBig from "../minor/ArticleCardBig";
 import ArticleCardSmall from "../minor/ArticleCardSmall";
 import profilePhoto from "../../assets/media/bg.png";
+
 function ArticleCard({ toggle }) {
   return (
     <section className="section-container article">
       <div className="section-header">
         <div className="section-title heading">What I have to Say ?</div>
-        <Link
-          to="https://www.linkedin.com/in/karankumarcv/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="section-navigation"
-        >
-          <IoOpenOutline className="card-title" />
-        </Link>
+        <div onClick={toggle} className="section-navigation label">
+          More Articles&emsp;
+          <MdKeyboardArrowRight className="sub-heading" />
+        </div>
       </div>
       <div className="section-body article">
         <ArticleCardBig
@@ -41,7 +38,7 @@ function ArticleCard({ toggle }) {
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ArticleCardSmall>
-        <ArticleCardSmall
+       <ArticleCardSmall
           subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"

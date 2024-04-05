@@ -1,18 +1,19 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import { IoOpenOutline } from "react-icons/io5";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 import ProjectCardBig from "../minor/projectCardBig";
 import ProjectCardSmall from "../minor/projectCardSmall";
 import profilePhoto from "../../assets/media/bg.png";
-
 function ProjectCard({toggle}) {
   return (
     <section className="section-container project" id="project">
       <div className="section-header">
         <div className="section-title heading">Explore My Work</div>
-        <Link to='https://github.com/karankumarcv' target="_blank" rel="noopener noreferrer" className="section-navigation project">
-          <IoOpenOutline className="card-title" />
-        </Link>
+        <div onClick={toggle} className="section-navigation label">
+          More Projects&emsp;
+          <MdKeyboardArrowRight className="sub-heading"/>
+        </div>
       </div>
       <div className="section-body project">
         <ProjectCardBig
@@ -40,7 +41,7 @@ function ProjectCard({toggle}) {
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ProjectCardSmall>
-        <ProjectCardSmall subToggle = {toggle}
+         <ProjectCardSmall subToggle = {toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."

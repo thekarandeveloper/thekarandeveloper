@@ -130,7 +130,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .icon-bars .icon-container div {
   margin: 0;
@@ -144,7 +143,6 @@
   /* transform: scale(1.2); */
   /* margin: 0 10px; */
   border: 2px var(--base) solid;
-
 }
 .info.cta-btn {
   border: 2px var(--base) solid;
@@ -183,7 +181,6 @@
   gap: 3rem;
 }
 
-
 /* ---------------Project Big Card-------------------- */
 
 .section-container.project .big-card-container {
@@ -197,7 +194,6 @@
   align-items: center;
   padding: 10px;
   cursor: pointer;
-
 }
 .section-container.project .big-card-img {
   width: 60%;
@@ -265,9 +261,8 @@
 
 /* ---------------Project small Card-------------------- */
 
-.section-container.project .small-card-container {
+.project-small-card-container {
   background-color: var(--base);
-
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -275,23 +270,34 @@
   align-items: center;
   padding: 10px;
   cursor: pointer;
-
+}
+.section-container .more-card-container {
+  background-color: var(--base);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--dark-bg);
+  color: var(--base);
 }
 
-.section-container.project .small-card-img {
+.project-small-card-img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   border-radius: 0;
 }
 
-.section-container.project .small-card-img img {
+ .project-small-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section-container.project .small-card-body {
+.project-small-card-body {
   width: 100%;
   height: 100%;
   display: flex;
@@ -301,10 +307,10 @@
   padding: 20px;
   row-gap: 1rem;
 }
-.section-container.project .small-card-title {
+.project-small-card-title {
   padding-top: 10px;
 }
-.section-container.project .small-card-desc {
+.project-small-card-body .small-card-desc {
   color: var(--dark-bg);
   opacity: 0.6;
   font-size: 14px;
@@ -312,12 +318,12 @@
   text-align: center;
 }
 
-.section-container.project .small-card-Button {
+.project-small-card-Button {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.section-container.project .small-card.cta-btn {
+.project-small-card.cta-btn {
   color: var(--primary);
   padding: 0;
 }
@@ -454,9 +460,8 @@
   border-radius: 0.5rem;
   cursor: pointer;
   border: 2px transparent solid;
-
 }
-.service-category-item:hover{
+.service-category-item:hover {
   border: 2px var(--base) solid;
 }
 .service-category-item.active-category-item {
@@ -496,7 +501,7 @@
   width: fit-content;
   color: var(--primary);
 }
-.feature-list-cta-btn .cta-btn:hover{
+.feature-list-cta-btn .cta-btn:hover {
   background-color: var(--light-bg);
 }
 /* ----------------article Card------------------------ */
@@ -662,7 +667,8 @@
   display: flex;
   flex-direction: column;
 }
-form {
+form,
+.form-section {
   width: 100%;
   height: 100%;
   display: flex;
@@ -671,19 +677,27 @@ form {
   align-items: center;
   row-gap: 2rem;
 }
-form input,form select,
+.form-section {
+  display: none;
+}
+.form-section.show {
+  display: flex;
+}
+form input,
+form select,
 form textarea,
-form button {
+form .submit-button {
   width: 100%;
   background-color: transparent;
   border: 2px var(--dark-bg) solid;
   font-size: 18px;
   padding: 15px;
 }
-
+form textarea {
+  height: 20%;
+}
 form input::placeholder,
-form input::placeholder
-{
+form input::placeholder {
   font-size: 18px;
   font-family: "Gilroy-Medium";
 }
@@ -691,22 +705,24 @@ form input::placeholder
 form textarea {
   height: 40%;
   font-family: "Gilroy-Medium";
-
-
 }
-form button {
+form .submit-button {
   background-color: var(--primary);
   color: var(--base);
   border: none;
 }
-.submit-button{
+
+form .submit-button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px transparent solid;
 }
-.submit-button:hover{
+form .submit-button:hover {
   border: 2px var(--dark-bg) solid;
-
 }
+
 /* ------------------Socials------------------- */
 
 .section-container.social {
@@ -739,7 +755,7 @@ form button {
 
 /* ----------------Project Content---------------------- */
 
-.modal-body-banner{
+.modal-body-banner {
   background-color: var(--light-bg);
   width: 100%;
   min-height: 15vw;
@@ -747,46 +763,43 @@ form button {
   justify-content: center;
   align-items: center;
 }
-.modal-body-section{
+.modal-body-section {
   width: 100%;
   background-color: var(--light-bg);
-  min-height:fit-content;
+  min-height: fit-content;
   padding: 5%;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-
 }
-.modal-body-section-title{
+.modal-body-section-title {
   font-family: "Gilroy-Semibold";
   font-size: 20px;
   color: #222c3b;
-
 }
-.modal-body-section-desc{
+.modal-body-section-desc {
   font-size: 16px;
   line-height: 1.5;
-  color: #485D7A;
+  color: #485d7a;
 }
-.modal-body-section-tags{
+.modal-body-section-tags {
   display: flex;
-  column-gap:4%;
-
+  column-gap: 4%;
 }
-.modal-body-section-tag-item{
-  background-color: #D5DDE6;
+.modal-body-section-tag-item {
+  background-color: #d5dde6;
   padding: 2% 3%;
   border-radius: 8px;
   font-size: 12px;
 }
-.date-set{
+.date-set {
   display: flex;
   align-items: center;
   column-gap: 20px;
   height: 10vh;
 }
-.date-set .date{
-  background-color: #D5DDE6;
+.date-set .date {
+  background-color: #d5dde6;
   padding: 2% 3%;
   border-radius: 8px;
   width: 20%;
@@ -795,11 +808,11 @@ form button {
   justify-content: center;
   align-items: center;
 }
-.date-desc{
+.date-desc {
   font-size: 14px;
   line-height: 1.5;
 }
-.modal-body-section-cta-btn{
+.modal-body-section-cta-btn {
   width: 100%;
   min-height: 50px;
   display: flex;
@@ -809,15 +822,16 @@ form button {
   color: var(--base);
   cursor: pointer;
 }
-.modal-body-section-cta-btn:hover{
+.modal-body-section-cta-btn:hover {
   background-color: var(--primary);
   color: var(--base);
 }
 
-.contactForm .modal-body{
+.contactForm .modal-body {
   justify-content: center;
   align-items: center;
 }
+
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* Tablet and lower screens than tablets */
@@ -873,7 +887,6 @@ form button {
     width: 100%;
     height: 40%;
     align-items: start;
-
   }
   .image-container img {
     width: 40%;

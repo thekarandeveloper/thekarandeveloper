@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, {useState, useRef, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import MiscContent from "./MiscContent";
 import { MdFileDownload } from "react-icons/md";
@@ -6,9 +6,9 @@ import ProjectContent from "./ProjectContent";
 import ServicesContent from "./ServicesContent";
 import ArticleContent from "./ArticleContent";
 import ContactFormContent from "./ContactFormContent";
+import AllProjects from "./AllProjects";
+
 function ModalBox({ toggle, setToggle, elements }) {
-
-
   const modalRef = useRef(null);
 
   // For the Clicked Element
@@ -57,18 +57,22 @@ function ModalBox({ toggle, setToggle, elements }) {
     }
   }, [toggle]);
 
+  // For the Service Module
+
+
   return (
     <React.Fragment>
       <div ref={modalRef}>
         <div className="modal-overlay">
+          <div className="blank-area" onClick={setToggle}></div>
           <div className="modal-container">
             <div className="modal-header">
               <div className="heading">
-                <span className="previous">Karan/</span>
+                {/* <span className="previous">Karan/</span> */}
                 <span className="current">{eve}</span>
               </div>
               <div className="modal-navigation">
-                <div className="action-button">
+                {/* <div className="action-button">
                   <a
                     className="label modal cta-btn"
                     href="https://calendly.com/karankumarcv/30min"
@@ -79,7 +83,7 @@ function ModalBox({ toggle, setToggle, elements }) {
                       <MdFileDownload />
                     </span>
                   </a>
-                </div>
+                </div> */}
                 <div className="close-button heading" onClick={setToggle}>
                   <IoClose />
                 </div>
@@ -88,9 +92,10 @@ function ModalBox({ toggle, setToggle, elements }) {
             <div className="modal-body">
               {/* <MiscContent /> */}
               {/* <ProjectContent /> */}
-              {/* <ServicesContent /> */}
+              {/* <ServicesContent/> */}
               {/* <ArticleContent /> */}
               {/* <ContactFormContent /> */}
+              <AllProjects toggles={toggle}/>
             </div>
           </div>
         </div>

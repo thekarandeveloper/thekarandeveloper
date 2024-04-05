@@ -32,9 +32,7 @@ function Services({ toggle }) {
     <section className="section-container services" id="services">
       <div className="section-header">
         <div className="section-title heading services">What I Offer ?</div>
-        <Link to='https://www.instagram.com/karankumarrcv/' target="_blank" rel="noopener noreferrer" className="section-navigation">
-          <IoOpenOutline className="card-title" />
-        </Link>
+       
       </div>
       <div className="section-body services">
         <div className="section-body-start">
