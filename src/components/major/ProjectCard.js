@@ -15,7 +15,7 @@ function ProjectCard({toggle}) {
           <MdKeyboardArrowRight className="sub-heading"/>
         </div>
       </div>
-      <div className="section-body project">
+      <div className="w-full h-full project grid grid-cols-3 gap-12">
         <ProjectCardBig
           subToggle = {toggle}
           imgname={profilePhoto}

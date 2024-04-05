@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function IconBars() {
   return (
-    <div className="icon-bars">
+    <div className="icon-bars flex flex-row items-center gap-10">
       <a
         className="icon-container sub-heading"
         target="_blank"

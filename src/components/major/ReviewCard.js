@@ -45,9 +45,9 @@ function ReviewCard({ toggle }) {
   setInterval(autoScroll, 30);
 
   return (
-    <section className="section-container review">
-      <div className="section-body review">
-        <div className="section-body-start">
+    <section className="section-container review h-[70vh] justify-center items-center">
+      <div className="section-body review flex flex-row">
+        <div className="section-body-start test w-5 flex flex-col justify-center gap-y-1">
           <div className="heading">What They Have To Say</div>
           <div className="body-normal">
             Mai ek freelance e-commerce expert aur website developer hoon, jo
@@ -56,7 +56,7 @@ function ReviewCard({ toggle }) {
             samajh ke saath,
           </div>
         </div>
-        <div className="section-body-end test" ref={ratingsRef}>
+        <div className="section-body-end test flex-col justify-start gap-y-6 overflow-y-scroll" ref={ratingsRef}>
           <TestimonialCard
             profileImg={ProfileImg}
             userName="Omani Yova"

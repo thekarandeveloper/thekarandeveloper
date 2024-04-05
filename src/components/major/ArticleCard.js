@@ -7,7 +7,7 @@ import profilePhoto from "../../assets/media/bg.png";
 
 function ArticleCard({ toggle }) {
   return (
-    <section className="section-container article">
+    <section id="article" className="section-container article h-[90vh] ">
       <div className="section-header">
         <div className="section-title heading">What I have to Say ?</div>
         <div onClick={toggle} className="section-navigation label">
@@ -15,7 +15,7 @@ function ArticleCard({ toggle }) {
           <MdKeyboardArrowRight className="sub-heading" />
         </div>
       </div>
-      <div className="section-body article">
+      <div className="h-4/5 article-body grid grid-rows-3 gap-12">
         <ArticleCardBig
           subToggle={toggle}
           imgname={profilePhoto}

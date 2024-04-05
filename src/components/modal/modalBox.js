@@ -91,7 +91,7 @@ function ModalBox({ toggle, setToggle, elements }) {
             </div>
             <div className="modal-body">
               {/* <MiscContent /> */}
-              {/* <ProjectContent /> */}
+              <ProjectContent />
               {/* <ServicesContent/> */}
               {/* <ArticleContent /> */}
               {/* <ContactFormContent /> */}

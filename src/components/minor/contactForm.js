@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 function TestimonialCard({ toggle }) {
   return (
-    <form>
+    <form className="w-full h-full flex flex-col justify-between items-center gap-y-8">
       <input
         className="user-email"
         type="email"
@@ -15,11 +15,11 @@ function TestimonialCard({ toggle }) {
         <option value={"iOS Apps"}>iOS Apps</option>
       </select>
       <textarea
-        className="user-message"
+        className="user-message "
         placeholder="How I can help you ?"
         spellCheck={false}
       ></textarea>
-      <button className="submit-button" onClick={toggle}>
+      <button className="submit-button cursor-pointer flex justify-center items-center" onClick={toggle}>
         Send
       </button>
     </form>

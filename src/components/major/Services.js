@@ -34,15 +34,15 @@ function Services({ toggle }) {
         <div className="section-title heading services">What I Offer ?</div>
        
       </div>
-      <div className="section-body services">
-        <div className="section-body-start">
+      <div className="section-body services items-center">
+        <div className="section-body-start h-full">
           <div className="label desc">
             Mai ek freelance e-commerce expert aur website developer hoon, jo
             dynamic aur user-friendly online platforms banane mein specialized
             hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri
             samajh ke saath,{" "}
           </div>
-          <div className="service-category" ref={categoryRef}>
+          <div className="service-category grid grid-cols-2 gap-x-6 gap-y-6 w-3/5 flex-wrap" ref={categoryRef}>
             <div
               className="service-category-item label active-category-item"
               onClick={categoryToggle}
@@ -69,8 +69,8 @@ function Services({ toggle }) {
             </div>
           </div>
         </div>
-        <div className="section-body-end">
-          <div className="feature-list-container" ref={descriptionRef}>
+        <div className="section-body-end justify-end">
+          <div className="feature-list-container w-4/5 p-6 flex flex-col gap-y-6" ref={descriptionRef}>
             <div className="feature-list-heading sub-heading">
               Website Features
             </div>
@@ -79,7 +79,7 @@ function Services({ toggle }) {
               code with a focus on quality. Transforming ideas into seamless
               digital experiences is my expertise.
             </div>
-            <div className="feature-list-items ">
+            <div className="feature-list-items grid grid-cols-3 gap-y-4 gap-x-3">
               <div className="feature-list-item body-normal">
                 <span>
                   <span>
@@ -119,8 +119,8 @@ function Services({ toggle }) {
                 &ensp; List Item 1
               </div>
             </div>
-            <div className="feature-list-cta-btn">
-              <button className="label  cta-btn feature" onClick={toggle}>
+            <div className="feature-list-cta-btn w-full mt-10 flex justify-end">
+              <button className="label  cta-btn feature w-fit" onClick={toggle}>
                 Book Your Enquiry Now{" "}
                 <span className="label cta-btn-icon">
                   <FaArrowRightLong />

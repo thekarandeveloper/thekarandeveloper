@@ -17,15 +17,13 @@ function Navbar({ toggle }) {
 
   return (
     <header>
-      <navbar className="navbar-container">
+      <navbar className="navbar-container w-full h-104 flex flex-row justify-between items-center p-8 m-0">
         <div className="nav-brand heading">
           <HashLink to="/">Karan Kumar</HashLink>
         </div>
-        <div className="nav-items" ref={navRef}>
+        <div className="nav-items flex gap-7" ref={navRef}>
           <HashLink className="label nav-item active" to="/">
-            <div className="nav-item-icon heading">
-              <AiFillHome />
-            </div>
+           
             <div className="nav-item-label">Home</div>
           </HashLink>
 
@@ -37,9 +35,7 @@ function Navbar({ toggle }) {
             }
             to="/#project"
           >
-            <div className="nav-item-icon heading">
-              <AiFillHome />
-            </div>
+           
             <div className="nav-item-label">Work</div>
           </HashLink>
           <HashLink
@@ -50,23 +46,18 @@ function Navbar({ toggle }) {
             }
             to="/#services"
           >
-            <div className="nav-item-icon heading">
-              <AiFillHome />
-            </div>
+           
             <div className="nav-item-label">Services</div>
           </HashLink>
 
-          <button className="label nav cta-btn" onClick={toggle}>
+          <button className="label nav cta-btn q-36 mx-5 px-4 rounded-lg" onClick={toggle}>
             Contact{" "}
             <span className="label cta-btn-icon">
               <IoMdCall />
             </span>
           </button>
         </div>
-        {/* <a className="nav-toggle" download={true} href={resumeFilePath}>
-          {" "}
-          <FaSearch />
-        </a> */}
+        
       </navbar>
     </header>
   );

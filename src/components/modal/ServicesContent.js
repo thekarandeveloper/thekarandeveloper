@@ -42,7 +42,7 @@ function ServicesContent() {
       </div>
 
       <form ref={sectionRef}>
-        <div className="form-section show">
+        <div className="form-section show w-full h-full flex flex-col justify-between items-center gap-y-8 hidden">
           section-1
           <input
             className="user-email"
