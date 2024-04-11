@@ -34,7 +34,7 @@ function ReviewCard({ toggle }) {
     if (ratingsRef.current) {
       const ratingContainer = ratingsRef.current;
       
-      ratingContainer.scrollTop++;
+      ratingContainer.scrollLeft++;
     }
   }
 
@@ -45,24 +45,23 @@ function ReviewCard({ toggle }) {
   setInterval(autoScroll, 30);
 
   return (
-    <section className="section-container review h-[70vh] justify-center items-center">
-      <div className="section-body review flex flex-row">
-        <div className="section-body-start test w-5 flex flex-col justify-center gap-y-1">
+    <section className="section-container review w-full h-full flex justify-center items-center bg-dark-bg text-body overflow-hidden">
+      <div className="section-body w-full review flex flex-col justify-start align-start gap-y-8">
+        <div className="section-body-start test w-full flex flex-col justify-center align-center gap-y-8 text-center ">
           <div className="heading">What They Have To Say</div>
-          <div className="label">
+          <div className="body-normal flex justify-center items-center flex-wrap">
             Mai ek freelance e-commerce expert aur website developer hoon, jo
             dynamic aur user-friendly online platforms banane mein specialized
             hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri
             samajh ke saath,
           </div>
         </div>
-        <div className="section-body-end test flex-col justify-start gap-y-6 overflow-y-scroll" ref={ratingsRef}>
+        <div className="section-body-end w-full h-full gap-x-6 overflow-x-auto whitespace-no-wrap flex justify-start pt-4" ref={ratingsRef}>
           <TestimonialCard
             profileImg={ProfileImg}
             userName="Omani Yova"
             category="Artist"
-            desc=" Mai ek freelance e-commerce expert aur website developer hoon, jo
-        dynamic aur user friendly online platforms banane"
+            desc=" Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user friendly online platforms banane"
           ></TestimonialCard>
           <TestimonialCard
             profileImg={ProfileImg}

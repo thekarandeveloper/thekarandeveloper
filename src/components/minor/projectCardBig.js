@@ -10,34 +10,29 @@ function projectCardBig({
   tag3,
   tag4,
   tag5,
-  tag6,
 }) {
   return (
-    <div className="big-card-container w-full h-full col-span-2 flex justify-center lg:flex-col xl:flex-row items-center p-4 cursor-pointer lg:p-3" onClick={subToggle}>
-      <div className="big-card-img w-8/12 h-full overflow-hidden rounded-large bg-fill lg:w-full" style={{backgroundImage:`url(${imgname})`}}>
-      </div>
-      <div className="big-card-body w-full h-full flex flex-col items-start justify-center p-8 pr-30 gap-y-8 lg:gap-y-5 xl:py-0 lg:p-6">
-        <div className="big-title title pt-8 xl:pt-5 lg:pt-0">{title}</div>
-        <div className="big-card-desc body-normal opacity-60 text-justify">{desc}</div>
-        <div className="big-card-tags w-full flex justify-between flex-wrap gap-y-6 gap-x-3 opacity-70">
-          <div className="big-card-tag-item body-normal">{tag1}</div>
-          <div className="big-card-tag-item body-normal">{tag2}</div>
-          <div className="big-card-tag-item body-normal">{tag3}</div>
-          
+    <div
+      className="w-full h-full bg-body flex flex-col justify-center items-center p-4 cursor-pointer"
+      onClick={subToggle}
+    >
+      <div
+        className="w-full h-[20vh] rounded-large bg-no-repeat bg-fill"
+        style={{ backgroundImage: `url(${imgname})` }}
+      ></div>
+      <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-8">
+        <div className="title pt-8 text-center w-full">{title}</div>
+        <div className="big-card-desc body-normal opacity-60 text-justify">
+          {desc}
         </div>
-        {/* <div className="big-card-Button w-full flex justify-end">
-        <a
-            className="label big-card cta-btn"
-            href={"/"}
-            download={true}
-          >
-            View Demo
-            <span className="label cta-btn-icon">
-            <MdOutlineArrowOutward />
-            </span>
-          </a>
-          
-        </div> */}
+        <div className="big-card-tags w-full flex justify-center flex-wrap gap-y-3 gap-x-3 opacity-70">
+          <div className="big-card-tag-item body-normal bg-light-bg p-3">{tag1}</div>
+          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag2}</div>
+          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag3}</div>
+          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag4}</div>
+          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag5}</div>
+        </div>
+        
       </div>
     </div>
   );

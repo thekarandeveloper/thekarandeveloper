@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Gilroy-Light";
-  src: local("Gilroy-Light"), url("../assets/fonts/Gilroy-Light.otf");
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"), url("../assets/fonts/Gilroy-Regular.otf");
 }
 @font-face {
   font-family: "Gilroy-Medium";
@@ -39,17 +39,41 @@
   font-family: "Gilroy-Medium";
   font-size: 1.25rem;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .body-normal {
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Regular";
   font-size: 1.3rem;
   font-style: normal;
   line-height: 1.8;
 }
+
+/* xs */
+@media (min-width: 320px) {
+  .large-heading {
+    font-size: 2.2rem;
+  }
+  .heading {
+    font-size: 1.0rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+  .label {
+    font-size: 0.675rem;
+  }
+
+  .body-normal {
+    font-size: 0.65rem;
+  }
+}
+
 /* sm */
 @media (min-width: 640px) {
+  .large-heading {
+    font-size: 2.9rem;
+  }
   .heading {
     font-size: 1.25rem;
   }

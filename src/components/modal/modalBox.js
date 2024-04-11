@@ -31,7 +31,6 @@ function ModalBox({ toggle, setToggle, elements }) {
         overlay.classList.add("modal-overlay-view");
         console.log("reached");
       });
-
       setTimeout(() => {
         modalContainer.forEach((container) => {
           container.classList.add("modal-container-view");
@@ -40,7 +39,6 @@ function ModalBox({ toggle, setToggle, elements }) {
       }, 200);
     } else if (!toggle && modalRef.current) {
       const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
-
       const modalContainer =
         modalRef.current.querySelectorAll(".modal-container");
       modalContainer.forEach((container) => {
@@ -57,39 +55,37 @@ function ModalBox({ toggle, setToggle, elements }) {
     }
   }, [toggle]);
 
-  // For the Service Module
-
 
   return (
     <React.Fragment>
       <div ref={modalRef}>
-        <div className="modal-overlay">
-          <div className="blank-area" onClick={setToggle}></div>
-          <div className="modal-container">
-            <div className="modal-header">
+        <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-1 rounded-none hidden">
+          <div className="blank-area h-[20vh] w-full" onClick={setToggle}></div>
+          <div className="modal-container z-10000 w-full h-[80vh] bg-body fixed bottom-0 p-5 rounded-t-xl">
+            <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6">
+            <div className="close w-20 h-1 bg-light-bg"></div>
+            <div className="close-button heading hidden" onClick={setToggle}>
+                  <IoClose />
+                </div>
               <div className="heading">
                 {/* <span className="previous">Karan/</span> */}
-                <span className="current">{eve}</span>
+                <span className="current title">{eve}</span>
               </div>
-              <div className="modal-navigation">
-                {/* <div className="action-button">
-                  <a
-                    className="label modal cta-btn"
+                <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
+                  <button
+                    className="modal bg-primary h-12 w-full "
                     href="https://calendly.com/karankumarcv/30min"
                     target="blank"
                   >
                     Download{" "}
-                    <span className="label cta-btn-icon">
+                    <span className="label cta-btn-icon hidden">
                       <MdFileDownload />
                     </span>
-                  </a>
-                </div> */}
-                <div className="close-button heading" onClick={setToggle}>
-                  <IoClose />
+                  </button>
                 </div>
-              </div>
+                
             </div>
-            <div className="modal-body">
+            <div className="modal-body overflow-y-scroll h-full">
               {/* <MiscContent /> */}
               <ProjectContent />
               {/* <ServicesContent/> */}

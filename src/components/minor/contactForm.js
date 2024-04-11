@@ -3,7 +3,7 @@ function TestimonialCard({ toggle }) {
   return (
     <form className="w-full h-full flex flex-col justify-between items-center gap-y-8">
       <input
-        className="user-email"
+        className="user-email "
         type="email"
         placeholder="YourEmail@gmail.com"
       ></input>

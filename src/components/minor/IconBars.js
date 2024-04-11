@@ -6,35 +6,32 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function IconBars() {
   return (
-    <div className="icon-bars flex flex-row items-center gap-10">
+    <div className="icon-bars flex gap-5 flex-wrap">
       <a
-        className="icon-container title"
+        className="icon-container bg-dark-bg text-body p-3"
         target="_blank"
         href="mailto:contact@karankumar.dev"
       >
-        <div className="label">
+        <div className="heading">
           <IoMail />
-        </div>
-        <div className="icon-title">
-         
         </div>
       </a>
       <a
-        className="icon-container title"
+        className="icon-container  bg-dark-bg text-body p-3"
         target="_blank"
         href="https://twitter.com/karankumarcv"
       >
-        <div className="label">
+        <div className="heading">
           <FaXTwitter />
         </div>
        
       </a>
       <a
-        className="icon-container title"
+        className="icon-container  bg-dark-bg text-body p-3"
         target="_blank"
         href="https://www.linkedin.com/in/karankumarcv/"
       >
-        <div className="label">
+        <div className="heading">
           <IoLogoLinkedin />
         </div>
         <div className="icon-title">
@@ -42,11 +39,11 @@ function IconBars() {
         </div>
       </a>
       <a
-        className="icon-container title"
+        className="icon-container  bg-dark-bg text-body p-3"
         target="_blank"
         href="https://www.instagram.com/karankumarcv/"
       >
-        <div className="label">
+        <div className="heading">
           <RiInstagramFill />
         </div>
         <div className="icon-title">

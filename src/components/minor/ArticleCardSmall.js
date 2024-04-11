@@ -6,8 +6,8 @@ function ArticleCardSmall({
   desc
 }) {
   return (
-    <div className="small-card-container flex flex-row lg:flex-col justify-center items-center p-4 h-[60vh]" onClick={subToggle}>
-      <div className="small-card-img xl:w-3/4 lg:w-4/5 h-full overflow-hidden bg-fill" style={{backgroundImage:`url(${imgname})`}}>
+    <div className="article-small-card-container h-[50vh] flex flex-col justify-center items-center p-5 cursor-pointer bg-body" onClick={subToggle}>
+      <div className="small-card-img w-full h-full overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
       </div>
       <div className="small-card-body w-full h-full flex flex-col justify-center items-center p-4 gap-y-1">
         <div className="title small-title pt-1">{title}</div>

@@ -7,17 +7,19 @@ import ProjectCardSmall from "../minor/projectCardSmall";
 import profilePhoto from "../../assets/media/bg.png";
 function ProjectCard({ toggle }) {
   return (
-    <section className="section-container project" id="project">
-      <div className="section-header">
+    <section className="section-container w-full bg-highlight" id="project">
+      <div className="section-header w-full flex flex-col justify-center items-center">
         <div className="section-title heading  text-dark-bg">
           Explore My Work
         </div>
-        <div onClick={toggle} className="section-navigation label">
+        <button onClick={toggle} className="title hidden lg:flex">
           More Projects&emsp;
-          <MdKeyboardArrowRight className="title" />
-        </div>
+          <span>
+            <MdKeyboardArrowRight className="title" />
+          </span>
+        </button>
       </div>
-      <div className="w-full h-full project grid grid-cols-3 gap-12">
+      <div className="w-full h-full flex flex-col justify-center items-center gap-y-14">
         <ProjectCardBig
           subToggle={toggle}
           imgname={profilePhoto}
@@ -27,6 +29,7 @@ function ProjectCard({ toggle }) {
           tag2="CMS"
           tag3="Mobile Apps"
           tag4="Mobile Apps"
+          tag5="Node.js"
         ></ProjectCardBig>
         <ProjectCardSmall
           subToggle={toggle}
@@ -34,25 +37,22 @@ function ProjectCard({ toggle }) {
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ProjectCardSmall>
-        
+
         <ProjectCardSmall
           subToggle={toggle}
           imgname={profilePhoto}
           title="Covid Tracker"
           desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
         ></ProjectCardSmall>
-        <ProjectCardSmall
-          subToggle={toggle}
-          imgname={profilePhoto}
-          title="Covid Tracker"
-          desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
-        ></ProjectCardSmall>
-        <ProjectCardSmall
-          subToggle={toggle}
-          imgname={profilePhoto}
-          title="Covid Tracker"
-          desc="Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality."
-        ></ProjectCardSmall>
+       
+      </div>
+      <div className="w-full py-4 flex justify-center items-center lg:hidden bg-dark-bg text-body">
+        <button onClick={toggle} className="title">
+          More Projects&emsp;
+          <span>
+            <MdKeyboardArrowRight className="heading" />
+          </span>
+        </button>
       </div>
     </section>
   );
