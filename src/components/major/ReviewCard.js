@@ -35,6 +35,7 @@ function ReviewCard({ toggle }) {
       const ratingContainer = ratingsRef.current;
       
       ratingContainer.scrollLeft++;
+      ratingContainer.scrollTop++;
     }
   }
 
@@ -45,9 +46,9 @@ function ReviewCard({ toggle }) {
   setInterval(autoScroll, 30);
 
   return (
-    <section className="section-container review w-full h-full flex justify-center items-center bg-dark-bg text-body overflow-hidden">
-      <div className="section-body w-full review flex flex-col justify-start align-start gap-y-8">
-        <div className="section-body-start test w-full flex flex-col justify-center align-center gap-y-8 text-center ">
+    <section className="section-container review w-full h-full flex justify-center items-center bg-dark-bg text-body overflow-hidden lg:justify-between lg:h-[70vh] ">
+      <div className="section-body w-full review flex flex-col justify-start gap-y-8 gap-x-12">
+        <div className="section-body-start test w-full flex flex-col justify-center  gap-y-8 text-center  lg:w-[50%] lg:text-left">
           <div className="heading">What They Have To Say</div>
           <div className="body-normal flex justify-center items-center flex-wrap">
             Mai ek freelance e-commerce expert aur website developer hoon, jo
@@ -56,7 +57,7 @@ function ReviewCard({ toggle }) {
             samajh ke saath,
           </div>
         </div>
-        <div className="section-body-end w-full h-full gap-x-6 overflow-x-auto whitespace-no-wrap flex justify-start pt-4" ref={ratingsRef}>
+        <div className="section-body-end w-full h-full gap-x-6 overflow-auto whitespace-no-wrap flex justify-start pt-4 lg:w-[50%] lg:flex-col  lg:items-end gap-y-8 lg:h-[60vh] lg:pb-12" ref={ratingsRef}>
           <TestimonialCard
             profileImg={ProfileImg}
             userName="Omani Yova"

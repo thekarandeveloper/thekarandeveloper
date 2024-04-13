@@ -8,16 +8,16 @@ import profilePhoto from "../../assets/media/bg.png";
 function ArticleCard({ toggle }) {
   return (
     <section id="article" className="section-container article bg-highlight">
-      <div className="section-header w-full flex flex-col justify-center items-center">
+      <div className="section-header w-full flex flex-col justify-center items-center lg:flex-row lg:justify-between">
         <div className="section-title heading">What I have to Say ?</div>
-        <button onClick={toggle} className="title hidden lg:flex">
+        <button onClick={toggle} className="title hidden lg:flex bg-dark-bg text-body">
           More Projects&emsp;
           <span>
-            <MdKeyboardArrowRight className="title" />
+            <MdKeyboardArrowRight className="heading" />
           </span>
         </button>
       </div>
-      <div className="flex flex-col gap-y-8">
+      <div className=" section-body flex flex-col gap-y-8 md:grid gap-8 grid-cols-2 grid-rows-2">
         <ArticleCardBig
           subToggle={toggle}
           imgname={profilePhoto}

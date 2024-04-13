@@ -9,7 +9,7 @@ function Navbar({ toggle }) {
         <div className="nav-brand heading">
           <HashLink to="/">Karan Kumar</HashLink>
         </div>
-        <div className="nav-items flex gap-7">
+        <div className="nav-items flex gap-7 justify-center items-center">
           <div className="toggleNavContainer bg-primary p-4 lg:hidden">
             <MdOutlineMenu className="heading" />
           </div>

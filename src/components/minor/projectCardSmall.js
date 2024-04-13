@@ -7,7 +7,7 @@ function projectCardSmall({
   desc
 }) {
   return (
-    <div className="project-small-card-container h-[50vh] flex flex-col justify-center items-center p-5 cursor-pointer bg-body" onClick={subToggle}>
+    <div className="project-small-card-container  flex flex-col justify-center items-center p-5 cursor-pointer bg-body lg:h-[30vw]" onClick={subToggle}>
       <div className="project-small-card-img w-full h-full overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
        
       </div>

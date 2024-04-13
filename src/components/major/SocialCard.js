@@ -3,7 +3,7 @@ import IconBars from "../minor/IconBars";
 function SocialCard() {
   return (
     <section className="section-container bg-highlight social h-[45vh] flex flex-col justify-center items-center gap-y-8">
-      <div className="heading w-full text-center">
+      <div className="heading w-full text-center ">
         Your Work, My Responsibility
       </div>
       <div className="label w-full text-center">

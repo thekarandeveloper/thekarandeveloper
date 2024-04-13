@@ -8,7 +8,7 @@ function IconBars() {
   return (
     <div className="icon-bars flex gap-5 flex-wrap">
       <a
-        className="icon-container bg-dark-bg text-body p-3"
+        className="icon-container bg-primary text-body p-3"
         target="_blank"
         href="mailto:contact@karankumar.dev"
       >
@@ -17,7 +17,7 @@ function IconBars() {
         </div>
       </a>
       <a
-        className="icon-container  bg-dark-bg text-body p-3"
+        className="icon-container  bg-primary text-body p-3"
         target="_blank"
         href="https://twitter.com/karankumarcv"
       >
@@ -27,7 +27,7 @@ function IconBars() {
        
       </a>
       <a
-        className="icon-container  bg-dark-bg text-body p-3"
+        className="icon-container  bg-primary text-body p-3"
         target="_blank"
         href="https://www.linkedin.com/in/karankumarcv/"
       >
@@ -39,7 +39,7 @@ function IconBars() {
         </div>
       </a>
       <a
-        className="icon-container  bg-dark-bg text-body p-3"
+        className="icon-container  bg-primary text-body p-3"
         target="_blank"
         href="https://www.instagram.com/karankumarcv/"
       >

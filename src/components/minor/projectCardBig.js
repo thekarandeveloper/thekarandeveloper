@@ -13,19 +13,19 @@ function projectCardBig({
 }) {
   return (
     <div
-      className="w-full h-full bg-body flex flex-col justify-center items-center p-4 cursor-pointer"
+      className="w-full h-fit bg-body flex flex-col justify-center items-center p-4 cursor-pointer md:col-span-2 lg:flex-row  gap-x-4 lg:h-full"
       onClick={subToggle}
     >
       <div
-        className="w-full h-[20vh] rounded-large bg-no-repeat bg-fill"
+        className="w-full h-full rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0"
         style={{ backgroundImage: `url(${imgname})` }}
       ></div>
       <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-8">
-        <div className="title pt-8 text-center w-full">{title}</div>
+        <div className="title text-center w-full lg:text-left">{title}</div>
         <div className="big-card-desc body-normal opacity-60 text-justify">
           {desc}
         </div>
-        <div className="big-card-tags w-full flex justify-center flex-wrap gap-y-3 gap-x-3 opacity-70">
+        <div className="big-card-tags w-full hidden justify-center flex-wrap gap-y-3 gap-x-3 opacity-70 md:flex lg:justify-start ">
           <div className="big-card-tag-item body-normal bg-light-bg p-3">{tag1}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag2}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag3}</div>
