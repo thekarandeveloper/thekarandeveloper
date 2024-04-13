@@ -16,13 +16,13 @@ function NavbarContent(subtoggle) {
     setIsClosed((prevIsClosed) => !prevIsClosed);
   };
   return (
-    <div className="modal-body-container hidden lg:flex justify-center items-center gap-x-8">
-      <HashLink className="label nav-item active" to="/">
+    <div className="flex justify-center items-center gap-y-8 w-full flex-col h-full pb-[15vh]">
+      <HashLink className="label nav-item bg-light-bg w-full flex justify-center items-center py-4" to="/">
       Home
       </HashLink>
 
       <HashLink
-        className="nav-item label"
+        className="nav-item label bg-light-bg w-full flex justify-center items-center py-4"
         smooth
         scroll={(el) =>
           el.scrollIntoView({ behavior: "auto", block: "nearest" })
@@ -31,7 +31,7 @@ function NavbarContent(subtoggle) {
       >Work
       </HashLink>
       <HashLink
-        className="label nav-item"
+        className="label nav-item bg-light-bg w-full flex justify-center items-center py-4"
         smooth
         scroll={(el) =>
           el.scrollIntoView({ behavior: "auto", block: "center" })
@@ -40,15 +40,7 @@ function NavbarContent(subtoggle) {
       >Services
       </HashLink>
 
-      <button
-        className="label nav cta-btn q-36 mx-5 px-4 rounded-lg bg-primary"
-        onClick={subtoggle}
-      >
-        Contact{" "}
-        <span className="label cta-btn-icon">
-          <IoMdCall className="label" />
-        </span>
-      </button>
+     
     </div>
   );
 }

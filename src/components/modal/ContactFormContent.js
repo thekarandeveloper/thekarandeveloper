@@ -9,7 +9,7 @@ function ContactFormContent() {
       <OptionBar></OptionBar>
 
         <ContactForm></ContactForm>
-        {/* <MessageWithIcon descrption=" Redirecting You to Calendly to Schedule Meeting with Karan"></MessageWithIcon> */}
+        {/* <MessageWithIcon description=" Redirecting You to Calendly to Schedule Meeting with Karan"></MessageWithIcon> */}
     </div>
   );
 }

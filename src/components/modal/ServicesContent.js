@@ -31,19 +31,17 @@ function ServicesContent() {
 
   return (
     <div className="modal-body-container services">
-      <div className="progress-bar-body">
-        <div className="progress-line"></div>
-        <div className="progress-items" ref={progressRef}>
-          <div className="progress-item active">1</div>
-          <div className="progress-item">2</div>
-          <div className="progress-item">3</div>
-          <div className="progress-item">4</div>
+      <div className="progress-bar-body w-full relative flex items-center justify-between flex-row pb-8">
+        <div className="progress-line h-1 absolute w-full bg-highlight"></div>
+        <div className="progress-items w-full flex justify-between z-20" ref={progressRef}>
+          <div className=" active p-4 px-6 rounded-[50%] bg-highlight  ">1</div>
+          <div className="progress-item p-4 px-6 rounded-[50%] bg-highlight ">2</div>
+          <div className="progress-item p-4 px-6 rounded-[50%] bg-highlight ">3</div>
         </div>
       </div>
 
       <form ref={sectionRef}>
-        <div className="form-section show w-full h-full flex flex-col justify-between items-center gap-y-8 hidden">
-          section-1
+        <div className="form-section show w-full 2xl:h-[60vh] flex flex-col justify-between items-center gap-y-8">
           <input
             className="user-email"
             type="email"
@@ -64,7 +62,7 @@ function ServicesContent() {
             spellCheck={false}
           ></textarea>
         </div>
-        <div className="form-section">
+        <div className="form-section hidden">
           section-2
           <input
             className="user-email"
@@ -87,7 +85,7 @@ function ServicesContent() {
           ></textarea>
         </div>
 
-        <div className="form-section">
+        <div className="form-section hidden">
           section-3
           <input
             className="user-email"
@@ -109,7 +107,7 @@ function ServicesContent() {
             spellCheck={false}
           ></textarea>
         </div>
-        <div className="form-section">
+        <div className="form-section hidden">
           section-4
           <input
             className="user-email"
@@ -132,9 +130,7 @@ function ServicesContent() {
           ></textarea>
         </div>
 
-        <div className="submit-button" onClick={showSection}>
-          Next  <MdNavigateNext />
-        </div>
+        
         {/* <button type="submit" className="submit-button" onClick={showSection}>
           Send
         </button> */}

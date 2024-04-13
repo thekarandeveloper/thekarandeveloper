@@ -13,11 +13,11 @@ function OptionBar({ toggle }) {
     }
   }
   return (
-    <div className="optionBody" ref={optionRef}>
-      <div className="optionbutton active" onClick={optionToggle}>
+    <div className="optionBody w-full h-10 md:h-14 2xl:h-[8vh] flex justify-center items-center p-1 bg-light-bg mb-6 2xl:p-3" ref={optionRef}>
+      <div className="optionbutton active label h-full w-full flex justify-center items-center cursor-pointer" onClick={optionToggle}>
         Email
       </div>
-      <div className="optionbutton" onClick={optionToggle}>
+      <div className="optionbutton label  h-full w-full flex justify-center items-center cursor-pointer" onClick={optionToggle}>
         Video meeting
       </div>
     </div>

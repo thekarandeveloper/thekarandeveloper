@@ -48,11 +48,10 @@ section {
   justify-content: center;
   align-items: start;
   gap: 6vh;
-  
 }
-.section-container{
-padding: 2rem;
-padding-top: 3.5rem;
+.section-container {
+  padding: 2rem;
+  padding-top: 3.5rem;
 }
 
 .card-container {
@@ -111,15 +110,14 @@ button:hover {
   color: var(--primary);
 }
 
-
 form input,
 form select,
 form textarea,
 form .submit-button {
   width: 100%;
   background-color: transparent;
-  border:2px solid #041c4e;
-  font-size: 18px;
+  border: 2px solid #041c4e;
+  font-size: 14px;
   padding: 15px;
 }
 
@@ -128,7 +126,7 @@ form textarea {
 }
 form input::placeholder,
 form input::placeholder {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Gilroy-Medium";
 }
 form textarea {
@@ -151,7 +149,7 @@ form .submit-button:hover {
   background-color: white;
   color: #0051ed;
 }
-#copy{
+#copy {
   margin-bottom: 0;
 }
 
@@ -167,40 +165,62 @@ form .submit-button:hover {
   transform: translateY(150%);
   transition: 0.6s;
 }
+.modal-body-container {
+  padding-bottom: 25vh;
+}
 .modal-container-view {
   transform: translateY(0%);
 }
 
+.progress-item.active {
+  background-color: #041c4e;
+  color: #fff;
+}
 
+.optionbutton.active {
+  color: white;
+  background-color: #041c4e;
+}
 
 /* md */
 @media (min-width: 768px) {
-
-  .home{
+  .home {
     flex-direction: row;
   }
-  
+
+  .modal-container {
+    transform: translateX(150%);
+    transition: 0.6s;
+  }
  
+  .modal-container-view {
+    transform: translateX(0%);
+  }
+  .modal-body-container {
+    padding-bottom: 6vh;
+  }
 }
 
 /* lg */
 @media (min-width: 1024px) {
-  .review{
+  .review {
     flex-direction: row;
   }
 }
 
 /* xl */
 @media (min-width: 1280px) {
+  
+ 
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
-  .section-container{
+  .section-container {
     padding: 4rem;
     padding-top: 3.8rem;
-    }
-    .section-body{
-      gap: 4rem;
-    }
+  }
+  .section-body {
+    gap: 4rem;
+  }
 }
