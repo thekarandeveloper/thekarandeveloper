@@ -9,28 +9,27 @@ import ContactFormContent from "./ContactFormContent";
 import AllProjects from "./AllProjects";
 import NavbarContent from "../modal/NavbarContent";
 
-function ModalBox({ toggle, setToggle, elements }) {
+function ModalBox({ modalOpen, modalClose, component, selectedItem }) {
   const modalRef = useRef(null);
 
   // For the Clicked Element
 
-  var eve;
-  if (elements) {
-    const events = elements.target.innerText;
-    eve = events;
+  var clickedData;
+  if (selectedItem) {
+    const events = selectedItem;
+    clickedData = events;
   }
 
   // For the Modal View
 
   useEffect(() => {
     const body = document.body;
-    if (toggle && modalRef.current) {
+    if (modalOpen && modalRef.current) {
       const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
       const modalContainer =
         modalRef.current.querySelectorAll(".modal-container");
       modalOverlays.forEach((overlay) => {
         overlay.classList.add("modal-overlay-view");
-        console.log("reached");
       });
       setTimeout(() => {
         modalContainer.forEach((container) => {
@@ -38,7 +37,7 @@ function ModalBox({ toggle, setToggle, elements }) {
           body.classList.add("hide-scroll");
         });
       }, 200);
-    } else if (!toggle && modalRef.current) {
+    } else if (!modalOpen && modalRef.current) {
       const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
       const modalContainer =
         modalRef.current.querySelectorAll(".modal-container");
@@ -54,25 +53,28 @@ function ModalBox({ toggle, setToggle, elements }) {
         });
       }, 500);
     }
-  }, [toggle]);
+  }, [modalOpen]);
 
   return (
     <React.Fragment>
       <div ref={modalRef}>
         <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none hidden md:justify-end">
-          <div className="blank-area h-[20vh] w-full" onClick={setToggle}></div>
+          <div
+            className="blank-area h-[20vh] w-full"
+            onClick={modalClose}
+          ></div>
           <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 p-5 rounded-t-xl md:h-full md:max-h-full md:w-[60vw]  lg:w-[50vw] md:rounded-r-none ">
             <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 md:flex-row md:justify-between md:items-center md:p-4 md:bg-dark-bg md:text-body md:mb-5 md:sticky md:right-10 md:left-5">
               <div className="close w-20 h-1 bg-light-bg md:hidden"></div>
               <div
                 className="close-button heading hidden md:block md:order-2"
-                onClick={setToggle}
+                onClick={modalClose}
               >
                 <IoClose />
               </div>
               <div className="title h-full pb-8 md:order-1 flex items-center md:pb-0 md:cursor-pointer">
                 {/* <span className="previous">Karan/</span> */}
-                <span className="current">{eve}</span>
+                <span className="current">{clickedData}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
                 <button
@@ -88,13 +90,16 @@ function ModalBox({ toggle, setToggle, elements }) {
               </div>
             </div>
             <div className="modal-body overflow-y-scroll h-[70vh] ">
+              {component === "navbar" && (
+                <NavbarContent submodalOpen={modalOpen}></NavbarContent>
+              )}
+              {component === "contact" && <ContactFormContent />}
+
               {/* <MiscContent /> */}
-              <ProjectContent />
+              {/* <ProjectContent /> */}
               {/* <ServicesContent/> */}
               {/* <ArticleContent /> */}
-              {/* <ContactFormContent /> */}
-              {/* <AllProjects toggles={toggle}/> */}
-              {/* <NavbarContent subtoggle={toggle}></NavbarContent> */}
+              {/* <AllProjects modalOpens={modalOpen}/> */}
             </div>
           </div>
         </div>

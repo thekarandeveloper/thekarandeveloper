@@ -1,0 +1,43 @@
+{
+    "categories": [
+        {
+            "name": "navbar",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "Work",
+                        "image": "",
+                        "desc": "",
+                        "tags": [
+                            "",
+                            ""
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Services",
+                        "image": "",
+                        "desc": "",
+                        "tags": [
+                            "",
+                            ""
+                        ]
+                    }
+                ],
+                "buttons": [
+                    {
+                        "name": "hamburger",
+                        "icon": "BiMenu",
+                        "category": "navbar"
+                    },
+                    {
+                        "name": "Contact",
+                        "icon": "BiSolidPhone",
+                        "category": "contact"
+                    }
+                ]
+            }
+        }
+    ]
+}

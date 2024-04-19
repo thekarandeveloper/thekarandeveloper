@@ -131,8 +131,8 @@ function Services({ toggle }) {
                 &ensp; List Item 1
               </div>
             </div>
-            <div className="feature-list-cta-btn w-full bg-dark-bg text-body mt-5 flex justify-center">
-              <button className="label cta-btn feature w-fit" onClick={toggle}>
+            <div className="feature-list-cta-btn w-full bg-dark-bg text-body mt-5 flex justify-center hover:bg-highlight hover:text-dark-bg">
+              <button className="body-normal cta-btn feature w-fit " onClick={toggle}>
                 Book Your Enquiry Now{" "}
                 <span className="label cta-btn-icon hidden">
                   <FaArrowRightLong />

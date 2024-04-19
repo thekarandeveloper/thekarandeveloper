@@ -1,0 +1,23 @@
+{
+    "categories": [
+        {
+            "name": "profile",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "title": "Karan Kumar",
+                        "image": "../../assets/media/profilePhoto.webp"
+                    }
+                ],
+                "buttons": [
+                    {
+                        "name": "",
+                        "icon": "",
+                        "category": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

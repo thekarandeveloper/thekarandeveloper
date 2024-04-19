@@ -1,11 +1,8 @@
-import React, { useRef, useState } from "react";
-import { MdOutlineMenu } from "react-icons/md";
+import React from "react";
 import { HashLink } from "react-router-hash-link";
-import NavbarContent from "../modal/NavbarContent";
+import NavData from "../../data/nav.json";
+import * as BsReactIcons from "react-icons/bi";
 
-import { IoMdCall } from "react-icons/io";
-import { AiFillHome } from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
 function Navbar({ toggle }) {
   return (
     <header className="w-full h-[15vh] flex justify-center">
@@ -14,43 +11,53 @@ function Navbar({ toggle }) {
           <HashLink to="/">Karan Kumar</HashLink>
         </div>
         <div className="nav-items flex gap-7 justify-center items-center">
-          <div className="toggleNavContainer bg-primary p-4 lg:hidden">
-            <MdOutlineMenu className="heading" />
-          </div>
+          {NavData.categories.map((data) =>
+            data.data.buttons
+              .filter((button) => button.name === "hamburger")
+              .map((buttonItem) => (
+                <div
+                  className="toggleNavContainer bg-primary p-4 lg:hidden"
+                  onClick={() => toggle(buttonItem.name, buttonItem.category)}
+                >
+                  {React.createElement(BsReactIcons[buttonItem.icon], {
+                    className: "heading",
+                  })}
+                </div>
+              ))
+          )}
+
           <div className="hidden lg:flex justify-center items-center gap-x-8">
-      <HashLink className="label nav-item active" to="/">
-      Home
-      </HashLink>
+            {NavData.categories.map((categoryData) =>
+              categoryData.data.items.map((dataItem) => (
+                <HashLink
+                  className="nav-item label py-2 px-6"
+                  smooth
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "auto", block: "nearest" })
+                  }
+                  to={`/#${dataItem.name.toLowerCase()}`}
+                >
+                  {dataItem.name}
+                </HashLink>
+              ))
+            )}
 
-      <HashLink
-        className="nav-item label"
-        smooth
-        scroll={(el) =>
-          el.scrollIntoView({ behavior: "auto", block: "nearest" })
-        }
-        to="/#project"
-      >Work
-      </HashLink>
-      <HashLink
-        className="label nav-item"
-        smooth
-        scroll={(el) =>
-          el.scrollIntoView({ behavior: "auto", block: "center" })
-        }
-        to="/#services"
-      >Services
-      </HashLink>
-
-      <button
-        className="label nav cta-btn q-36 mx-5 px-4 rounded-lg bg-primary"
-        onClick={toggle}
-      >
-        Contact{" "}
-        <span className="label cta-btn-icon">
-          <IoMdCall className="label" />
-        </span>
-      </button>
-    </div>
+            {NavData.categories.map((data) =>
+              data.data.buttons
+                .filter((button) => button.name === "Contact")
+                .map((buttonItem) => (
+                  <button
+                    className="label nav cta-btn q-36 mx-5 px-4 rounded-lg bg-primary hover:bg-body hover:text-dark-bg"
+                    onClick={() => toggle(buttonItem.name, buttonItem.category)}
+                  >
+                    {buttonItem.name}{" "}
+                    <span className="label cta-btn-icon">
+                      {React.createElement(BsReactIcons[buttonItem.icon])}
+                    </span>
+                  </button>
+                ))
+            )}
+          </div>
         </div>
       </navbar>
     </header>

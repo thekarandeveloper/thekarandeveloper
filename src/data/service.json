@@ -1,0 +1,71 @@
+{
+    "categories": [
+        {
+            "name": "services",
+            "heading": "What I Offer ?",
+            "desc":"Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user-friendly online platforms banane mein specialized hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri samajh ke saath,",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "Websites",
+                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
+                        "tags": [
+                            "List Item 1",
+                            "List Item 2",
+                            "List Item 3",
+                            "List Item 4",
+                            "List Item 5",
+                            "List Item 6"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Mobile Apps",
+                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
+                        "tags": [
+                            "List Item 1",
+                            "List Item 2",
+                            "List Item 3",
+                            "List Item 4",
+                            "List Item 5",
+                            "List Item 6"
+                        ]
+                    }, {
+                        "id": 3,
+                        "name": "iOS Apps",
+                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
+                        "tags": [
+                            "List Item 1",
+                            "List Item 2",
+                            "List Item 3",
+                            "List Item 4",
+                            "List Item 5",
+                            "List Item 6"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Desktop Apps",
+                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
+                        "tags": [
+                            "List Item 1",
+                            "List Item 2",
+                            "List Item 3",
+                            "List Item 4",
+                            "List Item 5",
+                            "List Item 6"
+                        ]
+                    }
+                ],
+                "buttons": [
+                    {
+                        "name": "Book Your Enquiry Now",
+                        "icon": "BiChevronRight",
+                        "category": "services"
+                    }
+                ]
+            }
+        }
+    ]
+}

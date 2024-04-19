@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 import ProjectCardBig from "../minor/projectCardBig";

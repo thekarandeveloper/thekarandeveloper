@@ -1,0 +1,45 @@
+{
+    "categories": [
+        {
+            "name": "socials",
+            "heading": "Your Work, My Responsibility",
+            "desc":"I’m a software engineer specializing in building exceptional digital experiences.",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "Mail",
+                        "image": "BiLogoGmail",
+                        "desc": ""
+                    },
+                    {
+                        "id": 2,
+                        "name": "Twitter",
+                        "image": "BiX",
+                        "desc": ""
+                    },
+                    {
+                        "id": 3,
+                        "name": "LinkedIn",
+                        "image": "BiLogoLinkedin",
+                        "desc": ""
+                    },
+                    {
+                        "id": 4,
+                        "name": "Instagram",
+                        "image": "BiLogoInstagramAlt",
+                        "desc": ""
+                    }
+
+                ],
+                "buttons": [
+                    {
+                        "name": "",
+                        "icon": "",
+                        "category": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

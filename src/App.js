@@ -13,27 +13,35 @@ import Introduction from "./components/major/Introduction.js";
 function App() {
   
   // Modal Function
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [element, setElement] = useState(null);
-  const toggleModal = (event) => {
+  const [category, setCategory] = useState(null);
+ 
+  const modalOpen = (event, category) => {
     setModal(!modal);
     setElement(event);
+    setCategory(category)
   };
 
+  const modalClose = () =>{
+    setModal(!modal);
+
+  }
   return (
     <React.Fragment>
       <ModalBox
-        toggle={modal}
-        setToggle={toggleModal}
-        elements={element}
+        modalOpen={modal}
+        modalClose={modalClose}
+        component={category}
+        selectedItem={element}
       ></ModalBox>
-      <Navbar toggle={toggleModal}></Navbar>
-      <Introduction toggle={toggleModal}></Introduction>
-      <ProjectCard toggle={toggleModal}></ProjectCard>
-      <ReviewCard toggle={toggleModal}></ReviewCard>
-      <ServiceCard toggle={toggleModal}></ServiceCard>
-      <ArticleCard toggle={toggleModal}></ArticleCard>
-      <ContactCard toggle={toggleModal}></ContactCard>
+      <Navbar toggle={modalOpen}></Navbar>
+      <Introduction toggle={modalOpen}></Introduction>
+      <ProjectCard toggle={modalOpen}></ProjectCard>
+      <ReviewCard toggle={modalOpen}></ReviewCard>
+      <ServiceCard toggle={modalOpen}></ServiceCard>
+      <ArticleCard toggle={modalOpen}></ArticleCard>
+      <ContactCard toggle={modalOpen}></ContactCard>
       <SocialCard></SocialCard>
       <CopyrightBar></CopyrightBar>
     </React.Fragment>

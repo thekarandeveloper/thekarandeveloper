@@ -1,0 +1,23 @@
+{
+    "categories": [
+        {
+            "name": "intro",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "title": "Hello",
+                        "body": "I'm Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise."
+                    }
+                ],
+                "buttons": [
+                    {
+                        "name": "View Resume",
+                        "icon": "BiChevronRight",
+                        "category": "resume"
+                    }
+                ]
+            }
+        }
+    ]
+}

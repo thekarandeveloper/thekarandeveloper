@@ -1,0 +1,28 @@
+{
+    "categories": [
+        {
+            "name": "contact",
+            "heading": "Have Something in Mind ?",
+            "desc":"I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.",
+            "data": {
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "",
+                        "category":"",
+                        "image": "",
+                        "desc": "",
+                        "ratings":3
+                    }
+                ],
+                "buttons": [
+                    {
+                        "name": "",
+                        "icon": "",
+                        "category": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
