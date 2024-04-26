@@ -1,12 +1,43 @@
 import React, { useState } from "react";
-import MessageWithIcon  from "../minor/MessageWithIcon";
+import MessageWithIcon from "../minor/MessageWithIcon";
 
 function TestimonialCard({ toggle }) {
   const [selectedOption, setSelectedOption] = useState("Email");
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-    console.log(selectedOption)
+    console.log(selectedOption);
+  };
+
+  const [email, setEmail] = useState("");
+  const [subject, setsubject] = useState("");
+  const [message, setmessage] = useState("");
+
+  const baseURL = "http://localhost:8000";
+
+  const sendEmail = async () => {
+    let dataSend = {
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    const res = await fetch(`${baseURL}/email/sendEmail`, {
+      method: "POST",
+      body: JSON.stringify(dataSend),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      // Handling Errors
+
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Sucessfully !");
+        }
+      });
   };
 
   return (
@@ -17,7 +48,7 @@ function TestimonialCard({ toggle }) {
           type="radio"
           name="contact-option"
           value={"Email"}
-          checked={selectedOption === 'Email'}
+          checked={selectedOption === "Email"}
           onChange={handleOptionChange}
         />
         <label for="email-option" className="mr-4 title">
@@ -30,7 +61,7 @@ function TestimonialCard({ toggle }) {
           name="contact-option"
           value={"Video"}
           onChange={handleOptionChange}
-          checked={selectedOption === 'Video'}
+          checked={selectedOption === "Video"}
         />
         <label for="video-option">Video Meeting</label>
       </div>
@@ -63,12 +94,12 @@ function TestimonialCard({ toggle }) {
       {selectedOption === "Video" && (
         <MessageWithIcon description=" Redirecting You to Calendly to Schedule Meeting with Karan"></MessageWithIcon>
       )}
-      {/* <button
+      <button
         className="submit-button cursor-pointer flex justify-center items-center"
-        onClick={toggle}
+        onClick={sendEmail}
       >
         Send
-      </button> */}
+      </button>
     </form>
   );
 }
