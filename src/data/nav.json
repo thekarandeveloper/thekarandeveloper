@@ -1,43 +1,25 @@
 {
-    "categories": [
+    "data": [
         {
             "name": "navbar",
-            "data": {
-                "items": [
-                    {
-                        "id": 1,
-                        "name": "Work",
-                        "image": "",
-                        "desc": "",
-                        "tags": [
-                            "",
-                            ""
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "name": "Services",
-                        "image": "",
-                        "desc": "",
-                        "tags": [
-                            "",
-                            ""
-                        ]
-                    }
-                ],
-                "buttons": [
-                    {
-                        "name": "hamburger",
-                        "icon": "BiMenu",
-                        "category": "navbar"
-                    },
-                    {
-                        "name": "Contact",
-                        "icon": "BiSolidPhone",
-                        "category": "contact"
-                    }
-                ]
-            }
+            "type": "items",
+            "action": {
+                "name": "openURL"
+            },
+            "items": [
+                {
+                    "name": "Work",
+                    "body": {}
+                },
+                {
+                    "name": "Services",
+                    "body": {}
+                },
+                {
+                    "name": "Articles",
+                    "body": {}
+                }
+            ]
         }
     ]
 }

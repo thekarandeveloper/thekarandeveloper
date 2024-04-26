@@ -11,29 +11,28 @@ import ModalBox from "./components/modal/modalBox.js";
 import Introduction from "./components/major/Introduction.js";
 
 function App() {
-  
   // Modal Function
   const [modal, setModal] = useState(false);
-  const [element, setElement] = useState(null);
-  const [category, setCategory] = useState(null);
- 
-  const modalOpen = (event, category) => {
+  const [item, setItem] = useState([]);
+  const [category, setCategory] = useState([]);
+
+
+  const modalOpen = (category, selectedItem) => {
     setModal(!modal);
-    setElement(event);
-    setCategory(category)
+    setItem(selectedItem);
+    setCategory(category);
   };
 
-  const modalClose = () =>{
+  const modalClose = () => {
     setModal(!modal);
-
-  }
+  };
   return (
     <React.Fragment>
       <ModalBox
         modalOpen={modal}
         modalClose={modalClose}
-        component={category}
-        selectedItem={element}
+        category={category}
+        selectedItem={item}
       ></ModalBox>
       <Navbar toggle={modalOpen}></Navbar>
       <Introduction toggle={modalOpen}></Introduction>

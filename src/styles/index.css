@@ -121,6 +121,8 @@ form .submit-button {
   padding: 15px;
 }
 
+
+
 form textarea {
   height: 20%;
 }
@@ -167,6 +169,7 @@ form .submit-button:hover {
 }
 .modal-body-container {
   padding-bottom: 25vh;
+  height: 100%;
 }
 .modal-container-view {
   transform: translateY(0%);
@@ -179,9 +182,31 @@ form .submit-button:hover {
 
 .optionbutton.active {
   color: white;
-  background-color: #041c4e;
-}
+  background-color: #99b6df;
 
+}
+.section-body-end .testCard {
+  animation: scroll 55s linear infinite;
+  cursor: pointer;
+}
+.section-body-end .testCard:hover{
+  animation-play-state: paused;
+}
+.section-body-end .testCard .test-card-container:hover{
+  transform: scale(1.051);
+  transition: 0.5s;
+}
+#testCard::-webkit-scrollbar{
+  display: none;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(5%); /* Start scrolling from the beginning */
+  }
+  100% {
+    transform: translateX(-70%); /* Scroll to the left by 100% of the container's width */
+  }
+}
 /* md */
 @media (min-width: 768px) {
   .home {
@@ -192,7 +217,7 @@ form .submit-button:hover {
     transform: translateX(150%);
     transition: 0.6s;
   }
- 
+
   .modal-container-view {
     transform: translateX(0%);
   }
@@ -206,12 +231,18 @@ form .submit-button:hover {
   .review {
     flex-direction: row;
   }
+  @keyframes scroll {
+    0% {
+      transform: translateY(5%); /* Start scrolling from the beginning */
+    }
+    100% {
+      transform: translateY(-70%); /* Scroll to the left by 100% of the container's width */
+    }
+  }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-  
- 
 }
 
 /* 2xl */

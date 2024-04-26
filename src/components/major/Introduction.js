@@ -30,7 +30,7 @@ function Introduction({ toggle }) {
                 .map((buttonItem) => (
                   <button
                     className="title border-body border-2 hover:bg-body hover:text-dark-bg"
-                    onClick={toggle}
+                    onClick={() => toggle(buttonItem, data)}
                   >
                     {buttonItem.name}{" "}
                     <span className="heading cta-btn-icon">

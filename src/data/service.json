@@ -11,12 +11,12 @@
                         "name": "Websites",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
                         "tags": [
-                            "List Item 1",
-                            "List Item 2",
-                            "List Item 3",
-                            "List Item 4",
-                            "List Item 5",
-                            "List Item 6"
+                            "asList Item 1",
+                            "asList Item 2",
+                            "asList Item 3",
+                            "asList Item 4",
+                            "asList Item 5",
+                            "asList Item 6"
                         ]
                     },
                     {
@@ -24,24 +24,24 @@
                         "name": "Mobile Apps",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
                         "tags": [
-                            "List Item 1",
-                            "List Item 2",
-                            "List Item 3",
-                            "List Item 4",
-                            "List Item 5",
-                            "List Item 6"
+                            "2List Item 1",
+                            "2List Item 2",
+                            "2List Item 3",
+                            "2List Item 4",
+                            "2List Item 5",
+                            "2List Item 6"
                         ]
                     }, {
                         "id": 3,
                         "name": "iOS Apps",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
                         "tags": [
-                            "List Item 1",
-                            "List Item 2",
-                            "List Item 3",
-                            "List Item 4",
-                            "List Item 5",
-                            "List Item 6"
+                            "3List Item 1",
+                            "3List Item 2",
+                            "3List Item 3",
+                            "3List Item 4",
+                            "3List Item 5",
+                            "3List Item 6"
                         ]
                     },
                     {
@@ -49,12 +49,12 @@
                         "name": "Desktop Apps",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
                         "tags": [
-                            "List Item 1",
-                            "List Item 2",
-                            "List Item 3",
-                            "List Item 4",
-                            "List Item 5",
-                            "List Item 6"
+                            "4List Item 1",
+                            "4List Item 2",
+                            "4List Item 3",
+                            "4List Item 4",
+                            "4List Item 5",
+                            "4List Item 6"
                         ]
                     }
                 ],

@@ -10,7 +10,7 @@
                         "id": 1,
                         "name": "Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
@@ -18,7 +18,7 @@
                         "id": 2,
                         "name": "Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":4
                     },
@@ -26,7 +26,7 @@
                         "id": 3,
                         "name": "Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":2
                     },
@@ -34,55 +34,55 @@
                         "id": 4,
                         "name": "Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":5
                     },
                     {
                         "id": 5,
-                        "name": "Omani Yova",
+                        "name": "5Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
                     {
                         "id": 6,
-                        "name": "Omani Yova",
+                        "name": "6Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
                     {
                         "id": 7,
-                        "name": "Omani Yova",
+                        "name": "7Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
                     {
                         "id": 8,
-                        "name": "Omani Yova",
+                        "name": "8Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
                     {
                         "id": 9,
-                        "name": "Omani Yova",
+                        "name": "9Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     },
                     {
                         "id": 10,
-                        "name": "Omani Yova",
+                        "name": "10Omani Yova",
                         "category":"Artist",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "ratings":3
                     }

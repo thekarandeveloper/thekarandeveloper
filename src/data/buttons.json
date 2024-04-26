@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "name": "buttons",
+            "type": "buttons",
+            "items": [
+                {
+                    "name": "Contact",
+                    "icon": "BiSolidPhone",
+                    "component": "contact",
+                    "modalAction": {
+                        "name": "Submit",
+                        "props": {
+                            "url" : "https://www.youtube.com/"
+                        }
+                    }
+                },
+                {
+                    "name": "hamBurger",
+                    "icon": "BiMenu",
+                    "component": "navbar",
+                    "modalAction": {
+                        "name": "none",
+                        "props": {}
+                    }
+                }
+                
+            ]
+        }
+    ]
+}

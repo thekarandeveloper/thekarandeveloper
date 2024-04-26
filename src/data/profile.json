@@ -17,6 +17,11 @@
                         "category": ""
                     }
                 ]
+            },
+            "ctaBtn":{
+                "name"  :"resume",
+                "type"  : "function",
+                "action": "fileDownload"
             }
         }
     ]

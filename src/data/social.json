@@ -10,7 +10,8 @@
                         "id": 1,
                         "name": "Mail",
                         "image": "BiLogoGmail",
-                        "desc": ""
+                        "desc": "",
+                        "url":"mailto:contact@karankumar.dev"
                     },
                     {
                         "id": 2,

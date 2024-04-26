@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { FaStar } from "react-icons/fa6";
 function OptionBar({ toggle }) {
   const optionRef = useRef(null);
   function optionToggle(e) {

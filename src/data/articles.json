@@ -8,7 +8,7 @@
                     {
                         "id": 1,
                         "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -20,8 +20,8 @@
                     },
                     {
                         "id": 2,
-                        "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "name": "2Explore My Work",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -33,8 +33,8 @@
                     },
                     {
                         "id": 3,
-                        "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "name": "3Explore My Work",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -46,8 +46,8 @@
                     },
                     {
                         "id": 4,
-                        "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "name": "4Explore My Work",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -60,7 +60,7 @@
                     {
                         "id": 5,
                         "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -73,7 +73,7 @@
                     {
                         "id": 6,
                         "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -86,7 +86,7 @@
                     {
                         "id": 7,
                         "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
@@ -99,7 +99,7 @@
                     {
                         "id": 1,
                         "name": "Explore My Work",
-                        "image": "../minor/projectCardBig",
+                        "image": "../../assets/media/bg.png",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                         "tags": [
                             "Mobile Apps",
