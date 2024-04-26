@@ -201,7 +201,7 @@ form .submit-button:hover {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(5%); /* Start scrolling from the beginning */
+    transform: translateX(-20%); /* Start scrolling from the beginning */
   }
   100% {
     transform: translateX(-70%); /* Scroll to the left by 100% of the container's width */
@@ -233,7 +233,7 @@ form .submit-button:hover {
   }
   @keyframes scroll {
     0% {
-      transform: translateY(5%); /* Start scrolling from the beginning */
+      transform: translateY(-20%); /* Start scrolling from the beginning */
     }
     100% {
       transform: translateY(-70%); /* Scroll to the left by 100% of the container's width */

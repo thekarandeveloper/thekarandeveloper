@@ -51,8 +51,12 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     }
   }, [modalOpen]);
 
+  // Sub Modal View
+
+  const subModal = (category, selectedItem) => {};
+
   // Modal Body
-  function renderComponent(component) {
+  function renderComponent(component, selectedItem) {
     var currentComponent = "";
 
     if (component.type === "items") {
@@ -60,7 +64,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     } else if (component.type === "buttons") {
       currentComponent = selectedItem.component.toLowerCase();
     }
-
+    console.log(currentComponent);
     switch (currentComponent) {
       case "navbar":
         return <NavbarContent submodalOpen={modalOpen}></NavbarContent>;
@@ -69,6 +73,8 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
       case "contact":
         console.log("It's using function");
         return <ContactFormContent />;
+      case "all-projects":
+        return <AllProjects toggle={renderComponent} />;
       default:
         break;
     }
@@ -78,25 +84,41 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   function openURL(url) {
     window.open(url, "_blank");
   }
+  function downloadURL(url, filename) {
+    console.log("trying to download");
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
-  function renderActionButton(component, item) {
+  function renderActionButton() {
     var currentComponent = "";
     if (category.type === "items") {
-      currentComponent = category.name.toLowerCase();
+      currentComponent = category?.action?.type?.toLowerCase();
     } else if (category.type === "buttons") {
-      currentComponent = selectedItem.name.toLowerCase();
+      currentComponent = selectedItem?.action?.type?.toLowerCase();
     }
 
     switch (currentComponent) {
-      case "contact":
-        if (selectedItem?.modalAction?.parameter?.urls) {
-          openURL(selectedItem?.modalAction?.parameter?.urls);
+      case "link":
+        if (selectedItem?.action?.parameter?.url) {
+          openURL(selectedItem?.action?.parameter?.url);
         } else {
           console.error("URL is missing or invalid");
         }
         break;
-      // respective function according to selected button name
-
+      case "download":
+        if (selectedItem?.action?.parameter?.url) {
+          downloadURL(
+            selectedItem?.action?.parameter?.url,
+            selectedItem?.action?.parameter?.fileName
+          );
+        }
+        break;
       default:
         break;
     }
@@ -120,20 +142,22 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 <IoClose />
               </div>
               <div className="title h-full pb-8 md:order-1 flex items-center md:pb-0 md:cursor-pointer">
-                <span className="current">{selectedItem.name}</span>
+                <span className="current">{selectedItem.label}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
                 <button
-                  className="modal-button bg-primary h-12 w-full 2xl:h-[6vh] title"
+                  className="modal-button bg-primary h-12 w-full 2xl:h-[6vh] title  hover:bg-dark-bg"
                   target="blank"
-                  onClick={() => renderActionButton(category, selectedItem)}
+                  onClick={renderActionButton}
                 >
-                  {modalOpen === true ? selectedItem.modalAction.name : ""}
+                  {modalOpen === true ? selectedItem?.action?.name : ""}
                 </button>
               </div>
             </div>
             <div className="modal-body overflow-y-auto h-[70vh] pt-7">
-              {modalOpen === true ? renderComponent(category) : ""}
+              {modalOpen === true
+                ? renderComponent(category, selectedItem)
+                : ""}
             </div>
           </div>
         </div>

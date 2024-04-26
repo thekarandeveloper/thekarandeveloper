@@ -1,12 +1,17 @@
 {
-    "categories": [
+    "data": [
         {
-            "name": "services",
-            "heading": "What I Offer ?",
+            "name": "intro",
+            "heading" : "What I Offer",
             "desc":"Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user-friendly online platforms banane mein specialized hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri samajh ke saath,",
-            "data": {
-                "items": [
-                    {
+
+            "type": "items",
+            "action": {
+                "name": "openURL",
+                "type" : "link"
+            },
+            "items": [
+                {
                         "id": 1,
                         "name": "Websites",
                         "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
@@ -57,15 +62,7 @@
                             "4List Item 6"
                         ]
                     }
-                ],
-                "buttons": [
-                    {
-                        "name": "Book Your Enquiry Now",
-                        "icon": "BiChevronRight",
-                        "category": "services"
-                    }
-                ]
-            }
+            ]
         }
     ]
 }

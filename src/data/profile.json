@@ -1,28 +1,21 @@
 {
-    "categories": [
+    "data": [
         {
-            "name": "profile",
-            "data": {
-                "items": [
-                    {
-                        "id": 1,
+            "name": "portfolio",
+            "type": "items",
+            "action": {
+                "name": "openURL",
+                "type" : "link"
+            },
+            "items": [
+                {
+                    "name": "Karan Kumar",
+                    "body": {
                         "title": "Karan Kumar",
                         "image": "../../assets/media/profilePhoto.webp"
                     }
-                ],
-                "buttons": [
-                    {
-                        "name": "",
-                        "icon": "",
-                        "category": ""
-                    }
-                ]
-            },
-            "ctaBtn":{
-                "name"  :"resume",
-                "type"  : "function",
-                "action": "fileDownload"
-            }
+                }
+            ]
         }
     ]
 }

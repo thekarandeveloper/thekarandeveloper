@@ -6,7 +6,7 @@ function Services({ toggle }) {
   const categoryRef = useRef(null);
   const descriptionRef = useRef(null);
   const [category, setCategory] = useState(
-    ServiceData.categories[0].data.items[0]
+    ServiceData.data[0].items[0]
   );
 
   function categoryToggle(categoryClicked,dataItem) {
@@ -40,26 +40,26 @@ function Services({ toggle }) {
       className="section-container services bg-primary text-body overflow-hidden 2xl:h-[80vh]"
       id="services"
     >
-      {ServiceData.categories.map((categoryData) => (
+      {ServiceData.data.map((data) => (
         <div className="section-header w-full text-center">
           <div className="w-full section-title heading services lg:justify-start text-left">
-            {categoryData.heading}
+            {data.heading}
           </div>
         </div>
       ))}
 
-      {ServiceData.categories.map((categoryData) => (
+      {ServiceData.data.map((data) => (
         <div className="section-body h-full services w-full flex flex-col items-center gap-y-10 lg:flex-row justify-between">
           <div className="section-body-start w-full h-full flex justify-center flex-col gap-y-10 gap-x-20 lg:w-[50%]">
             <div className="body-normal desc text-center lg:text-left lg:w-[80%]">
-              {categoryData.desc}
+              {data.desc}
             </div>
             <div
               className="service-category w-full h-15 flex gap-x-5 overflow-x-auto lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:w-[70%] lg:h-[20vh] gap-10"
               ref={categoryRef}
             >
-              {ServiceData.categories.map((categoryData) =>
-                categoryData.data.items.map((dataItem) => (
+              {ServiceData.data.map((data) =>
+                data.items.map((dataItem) => (
                   <div
                     id={dataItem.id}
                     className={`service-category-item ${

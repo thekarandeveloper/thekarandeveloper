@@ -1,100 +1,97 @@
 {
-    "categories": [
+    "data": [
         {
             "name": "review",
-            "heading": "What They Have To Say",
+            "heading" : "What They Have To Say",
             "desc":"Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user-friendly online platforms banane mein specialized hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri samajh ke saath,",
-            "data": {
-                "items": [
-                    {
-                        "id": 1,
-                        "name": "Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 2,
-                        "name": "Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":4
-                    },
-                    {
-                        "id": 3,
-                        "name": "Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":2
-                    },
-                    {
-                        "id": 4,
-                        "name": "Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":5
-                    },
-                    {
-                        "id": 5,
-                        "name": "5Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 6,
-                        "name": "6Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 7,
-                        "name": "7Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 8,
-                        "name": "8Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 9,
-                        "name": "9Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    },
-                    {
-                        "id": 10,
-                        "name": "10Omani Yova",
-                        "category":"Artist",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "ratings":3
-                    }
-                ],
-                "buttons": [
-                    {
-                        "name": "",
-                        "icon": "",
-                        "category": ""
-                    }
-                ]
-            }
+            "type": "items",
+            "action": {
+                "name": "openURL",
+                "type" : "link"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 2,
+                    "name": "Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":4
+                },
+                {
+                    "id": 3,
+                    "name": "Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":2
+                },
+                {
+                    "id": 4,
+                    "name": "Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":5
+                },
+                {
+                    "id": 5,
+                    "name": "5Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 6,
+                    "name": "6Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 7,
+                    "name": "7Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 8,
+                    "name": "8Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 9,
+                    "name": "9Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                },
+                {
+                    "id": 10,
+                    "name": "10Omani Yova",
+                    "category":"Artist",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "ratings":3
+                }
+            ]
         }
     ]
 }
+

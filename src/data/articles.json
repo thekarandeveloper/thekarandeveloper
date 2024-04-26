@@ -1,123 +1,120 @@
+
 {
-    "categories": [
+    "data": [
         {
             "name": "articles",
-            "heading": "What I have to Say ?",
-            "data": {
-                "items": [
-                    {
-                        "id": 1,
-                        "name": "Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "name": "2Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 3,
-                        "name": "3Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 4,
-                        "name": "4Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 5,
-                        "name": "Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 6,
-                        "name": "Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 7,
-                        "name": "Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    },
-                    {
-                        "id": 1,
-                        "name": "Explore My Work",
-                        "image": "../../assets/media/bg.png",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                        "tags": [
-                            "Mobile Apps",
-                            "CMS",
-                            "CMS",
-                            "CMS",
-                            "CMS"
-                        ]
-                    }
-                ],
-                "buttons": [
-                    {
-                        "name": "More Articles",
-                        "icon": "BiChevronRight",
-                        "category": "articles"
-                    }
-                ]
-            }
+            "heading" : "What I have to Say ?",
+            "type": "items",
+            "action": {
+                "name": "openURL",
+                "type" : "link"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "2Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "3Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "4Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Explore My Work",
+                    "image": "../../assets/media/bg.png",
+                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "tags": [
+                        "Mobile Apps",
+                        "CMS",
+                        "CMS",
+                        "CMS",
+                        "CMS"
+                    ]
+                }
+            ]
         }
     ]
 }

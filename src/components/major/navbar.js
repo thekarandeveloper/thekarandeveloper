@@ -34,7 +34,7 @@ function Navbar({ toggle }) {
                   className="nav-item label py-2 px-6"
                   smooth
                   scroll={(el) =>
-                    el.scrollIntoView({ behavior: "auto", block: "start" })
+                    el.scrollIntoView({ behavior: "auto", block: "center" })
                   }
                   to={`/#${dataItem.name.toLowerCase()}`}
                 >

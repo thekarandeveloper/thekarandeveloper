@@ -6,25 +6,68 @@
             "items": [
                 {
                     "name": "Contact",
+                    "label": "Contact",
                     "icon": "BiSolidPhone",
                     "component": "contact",
-                    "modalAction": {
+                    "action": {
                         "name": "Submit",
+                        "type": "submit",
                         "parameter": {
-                            "urls" : "https://github.com/thekarandeveloper"
+                            "url": "https://github.com/thekarandeveloper"
                         }
                     }
                 },
                 {
                     "name": "hamBurger",
+                    "label": "Quick Links",
                     "icon": "BiMenu",
                     "component": "navbar",
-                    "parameter": {
+                    "action": {
                         "name": "none",
-                        "props": {}
+                        "type": "link",
+                        "parameter": {}
+                    }
+                },
+                {
+                    "name": "Resume",
+                    "label": "View Resume",
+                    "icon": "BiChevronRight",
+                    "component": "resume",
+                    "action": {
+                        "name": "Download",
+                        "type": "download",
+                        "parameter": {
+                            "fileName": "KARAN_KUMAR_RESUME.pdf",
+                            "url": "../../assets/KARAN_KUMAR_RESUME.pdf"
+                        }
+                    }
+                },
+                {
+                    "name": "More-Projects",
+                    "label": "All Projects",
+                    "icon": "BiChevronRight",
+                    "component": "all-projects",
+                    "action": {
+                        "name": "View Github",
+                        "type": "link",
+                        "parameter": {
+                            "url": "https://github.com/thekarandeveloper"
+                        }
+                    }
+                },
+                {
+                    "name": "More-Articles",
+                    "label": "All Articles",
+                    "icon": "BiChevronRight",
+                    "component": "all-articles",
+                    "action": {
+                        "name": "View LinkedIN",
+                        "type": "link",
+                        "parameter": {
+                            "url": "https://www.linkedin.com/in/karandeveloper"
+                        }
                     }
                 }
-                
             ]
         }
     ]
