@@ -10,8 +10,8 @@
                     "component": "contact",
                     "modalAction": {
                         "name": "Submit",
-                        "props": {
-                            "url" : "https://www.youtube.com/"
+                        "parameter": {
+                            "urls" : "https://github.com/thekarandeveloper"
                         }
                     }
                 },
@@ -19,7 +19,7 @@
                     "name": "hamBurger",
                     "icon": "BiMenu",
                     "component": "navbar",
-                    "modalAction": {
+                    "parameter": {
                         "name": "none",
                         "props": {}
                     }

@@ -10,6 +10,7 @@ import AllProjects from "./AllProjects";
 import NavbarContent from "../modal/NavbarContent";
 import { openURL } from "../../scripts/utility";
 import ModalActionButton from "../minor/ModalActionButton";
+
 function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   const modalRef = useRef(null);
 
@@ -73,24 +74,29 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     }
   }
 
-  // Modal Body
-  function renderActionButton(component) {
-    var currentComponent = "";
+  // Modal Action Button
+  function openURL(url) {
+    window.open(url, "_blank");
+  }
 
-    if (component.type === "items") {
+  function renderActionButton(component, item) {
+    var currentComponent = "";
+    if (category.type === "items") {
       currentComponent = category.name.toLowerCase();
-    } else if (component.type === "buttons") {
+    } else if (category.type === "buttons") {
       currentComponent = selectedItem.name.toLowerCase();
     }
 
     switch (currentComponent) {
       case "contact":
-        return (
-          <ModalActionButton
-            name={selectedItem.name}
-            clickAction={selectedItem.modalAction.name}
-          />
-        );
+        if (selectedItem?.modalAction?.parameter?.urls) {
+          openURL(selectedItem?.modalAction?.parameter?.urls);
+        } else {
+          console.error("URL is missing or invalid");
+        }
+        break;
+      // respective function according to selected button name
+
       default:
         break;
     }
@@ -117,7 +123,13 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 <span className="current">{selectedItem.name}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
-                {renderActionButton(category)}
+                <button
+                  className="modal-button bg-primary h-12 w-full 2xl:h-[6vh] title"
+                  target="blank"
+                  onClick={() => renderActionButton(category, selectedItem)}
+                >
+                  {modalOpen === true ? selectedItem.modalAction.name : ""}
+                </button>
               </div>
             </div>
             <div className="modal-body overflow-y-auto h-[70vh] pt-7">
