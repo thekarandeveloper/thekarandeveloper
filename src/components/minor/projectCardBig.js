@@ -8,8 +8,7 @@ function projectCardBig({
   tag1,
   tag2,
   tag3,
-  tag4,
-  tag5,
+  
 }) {
   return (
     <div
@@ -29,8 +28,7 @@ function projectCardBig({
           <div className="big-card-tag-item body-normal bg-light-bg p-3">{tag1}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag2}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag3}</div>
-          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag4}</div>
-          <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag5}</div>
+         
         </div>
         
       </div>

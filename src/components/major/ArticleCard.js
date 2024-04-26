@@ -42,7 +42,7 @@ function ArticleCard({ toggle }) {
             subToggle={() => toggle(data, data.items[0])}
             imgname={data.items[0].image}
             title={data.items[0].name}
-            desc={data.items[0].desc}
+            desc={data.items[0].content}
           ></ArticleCardBig>
         ))}
         {ArticleData.data.map((data) =>
@@ -53,7 +53,7 @@ function ArticleCard({ toggle }) {
                 subToggle={() => toggle(data, dataItem)}
                 imgname={dataItem.image}
                 title={dataItem.name}
-                desc={dataItem.desc}
+                desc={dataItem.content}
               ></ArticleCardSmall>
             ))
         )}

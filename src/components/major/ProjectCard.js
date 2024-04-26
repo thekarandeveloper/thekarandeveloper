@@ -22,7 +22,7 @@ function ProjectCard({ toggle }) {
                   onClick={() => toggle(data, buttonItem)}
                   className="title hidden lg:flex bg-dark-bg text-body"
                 >
-                  {buttonItem.name}&emsp;
+                  {buttonItem.label}&emsp;
                   <span>
                     {React.createElement(BsReactIcons[buttonItem.icon], {
                       className: "heading",
@@ -39,13 +39,12 @@ function ProjectCard({ toggle }) {
           <ProjectCardBig
             subToggle={() => toggle(data, data.items[0])}
             imgname={data.items[0].image}
-            title={data.items[0].title}
+            title={data.items[0].name}
             desc={data.items[0].desc}
             tag1={data.items[0].tags[0]}
             tag2={data.items[0].tags[1]}
             tag3={data.items[0].tags[2]}
-            tag4={data.items[0].tags[3]}
-            tag5={data.items[0].tags[4]}
+            
           ></ProjectCardBig>
         ))}
 
@@ -56,7 +55,7 @@ function ProjectCard({ toggle }) {
               <ProjectCardSmall
                 subToggle={() => toggle(data, item)}
                 imgname={item.image}
-                title={item.title}
+                title={item.name}
                 desc={item.desc}
               ></ProjectCardSmall>
             ))

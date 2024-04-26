@@ -6,112 +6,115 @@
             "type": "items",
             "action": {
                 "name": "openURL",
+                "label": "View Live",
                 "type" : "link"
             },
             "items": [
                 {
                     "id": 1,
-                    "title": "Project Title",
+                    "name": "Project Title",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. dataItem",
                     "tags": [
                         "Mobile Apps",
                         "Node.js",
-                        "tag2",
-                        "ta3",
-                        "tag4"
-                    ]
+                        "tag2"
+                    ],
+                    "technology":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "challenges":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "url":"https://vercel.com/guides/"
+                    
                 },
                 {
                     "id": 2,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 3,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 4,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 5,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 6,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 7,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 },
                 {
                     "id": 8,
-                    "title": "Explore My Work",
+                    "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
                     "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
-                        "CMS",
-                        "CMS",
-                        "CMS",
-                        "CMS"
-                    ]
+                        "Node.js",
+                        "tag2"
+                    ],
+                    "challenges":[],
+                    "url":"https://vercel.com/guides/"
                 }
             ]
         }

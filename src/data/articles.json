@@ -14,7 +14,7 @@
                     "id": 1,
                     "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -27,7 +27,7 @@
                     "id": 2,
                     "name": "2Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -40,7 +40,7 @@
                     "id": 3,
                     "name": "3Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -53,7 +53,7 @@
                     "id": 4,
                     "name": "4Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -66,7 +66,7 @@
                     "id": 5,
                     "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -79,7 +79,7 @@
                     "id": 6,
                     "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -92,7 +92,7 @@
                     "id": 7,
                     "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -105,7 +105,7 @@
                     "id": 1,
                     "name": "Explore My Work",
                     "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",

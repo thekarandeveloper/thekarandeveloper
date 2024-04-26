@@ -71,10 +71,13 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
       case "resume":
         return <MiscContent />;
       case "contact":
-        console.log("It's using function");
         return <ContactFormContent />;
+      case "project":
+          return <ProjectContent mockup={selectedItem?.image} overview={selectedItem?.desc} technology={selectedItem?.technology} tag1={selectedItem?.tags[0]}  tag2={selectedItem?.tags[1]} tag3={selectedItem?.tags[2]} challenges={selectedItem?.challenges}/>;
       case "all-projects":
         return <AllProjects toggle={renderComponent} />;
+      case "articles":
+        return <ArticleContent banner={selectedItem.image} content={selectedItem.content}/>
       default:
         break;
     }
@@ -105,8 +108,8 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
 
     switch (currentComponent) {
       case "link":
-        if (selectedItem?.action?.parameter?.url) {
-          openURL(selectedItem?.action?.parameter?.url);
+        if (selectedItem?.action?.parameter?.url || selectedItem?.url ) {
+          openURL(selectedItem?.action?.parameter?.url || selectedItem?.url );
         } else {
           console.error("URL is missing or invalid");
         }
@@ -142,7 +145,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 <IoClose />
               </div>
               <div className="title h-full pb-8 md:order-1 flex items-center md:pb-0 md:cursor-pointer">
-                <span className="current">{selectedItem.label}</span>
+                <span className="current">{selectedItem.name}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
                 <button
@@ -150,7 +153,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                   target="blank"
                   onClick={renderActionButton}
                 >
-                  {modalOpen === true ? selectedItem?.action?.name : ""}
+                  {modalOpen === true ? (selectedItem?.action?.name || category?.action?.label) : ""}
                 </button>
               </div>
             </div>
