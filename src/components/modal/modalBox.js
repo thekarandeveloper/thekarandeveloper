@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import MiscContent from "./MiscContent";
-import { MdFileDownload } from "react-icons/md";
 import ProjectContent from "./ProjectContent";
 import ServicesContent from "./ServicesContent";
 import ArticleContent from "./ArticleContent";
@@ -13,7 +12,6 @@ import ModalActionButton from "../minor/ModalActionButton";
 
 function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   const modalRef = useRef(null);
-
   // For the Modal View
 
   useEffect(() => {
@@ -51,20 +49,15 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     }
   }, [modalOpen]);
 
-  // Sub Modal View
-
-  const subModal = (category, selectedItem) => {};
-
   // Modal Body
-  function renderComponent(component, selectedItem) {
+  function renderComponent(component, item) {
     var currentComponent = "";
-
     if (component.type === "items") {
-      currentComponent = category.name.toLowerCase();
+      currentComponent = component.name.toLowerCase();
     } else if (component.type === "buttons") {
-      currentComponent = selectedItem.component.toLowerCase();
+      currentComponent = item.component.toLowerCase();
     }
-    console.log(currentComponent);
+
     switch (currentComponent) {
       case "navbar":
         return <NavbarContent submodalOpen={modalOpen}></NavbarContent>;
@@ -73,11 +66,22 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
       case "contact":
         return <ContactFormContent />;
       case "project":
-          return <ProjectContent mockup={selectedItem?.image} overview={selectedItem?.desc} technology={selectedItem?.technology} tag1={selectedItem?.tags[0]}  tag2={selectedItem?.tags[1]} tag3={selectedItem?.tags[2]} challenges={selectedItem?.challenges}/>;
+        console.log("Project render");
+        return (
+          <ProjectContent
+            mockup={item?.image}
+            overview={item?.desc}
+            technology={item?.technology}
+            tag1={item?.tags[0]}
+            tag2={item?.tags[1]}
+            tag3={item?.tags[2]}
+            challenges={item?.challenges}
+          />
+        );
       case "all-projects":
         return <AllProjects toggle={renderComponent} />;
       case "articles":
-        return <ArticleContent banner={selectedItem.image} content={selectedItem.content}/>
+        return <ArticleContent banner={item.image} content={item.content} />;
       default:
         break;
     }
@@ -108,8 +112,8 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
 
     switch (currentComponent) {
       case "link":
-        if (selectedItem?.action?.parameter?.url || selectedItem?.url ) {
-          openURL(selectedItem?.action?.parameter?.url || selectedItem?.url );
+        if (selectedItem?.action?.parameter?.url || selectedItem?.url) {
+          openURL(selectedItem?.action?.parameter?.url || selectedItem?.url);
         } else {
           console.error("URL is missing or invalid");
         }
@@ -153,7 +157,9 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                   target="blank"
                   onClick={renderActionButton}
                 >
-                  {modalOpen === true ? (selectedItem?.action?.name || category?.action?.label) : ""}
+                  {modalOpen === true
+                    ? selectedItem?.action?.name || category?.action?.label
+                    : ""}
                 </button>
               </div>
             </div>

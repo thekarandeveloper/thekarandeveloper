@@ -9,36 +9,36 @@ function TestimonialCard({ toggle }) {
     console.log(selectedOption);
   };
 
-  const [email, setEmail] = useState("");
-  const [subject, setsubject] = useState("");
-  const [message, setmessage] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [subject, setsubject] = useState("");
+  // const [message, setmessage] = useState("");
 
-  const baseURL = "http://localhost:8000";
+  // const baseURL = "http://localhost:8000";
 
-  const sendEmail = async () => {
-    let dataSend = {
-      email: email,
-      subject: subject,
-      message: message,
-    };
+  // const sendEmail = async () => {
+  //   let dataSend = {
+  //     email: email,
+  //     subject: subject,
+  //     message: message,
+  //   };
 
-    const res = await fetch(`${baseURL}/email/sendEmail`, {
-      method: "POST",
-      body: JSON.stringify(dataSend),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    })
-      // Handling Errors
+  //   const res = await fetch(`${baseURL}/email/sendEmail`, {
+  //     method: "POST",
+  //     body: JSON.stringify(dataSend),
+  //     headers: {
+  //       Accept: "application/json",
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     // Handling Errors
 
-      .then((res) => {
-        console.log(res);
-        if (res.status > 199 && res.status < 300) {
-          alert("Send Sucessfully !");
-        }
-      });
-  };
+  //     .then((res) => {
+  //       console.log(res);
+  //       if (res.status > 199 && res.status < 300) {
+  //         alert("Send Sucessfully !");
+  //       }
+  //     });
+  // };
 
   return (
     <form className="w-full h-full flex flex-col justify-between items-center gap-y-10">
@@ -94,12 +94,12 @@ function TestimonialCard({ toggle }) {
       {selectedOption === "Video" && (
         <MessageWithIcon description=" Redirecting You to Calendly to Schedule Meeting with Karan"></MessageWithIcon>
       )}
-      <button
+      {/* <button
         className="submit-button cursor-pointer flex justify-center items-center"
         onClick={sendEmail}
       >
         Send
-      </button>
+      </button> */}
     </form>
   );
 }
