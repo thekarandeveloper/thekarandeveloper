@@ -1,4 +1,4 @@
-<h1 align="left">Hi 👋, I'm Karan Kumar</h1>
+# Hi 👋, I'm Karan Kumar
 
 Persuing Computer Science Engineering (CSE) from India, a student with a passion for creating exceptional websites. As a dedicated website developer, I thrive on turning ideas into captivating online experiences that leave a lasting impression.
 
