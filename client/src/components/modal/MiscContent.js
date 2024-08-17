@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
-import KaranResume from "../../assets/media/KARAN_KUMAR_RESUME.jpeg"
+import KaranResumePage1 from "../../assets/docs/KARAN_KUMAR_RESUME_Page_1.jpg"
+import KaranResumePage2 from "../../assets/docs/KARAN_KUMAR_RESUME_Page_2.jpg"
+import PdfCard from '../major/PdfCard';
 function MiscContent() {
-    const [numPages, setNumPages] = useState();
-    const [pageNumber, setPageNumber] = useState(1);
-  
-    function onDocumentLoadSuccess({ numPages }){
-      setNumPages(numPages);
-    }
+   
   return (
     <div className='modal-body-container resume'>
        {/* <Document file={KaranResume} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document> */}
-      <img src={KaranResume}/>
+      <img src={KaranResumePage1}/>
+      <hr></hr>
+      <img src={KaranResumePage2}/>
+      {/* <PdfCard></PdfCard> */}
     </div>
   )
 }
