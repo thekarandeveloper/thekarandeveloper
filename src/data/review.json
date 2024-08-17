@@ -2,96 +2,95 @@
     "data": [
         {
             "name": "review",
-            "heading" : "What They Have To Say",
-            "desc":"Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user-friendly online platforms banane mein specialized hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri samajh ke saath,",
+            "heading": "What They Have To Say",
+            "desc": "I am a freelance e-commerce expert and website developer, specialized in creating dynamic and user-friendly online platforms. With a keen eye for design and a deep understanding of e-commerce strategies,",
             "type": "items",
             "action": {
                 "name": "openURL",
-                "type" : "link"
+                "type": "link"
             },
             "items": [
                 {
                     "id": 1,
-                    "name": "Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Amit Sharma",
+                    "category": "Entrepreneur",
+                    "image": "../../assets/media/amit.png",
+                    "desc": "Karan developed a robust e-commerce platform for our business. His attention to detail and coding skills are very impressive.",
+                    "ratings": 5
                 },
                 {
                     "id": 2,
-                    "name": "Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":4
+                    "name": "Priya Singh",
+                    "category": "Digital Marketer",
+                    "image": "../../assets/media/priya.png",
+                    "desc": "Karan is very efficient in understanding and executing the work. He made our website user-friendly and aesthetically pleasing.",
+                    "ratings": 4
                 },
                 {
                     "id": 3,
-                    "name": "Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":2
+                    "name": "Ravi Kumar",
+                    "category": "Software Engineer",
+                    "image": "../../assets/media/ravi.png",
+                    "desc": "Working with Karan has been a great experience. His knowledge and problem-solving approach are very impressive.",
+                    "ratings": 4
                 },
                 {
                     "id": 4,
-                    "name": "Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":5
+                    "name": "Anjali Verma",
+                    "category": "Graphic Designer",
+                    "image": "../../assets/media/anjali.png",
+                    "desc": "Karan's design and coding skills are of very high quality. He completed our project efficiently and effectively.",
+                    "ratings": 5
                 },
                 {
                     "id": 5,
-                    "name": "5Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Vikas Gupta",
+                    "category": "Content Creator",
+                    "image": "../../assets/media/vikas.png",
+                    "desc": "Karan was very helpful in developing my blog platform. His focus and commitment are appreciable.",
+                    "ratings": 4
                 },
                 {
                     "id": 6,
-                    "name": "6Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Nidhi Mehta",
+                    "category": "Project Manager",
+                    "image": "../../assets/media/nidhi.png",
+                    "desc": "Karan's project management skills and technical knowledge made our project a success. His work is always of high quality and timely.",
+                    "ratings": 5
                 },
                 {
                     "id": 7,
-                    "name": "7Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Rohan Desai",
+                    "category": "Startup Founder",
+                    "image": "../../assets/media/rohan.png",
+                    "desc": "Karan provided an innovative solution for our startup. His coding skills and creativity are remarkable.",
+                    "ratings": 5
                 },
                 {
                     "id": 8,
-                    "name": "8Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Sneha Patel",
+                    "category": "UI/UX Designer",
+                    "image": "../../assets/media/sneha.png",
+                    "desc": "Working with Karan was a wonderful experience. He flawlessly implemented the UI/UX design.",
+                    "ratings": 4
                 },
                 {
                     "id": 9,
-                    "name": "9Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Arjun Khanna",
+                    "category": "Tech Blogger",
+                    "image": "../../assets/media/arjun.png",
+                    "desc": "Karan's technical expertise and dedication made our project complete very smoothly. Working with him was a lot of fun.",
+                    "ratings": 5
                 },
                 {
                     "id": 10,
-                    "name": "10Omani Yova",
-                    "category":"Artist",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "ratings":3
+                    "name": "Maya Joshi",
+                    "category": "Freelancer",
+                    "image": "../../assets/media/maya.png",
+                    "desc": "Karan's skills and professionalism took my freelance projects to the next level. His work is always top-notch.",
+                    "ratings": 5
                 }
             ]
         }
     ]
 }
-

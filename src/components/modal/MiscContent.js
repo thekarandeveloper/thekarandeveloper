@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
-import KaranResume from "../../assets/media/KARAN_KUMAR_RESUME.jpg"
+import KaranResume from "../../assets/media/KARAN_KUMAR_RESUME.jpeg"
 function MiscContent() {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);

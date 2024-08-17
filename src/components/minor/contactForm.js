@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MessageWithIcon from "../minor/MessageWithIcon";
+// const nodemailer = require("nodemailer");
 
 function TestimonialCard({ toggle }) {
   const [selectedOption, setSelectedOption] = useState("Email");
@@ -9,36 +10,32 @@ function TestimonialCard({ toggle }) {
     console.log(selectedOption);
   };
 
-  // const [email, setEmail] = useState("");
-  // const [subject, setsubject] = useState("");
-  // const [message, setmessage] = useState("");
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.ethereal.email",
+//   port: 587,
+//   secure: false, // Use `true` for port 465, `false` for all other ports
+//   auth: {
+//     user: "contact@karankumar.dev",
+//     pass: "#Karan.mail@12345",
+//   },
+// });
 
-  // const baseURL = "http://localhost:8000";
+// // async..await is not allowed in global scope, must use a wrapper
+// async function main() {
+//   // send mail with defined transport object
+//   const info = await transporter.sendMail({
+//     from: '"Karan Kumar" <contact@karankumar.devl>', // sender address
+//     to: "thekarankumar.dev@gmail.com", // list of receivers
+//     subject: "Hello ✔", // Subject line
+//     text: "Hello world?", // plain text body
+//     html: "<b>Hello world?</b>", // html body
+//   });
 
-  // const sendEmail = async () => {
-  //   let dataSend = {
-  //     email: email,
-  //     subject: subject,
-  //     message: message,
-  //   };
+//   console.log("Message sent: %s", info.messageId);
+//   // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+// }
 
-  //   const res = await fetch(`${baseURL}/email/sendEmail`, {
-  //     method: "POST",
-  //     body: JSON.stringify(dataSend),
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-Type": "application/json",
-  //     },
-  //   })
-  //     // Handling Errors
-
-  //     .then((res) => {
-  //       console.log(res);
-  //       if (res.status > 199 && res.status < 300) {
-  //         alert("Send Sucessfully !");
-  //       }
-  //     });
-  // };
+// main().catch(console.error);
 
   return (
     <form className="w-full h-full flex flex-col justify-between items-center gap-y-10">

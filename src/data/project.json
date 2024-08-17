@@ -2,119 +2,97 @@
     "data": [
         {
             "name": "project",
-            "heading" : "Explore My Work",
+            "heading": "Explore My Work",
             "type": "items",
             "action": {
                 "name": "openURL",
                 "label": "View Live",
-                "type" : "link"
+                "type": "link"
             },
             "items": [
                 {
                     "id": 1,
-                    "name": "Project Title",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. dataItem",
+                    "name": "Menstrual iOS App",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A comprehensive menstrual health app designed to support women's health through cycle monitoring, summary reports, a supportive community, tailored diet and exercise plans, and emergency assistance.",
                     "tags": [
                         "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "Swift",
+                        "Firebase"
                     ],
-                    "technology":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "challenges":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "url":"https://vercel.com/guides/"
-                    
+                    "technology": "Developed using Swift and SwiftUI, integrated with Firebase Realtime Database for seamless data management and real-time updates. Utilizes collection views, table views, delegates, closures, and Swift Graph for rich UI and UX.",
+                    "challenges": "Ensuring data accuracy and privacy, creating an intuitive user interface, and implementing real-time data synchronization were key challenges addressed during the development.",
+                    "url": "https://example.com/sakhi"
                 },
                 {
                     "id": 2,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "name": "Contact Manager",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A powerful MERN stack application that can manage over 1 million entries with full CRUD operations, including duplicate detection for all entries.",
                     "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "Web Apps",
+                        "MERN",
+                        "Database Management"
                     ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
+                    "technology": "Built using MongoDB for handling a large volume of data, Express.js and Node.js for server-side logic, and React for the frontend. It includes robust duplicate detection and efficient data handling capabilities.",
+                    "challenges": "Managing and optimizing performance for a large dataset, ensuring quick CRUD operations, and implementing effective duplicate detection were significant challenges successfully managed.",
+                    "url": "https://example.com/contact-manager"
                 },
                 {
                     "id": 3,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "name": "Blog Platform",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A dynamic blog platform that allows users to create, share, and comment on posts. Built with React for a responsive user experience.",
                     "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "Web Apps",
+                        "React",
+                        "Dynamic Content"
                     ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
+                    "technology": "Developed using React for the frontend and Node.js with PostgreSQL for the backend. The platform supports user authentication and features a content management system that handles dynamic content efficiently.",
+                    "challenges": "Implementing a robust comment moderation system and efficiently managing user-generated content were key challenges.",
+                    "url": "https://example.com/blog"
                 },
                 {
                     "id": 4,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "name": "Sorting Visualizer",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A JavaScript project that visualizes various sorting algorithms, demonstrating how they work in real-time.",
                     "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "Web Apps",
+                        "JavaScript",
+                        "Algorithms"
                     ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
+                    "technology": "Developed using vanilla JavaScript to visualize sorting algorithms, providing an interactive educational tool for understanding DSA concepts.",
+                    "challenges": "Ensuring the accuracy of algorithm implementation and providing an intuitive visual representation were key challenges.",
+                    "url": "https://example.com/sorting-visualizer"
                 },
                 {
                     "id": 5,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "name": "Text Recognizer (OCR)",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A Python-based OCR project that uses Tesseract to recognize and extract text from images with high accuracy.",
                     "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "Python",
+                        "OCR",
+                        "Tesseract"
                     ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
+                    "technology": "Built with Python and integrated with Tesseract OCR to accurately recognize and extract text from images. The system is designed for high precision in character recognition.",
+                    "challenges": "Ensuring high accuracy in text recognition, especially with varying image qualities, was a significant challenge.",
+                    "url": "https://example.com/ocr"
                 },
                 {
                     "id": 6,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "name": "Expense Tracker",
+                    "image": "../../assets/media/banner-project.png",
+                    "desc": "A user-friendly expense tracker helping users to manage their finances by tracking income and expenses.",
                     "tags": [
                         "Mobile Apps",
-                        "Node.js",
-                        "tag2"
+                        "React Native",
+                        "Firebase"
                     ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
-                },
-                {
-                    "id": 7,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
-                    ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
-                },
-                {
-                    "id": 8,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
-                    "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
-                    "tags": [
-                        "Mobile Apps",
-                        "Node.js",
-                        "tag2"
-                    ],
-                    "challenges":[],
-                    "url":"https://vercel.com/guides/"
+                    "technology": "Developed using React Native for cross-platform compatibility, integrated with Firebase for data storage and authentication.",
+                    "challenges": "Ensuring accurate financial calculations and providing a secure user experience were key challenges that were successfully tackled.",
+                    "url": "https://example.com/expense"
                 }
             ]
         }

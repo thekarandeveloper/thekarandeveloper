@@ -3,7 +3,7 @@
         {
             "name": "intro",
             "heading" : "What I Offer",
-            "desc":"Mai ek freelance e-commerce expert aur website developer hoon, jo dynamic aur user-friendly online platforms banane mein specialized hoon. Design ki taraf tej nazar aur e-commerce strategies ki gehri samajh ke saath,",
+            "desc":"I am a dedicated full-stack developer with a keen eye for design and a passion for creating intuitive and efficient digital solutions. My expertise spans across websites, UI designs, and iOS apps.",
 
             "type": "items",
             "action": {
@@ -12,56 +12,44 @@
             },
             "items": [
                 {
-                        "id": 1,
-                        "name": "Websites",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
-                        "tags": [
-                            "asList Item 1",
-                            "asList Item 2",
-                            "asList Item 3",
-                            "asList Item 4",
-                            "asList Item 5",
-                            "asList Item 6"
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "name": "Mobile Apps",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
-                        "tags": [
-                            "2List Item 1",
-                            "2List Item 2",
-                            "2List Item 3",
-                            "2List Item 4",
-                            "2List Item 5",
-                            "2List Item 6"
-                        ]
-                    }, {
-                        "id": 3,
-                        "name": "iOS Apps",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
-                        "tags": [
-                            "3List Item 1",
-                            "3List Item 2",
-                            "3List Item 3",
-                            "3List Item 4",
-                            "3List Item 5",
-                            "3List Item 6"
-                        ]
-                    },
-                    {
-                        "id": 4,
-                        "name": "Desktop Apps",
-                        "desc": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality. Transforming ideas into seamless digital experiences is my expertise.",
-                        "tags": [
-                            "4List Item 1",
-                            "4List Item 2",
-                            "4List Item 3",
-                            "4List Item 4",
-                            "4List Item 5",
-                            "4List Item 6"
-                        ]
-                    }
+                    "id": 1,
+                    "name": "Websites",
+                    "desc": "I specialize in developing responsive and user-friendly websites that are tailored to meet the unique needs of each client. From concept to deployment.",
+                    "tags": [
+                        "Responsive Design",
+                        "SEO Optimization",
+                        "Performance Tuning",
+                        "Custom Web Solutions",
+                        "E-commerce Integration",
+                        "Cross-Browser"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "UI Designs",
+                    "desc": "My approach to UI design is centered on creating visually appealing and user-centric interfaces. I strive to design layouts that are both aesthetically pleasing and highly functional, enhancing the overall user experience.",
+                    "tags": [
+                        "User Research",
+                        "Wireframing",
+                        "Prototyping",
+                        "Visual Design",
+                        "Usability Testing",
+                        "Interaction Design"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "name": "iOS Apps",
+                    "desc": "With a strong background in iOS development, I create robust and scalable apps that offer seamless user experiences. My focus is on leveraging the latest technologies to build apps that are not only functional but also engaging.",
+                    "tags": [
+                        "Swift",
+                        "Objective-C",
+                        "User Interface Design",
+                        "Firebase Integration",
+                        "Optimization",
+                        "App Store Deployment"
+                    ]
+                }
             ]
         }
     ]
