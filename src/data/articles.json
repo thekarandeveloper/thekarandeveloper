@@ -12,8 +12,8 @@
             "items": [
                 {
                     "id": 1,
-                    "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "name": "Create a Simple calculator using vanilla JS",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -25,8 +25,8 @@
                 },
                 {
                     "id": 2,
-                    "name": "2Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "name": "Create To-do List",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -38,8 +38,8 @@
                 },
                 {
                     "id": 3,
-                    "name": "3Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "name": "Create a custom Toggle Switch using CSS",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -52,7 +52,7 @@
                 {
                     "id": 4,
                     "name": "4Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -65,7 +65,7 @@
                 {
                     "id": 5,
                     "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -78,7 +78,7 @@
                 {
                     "id": 6,
                     "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -91,7 +91,7 @@
                 {
                     "id": 7,
                     "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -104,7 +104,7 @@
                 {
                     "id": 1,
                     "name": "Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articleBG.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
