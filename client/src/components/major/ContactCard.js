@@ -11,9 +11,15 @@ function ContactCard({ toggle }) {
           building accessible, human-centered products at Upstatement.
         </div>
       </div>
-      <div className="w-full flex flex-col h-full  justify-center">
+      <div className="w-full flex flex-col h-full  justify-center bg-slate-100 p-8">
       <ContactForm toggle={toggle}></ContactForm>
-       
+      <button
+                  className="modal-button bg-primary h-12 w-full 2xl:h-[6vh] label  hover:bg-dark-bg text-white mt-8"
+                  target="blank"
+                 
+                >
+                  Submit
+                </button>
       </div>
     </section>
   );
