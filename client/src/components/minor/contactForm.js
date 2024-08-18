@@ -41,26 +41,26 @@ function TestimonialCard({ toggle }) {
     <form className="w-full h-full flex flex-col justify-between items-center gap-y-10">
       <div className="flex w-full gap-x-3 h-6 justify-start items-center  accent-dark-bg">
         <input
-          className="w-8 h-full"
+          className="w-8 h-full cursor-pointer"
           type="radio"
           name="contact-option"
           value={"Email"}
           checked={selectedOption === "Email"}
           onChange={handleOptionChange}
         />
-        <label for="email-option" className="mr-4 title">
+        <label for="email-option" className="mr-4 label">
           Email
         </label>
 
         <input
-          className="w-8 h-full"
+          className="w-8 h-full cursor-pointer"
           type="radio"
           name="contact-option"
           value={"Video"}
           onChange={handleOptionChange}
           checked={selectedOption === "Video"}
         />
-        <label for="video-option">Video Meeting</label>
+        <label for="video-option" className="label cursor-pointer">Video Meeting</label>
       </div>
 
       {selectedOption === "Email" && (

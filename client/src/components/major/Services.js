@@ -8,8 +8,11 @@ function Services({ toggle }) {
   const [category, setCategory] = useState(
     ServiceData.data[0].items[0]
   );
+  const [dataItem, setDataItem] = useState([])
 
   function categoryToggle(categoryClicked,dataItem) {
+
+    
     // Remove active from all buttons
     if (categoryRef.current) {
       const currentActive = categoryRef.current.querySelectorAll(
@@ -60,6 +63,7 @@ function Services({ toggle }) {
             >
               {ServiceData.data.map((data) =>
                 data.items.map((dataItem) => (
+                  
                   <div
                     id={dataItem.id}
                     className={`service-category-item ${
@@ -67,7 +71,7 @@ function Services({ toggle }) {
                     } flex-shrink-0 label  bg-[#1F6BFF] p-5 flex justify-center items-center cursor-pointer`}
                     onClick={(event) => categoryToggle(event, dataItem)}
                   >
-                    {dataItem.name}
+                    {dataItem.name} {setDataItem(dataItem)}
                   </div>
                 ))
               )}
@@ -76,7 +80,7 @@ function Services({ toggle }) {
           <div className="section-body-end flex justify-end  w-[50%] 2xl:h-full">
           
             <div
-              className="feature-list-container  p-6 flex flex-col gap-y-6 bg-body text-dark-bg lg:w-[90%] xl:w-[80%] 2xl:justify-between"
+              className="feature-list-container p-6 flex flex-col gap-y-6 bg-body text-dark-bg lg:w-[90%] xl:w-[80%] 2xl:justify-between 2xl:min-h-[500px] 2xl:max-h-[500px]"
               ref={descriptionRef}
             >
               
@@ -103,7 +107,7 @@ function Services({ toggle }) {
               <div className="feature-list-cta-btn w-full bg-dark-bg text-body mt-5 flex justify-center hover:bg-highlight hover:text-dark-bg">
                 <button
                   className="body-normal cta-btn feature w-fit "
-                  onClick={toggle}
+                  onClick={() => toggle(data, dataItem)}
                 >
                   Book Your Enquiry Now{" "}
                   <span className="label cta-btn-icon hidden">

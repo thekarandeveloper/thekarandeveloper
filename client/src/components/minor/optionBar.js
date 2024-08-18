@@ -19,6 +19,7 @@ function OptionBar({ toggle }) {
       <div className="optionbutton label  h-full w-full flex justify-center items-center cursor-pointer" onClick={optionToggle}>
         Video meeting
       </div>
+      
     </div>
   );
 }

@@ -38,7 +38,7 @@ function App() {
       <Introduction toggle={modalOpen}></Introduction>
       <ProjectCard toggle={modalOpen}></ProjectCard>
       <ReviewCard toggle={modalOpen}></ReviewCard>
-      <ServiceCard toggle={modalOpen}></ServiceCard>
+      {/* <ServiceCard toggle={modalOpen}></ServiceCard> */}
       <ArticleCard toggle={modalOpen}></ArticleCard>
       <ContactCard toggle={modalOpen}></ContactCard>
       <SocialCard></SocialCard>

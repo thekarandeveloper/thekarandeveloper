@@ -14,7 +14,7 @@
                 {
                     "id": 1,
                     "name": "Websites",
-                    "desc": "I specialize in developing responsive and user-friendly websites that are tailored to meet the unique needs of each client. From concept to deployment.",
+                    "desc": "I specialize in developing responsive and user-friendly websites that are tailored to meet the unique needs of each client.",
                     "tags": [
                         "Responsive Design",
                         "SEO Optimization",
@@ -27,7 +27,7 @@
                 {
                     "id": 2,
                     "name": "UI Designs",
-                    "desc": "My approach to UI design is centered on creating visually appealing and user-centric interfaces. I strive to design layouts that are both aesthetically pleasing and highly functional, enhancing the overall user experience.",
+                    "desc": "My approach to UI design is centered on creating visually appealing and user-centric interfaces.",
                     "tags": [
                         "User Research",
                         "Wireframing",
@@ -40,7 +40,7 @@
                 {
                     "id": 3,
                     "name": "iOS Apps",
-                    "desc": "With a strong background in iOS development, I create robust and scalable apps that offer seamless user experiences. My focus is on leveraging the latest technologies to build apps that are not only functional but also engaging.",
+                    "desc": "With a strong background in iOS development, I create robust and scalable apps that offer seamless user experiences. ",
                     "tags": [
                         "Swift",
                         "Objective-C",
