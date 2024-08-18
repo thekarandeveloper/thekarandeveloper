@@ -3,8 +3,12 @@ import { HashLink } from "react-router-hash-link";
 import NavData from "../../data/nav.json";
 import Buttons from "../../data/buttons.json";
 import * as BsReactIcons from "react-icons/bi";
-
+import { useGlobalContext } from "../../context/GlobalDataManager";
+import ContactFormContent from "../modal/ContactFormContent";
 function Navbar({ toggle }) {
+
+  const {modalData, openModal, closeModal} = useGlobalContext();
+
   return (
     <header className="w-full h-[15vh] flex justify-center">
       <navbar className="navbar-container w-full h-104 flex flex-row justify-between items-center p-8 m-0 bg-dark-bg rounded-t-none text-body">
@@ -49,9 +53,10 @@ function Navbar({ toggle }) {
                 .map((buttonItem) => (
                   <button
                     className="label nav cta-btn q-36 mx-5 px-4 rounded-lg bg-primary hover:bg-body hover:text-dark-bg"
-                    onClick={() => toggle(data, buttonItem)}
+                    // onClick={() => toggle(data, buttonItem)}
+                    onClick={()=> openModal('Contact Now', <ContactFormContent/>, 'Submit', 'Submit', "" )}
                   >
-                    {buttonItem.name}{" "}
+                    {buttonItem.name}{" "} {console.log("Modal Data", modalData.content)}
                     <span className="label cta-btn-icon">
                       {React.createElement(BsReactIcons[buttonItem.icon])}
                     </span>

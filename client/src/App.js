@@ -28,6 +28,7 @@ function App() {
   };
   return (
     <React.Fragment>
+    
       <ModalBox
         modalOpen={modal}
         modalClose={modalClose}

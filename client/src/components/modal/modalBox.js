@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
-import MiscContent from "./MiscContent";
-import ProjectContent from "./ProjectContent";
+
 import ServicesContent from "./ServicesContent";
 import ArticleContent from "./ArticleContent";
 import ContactFormContent from "./ContactFormContent";
@@ -9,8 +8,10 @@ import AllProjects from "./AllProjects";
 import NavbarContent from "../modal/NavbarContent";
 import { openURL } from "../../scripts/utility";
 import ModalActionButton from "../minor/ModalActionButton";
-
+import { useGlobalContext } from "../../context/GlobalDataManager";
 function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
+  const {modalData, closeModal} = useGlobalContext();
+
   const modalRef = useRef(null);
   // For the Modal View
 
@@ -50,42 +51,42 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   }, [modalOpen]);
 
   // Modal Body
-  function renderComponent(component, item) {
-    var currentComponent = "";
-    if (component.type === "items") {
-      currentComponent = component.name.toLowerCase();
-    } else if (component.type === "buttons") {
-      currentComponent = item.component.toLowerCase();
-    }
+  // function renderComponent(component, item) {
+  //   var currentComponent = "";
+  //   if (component.type === "items") {
+  //     currentComponent = component.name.toLowerCase();
+  //   } else if (component.type === "buttons") {
+  //     currentComponent = item.component.toLowerCase();
+  //   }
 
-    switch (currentComponent) {
-      case "navbar":
-        return <NavbarContent submodalOpen={modalOpen}></NavbarContent>;
-      case "resume":
-        return <MiscContent />;
-      case "contact":
-        return <ContactFormContent />;
-      case "project":
-        console.log("Project render");
-        return (
-          <ProjectContent
-            mockup={item?.image}
-            overview={item?.desc}
-            technology={item?.technology}
-            tag1={item?.tags[0]}
-            tag2={item?.tags[1]}
-            tag3={item?.tags[2]}
-            challenges={item?.challenges}
-          />
-        );
-      case "all-projects":
-        return <AllProjects toggle={renderComponent} />;
-      case "articles":
-        return <ArticleContent banner={item.image} content={item.content} />;
-      default:
-        break;
-    }
-  }
+  //   switch (currentComponent) {
+  //     case "navbar":
+  //       return <NavbarContent submodalOpen={modalOpen}></NavbarContent>;
+  //     case "resume":
+  //       return <MiscContent />;
+  //     case "contact":
+  //       return <ContactFormContent />;
+  //     case "project":
+  //       console.log("Project render");
+  //       return (
+  //         <ProjectContent
+  //           mockup={item?.image}
+  //           overview={item?.desc}
+  //           technology={item?.technology}
+  //           tag1={item?.tags[0]}
+  //           tag2={item?.tags[1]}
+  //           tag3={item?.tags[2]}
+  //           challenges={item?.challenges}
+  //         />
+  //       );
+  //     case "all-projects":
+  //       return <AllProjects toggle={renderComponent} />;
+  //     case "articles":
+  //       return <ArticleContent banner={item.image} content={item.content} />;
+  //     default:
+  //       break;
+  //   }
+  // }
 
   // Modal Action Button
   function openURL(url) {
@@ -133,23 +134,23 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
 
   return (
     <React.Fragment>
-      <div ref={modalRef}>
-        <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none hidden md:justify-end">
+    {modalData.isOpen && (  <div ref={modalRef}>
+        <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none md:justify-end">
           <div
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
-            onClick={modalClose}
+            onClick={closeModal}
           ></div>
-          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 p-5 rounded-t-xl md:h-full md:max-h-full md:w-[60vw]  lg:w-[50vw] md:rounded-r-none ">
+          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 p-5 rounded-t-xl md:h-full md:max-h-full md:w-[60vw]  lg:w-[50vw] md:rounded-r-none">
             <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 md:flex-row md:justify-between md:items-center md:p-4 md:bg-dark-bg md:text-body md:mb-5 md:sticky md:right-5 md:left-5">
               <div className="close w-20 h-1 bg-light-bg md:hidden"></div>
               <div
                 className="close-button heading hidden md:block md:order-2 hover:bg-primary cursor-pointer rounded-md"
-                onClick={modalClose}
+                onClick={closeModal}
               >
                 <IoClose />
               </div>
               <div className="title h-full pb-8 md:order-1 flex items-center md:pb-0 md:cursor-pointer">
-                <span className="current">{selectedItem.name}</span>
+                <span className="current">{modalData.title}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
                 <button
@@ -157,20 +158,17 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                   target="blank"
                   onClick={renderActionButton}
                 >
-                  {modalOpen === true
-                    ? selectedItem?.action?.name || category?.action?.label
-                    : ""}
+                  {modalData.ctaLabel}
                 </button>
               </div>
             </div>
             <div className="modal-body overflow-y-auto h-[70vh] pt-7">
-              {modalOpen === true
-                ? renderComponent(category, selectedItem)
-                : ""}
+                {modalData.content[modalData.content.length - 1]}
             </div>
           </div>
         </div>
-      </div>
+      </div>)}
+    
     </React.Fragment>
   );
 }

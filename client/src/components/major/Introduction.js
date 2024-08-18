@@ -3,7 +3,10 @@ import * as BsReactIcons from "react-icons/bi";
 import IntroData from "../../data/intro.json";
 import ProfileData from "../../data/profile.json";
 import Buttons from "../../data/buttons.json";
-function Introduction({ toggle }) {
+import { useGlobalContext } from "../../context/GlobalDataManager";
+import MiscContent from "../modal/MiscContent";
+function Introduction() {
+  const {openModal} = useGlobalContext()
   return (
     <section className="home h-[90vh] md:h-[70vh]">
       <div className="image-container w-full bg-light-bg h-full flex justify-center items-center overflow-hidden  pt-12  pb-0 p-0 md:order-2">
@@ -30,7 +33,7 @@ function Introduction({ toggle }) {
                 .map((buttonItem) => (
                   <button
                     className="title border-body border-2 hover:bg-body hover:text-dark-bg"
-                    onClick={() => toggle(data, buttonItem)}
+                    onClick={() => openModal("Resume",<MiscContent/>, "Download", "link", "../../assets/KARAN_KUMAR_RESUME.pdf" )}
                   >
                     {buttonItem.name}{" "}
                     <span className="heading cta-btn-icon">

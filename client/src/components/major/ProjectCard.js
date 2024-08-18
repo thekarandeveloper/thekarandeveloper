@@ -3,10 +3,13 @@ import ProjectCardBig from "../minor/projectCardBig";
 import ProjectCardSmall from "../minor/projectCardSmall";
 import projectData from "../../data/project.json";
 import Buttons from "../../data/buttons.json";
-
+import { useGlobalContext } from "../../context/GlobalDataManager";
+import ProjectContent from "../modal/ProjectContent";
+import AllProjects from "../modal/AllProjects";
 import * as BsReactIcons from "react-icons/bi";
 
-function ProjectCard({ toggle }) {
+function ProjectCard() {
+  const {openModal} = useGlobalContext()
   return (
     <section className="section-container w-full bg-highlight " id="work">
       {projectData.data.map((data) => (
@@ -19,7 +22,9 @@ function ProjectCard({ toggle }) {
               .filter((button) => button.name.toLowerCase() === "more-projects")
               .map((buttonItem) => (
                 <button
-                  onClick={() => toggle(data, buttonItem)}
+                  onClick={() => openModal("All Projects",
+                  <AllProjects/>, "View Github", "Link"
+                  )}
                   className="title hidden lg:flex bg-dark-bg text-body"
                 >
                   {buttonItem.label}&emsp;
@@ -37,7 +42,14 @@ function ProjectCard({ toggle }) {
       <div className="section-body w-full h-full flex flex-col justify-center items-center gap-y-14 md:grid md:grid-cols-2 gap-8 lg:grid-cols-3">
         {projectData.data.map((data) => (
           <ProjectCardBig
-            subToggle={() => toggle(data, data.items[0])}
+            subToggle={() => openModal(`${data.items[0].name}`, 
+            <ProjectContent mockup={data.items[0].image}
+             overview={data.items[0].desc}
+             technology={data.items[0].technology}
+             tag1={data.items[0].tags[0]}
+             tag2={data.items[0].tags[1]}
+             tag3={data.items[0].tags[2]}
+             challenges={data.items[0].challenges}/>, 'Demo', 'link', "" )}
             imgname={data.items[0].image}
             title={data.items[0].name}
             desc={data.items[0].desc}
@@ -53,7 +65,13 @@ function ProjectCard({ toggle }) {
             .slice(1, 5)
             .map((item) => (
               <ProjectCardSmall
-                subToggle={() => toggle(data, item)}
+                subToggle={() => openModal(`${item.name}`,<ProjectContent mockup={item.image}
+             overview={item.desc}
+             technology={item.technology}
+             tag1={item.tags[0]}
+             tag2={item.tags[1]}
+             tag3={item.tags[2]}
+             challenges={item.challenges}/>, 'View Demo', "link","" )}
                 imgname={item.image}
                 title={item.name}
                 desc={item.desc}
@@ -67,7 +85,9 @@ function ProjectCard({ toggle }) {
             .filter((button) => button.name.toLowerCase() === "more-projects")
             .map((buttonItem) => (
               <button
-                onClick={() => toggle(data, buttonItem)}
+                onClick={() => openModal("All Projects",
+                  <AllProjects/>, "View Github", "Link"
+                  )}
                 className="title hidden lg:flex bg-dark-bg text-body"
               >
                 {buttonItem.name}&emsp;
