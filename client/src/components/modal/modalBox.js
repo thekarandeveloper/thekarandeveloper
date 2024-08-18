@@ -5,7 +5,7 @@ import ServicesContent from "./ServicesContent";
 import ArticleContent from "./ArticleContent";
 import ContactFormContent from "./ContactFormContent";
 import AllProjects from "./AllProjects";
-import NavbarContent from "../modal/NavbarContent";
+
 import { openURL } from "../../scripts/utility";
 import ModalActionButton from "../minor/ModalActionButton";
 import { useGlobalContext } from "../../context/GlobalDataManager";
@@ -140,16 +140,16 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
             onClick={closeModal}
           ></div>
-          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 p-5 rounded-t-xl md:h-full md:max-h-full md:w-[60vw]  lg:w-[50vw] md:rounded-r-none">
-            <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 md:flex-row md:justify-between md:items-center md:p-4 md:bg-dark-bg md:text-body md:mb-5 md:sticky md:right-5 md:left-5">
-              <div className="close w-20 h-1 bg-light-bg md:hidden"></div>
+          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl md:h-full md:max-h-full md:w-[60vw]  lg:w-[50vw] md:rounded-r-none">
+            <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 md:flex-row md:justify-between md:items-center md:p-4 md:bg-dark-bg md:text-body md:mb-5 md:sticky md:right-5 md:left-5 pt-5">
+              <div className="close w-10 h-1 bg-slate-400 md:hidden"></div>
               <div
                 className="close-button heading hidden md:block md:order-2 hover:bg-primary cursor-pointer rounded-md"
                 onClick={closeModal}
               >
                 <IoClose />
               </div>
-              <div className="title h-full pb-8 md:order-1 flex items-center md:pb-0 md:cursor-pointer">
+              <div className="heading text-[1.2rem] h-full pb-4 md:order-1 flex items-center md:pb-0 md:cursor-pointer w-full justify-center border border-gray border-0 border-b-[1px] rounded-none sticky">
                 <span className="current">{modalData.title}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
@@ -162,7 +162,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 </button>
               </div>
             </div>
-            <div className="modal-body overflow-y-auto h-[70vh] pt-7">
+            <div className="modal-body overflow-y-auto h-fit p-7">
                 {modalData.content[modalData.content.length - 1]}
             </div>
           </div>

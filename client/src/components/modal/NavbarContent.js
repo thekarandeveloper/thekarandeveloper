@@ -16,7 +16,7 @@ function NavbarContent(subtoggle) {
     setIsClosed((prevIsClosed) => !prevIsClosed);
   };
   return (
-    <div className="flex justify-center items-center gap-y-8 w-full flex-col h-full pb-[15vh]">
+    <div className="flex justify-start items-center gap-y-8 w-full flex-col h-[40vh] pb-[5vh]">
       <HashLink className="label nav-item bg-light-bg w-full flex justify-center items-center py-4" to="/">
       Home
       </HashLink>

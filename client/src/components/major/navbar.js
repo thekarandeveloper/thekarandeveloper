@@ -5,7 +5,9 @@ import Buttons from "../../data/buttons.json";
 import * as BsReactIcons from "react-icons/bi";
 import { useGlobalContext } from "../../context/GlobalDataManager";
 import ContactFormContent from "../modal/ContactFormContent";
-function Navbar({ toggle }) {
+import NavbarContent from "../modal/NavbarContent";
+import { IoMdCall } from "react-icons/io";
+function Navbar() {
 
   const {modalData, openModal, closeModal} = useGlobalContext();
 
@@ -22,7 +24,7 @@ function Navbar({ toggle }) {
               .map((buttonItem) => (
                 <div
                   className="toggleNavContainer bg-primary p-4 lg:hidden"
-                  onClick={() => toggle(data, buttonItem)}
+                  onClick={()=> openModal('Explore', <NavbarContent/>, `Contact `, 'link', "" )}
                 >
                   {React.createElement(BsReactIcons[buttonItem.icon], {
                     className: "heading",
