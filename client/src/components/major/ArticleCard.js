@@ -42,7 +42,7 @@ function ArticleCard() {
           )}
         </div>
       ))}
-      <div className=" section-body flex flex-col gap-y-8 md:grid gap-8 grid-cols-2 grid-rows-3">
+      <div className="section-body flex flex-col gap-y-8 md:grid gap-8 grid-cols-2 grid-rows-2">
         {ArticleData.data.map((data) => (
           <ArticleCardBig
             subToggle={() => openModal(`${data.items[0].name}`, <ArticleContent banner={data.items[0].image.image}/>, "View Full Article", "link")}
@@ -53,7 +53,7 @@ function ArticleCard() {
         ))}
         {ArticleData.data.map((data) =>
           data.items
-            .slice(1, 4)
+            .slice(1, 3)
             .map((dataItem) => (
               <ArticleCardSmall
                 subToggle={() => openModal(`${dataItem.name}`, <ArticleContent banner={dataItem.image}/>, "View Full Article", "link")}

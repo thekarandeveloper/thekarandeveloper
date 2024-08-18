@@ -16,15 +16,15 @@ function projectCardBig({
       onClick={subToggle}
     >
       <div
-        className="w-full h-[15vh] rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0"
+        className="w-full h-[25vh] rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0 lg:h-full "
         style={{ backgroundImage: `url(${imgname})` }}
       ></div>
       <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-8">
-        <div className="title text-center w-full lg:text-left">{title}</div>
-        <div className="big-card-desc body-normal opacity-60 text-justify">
+        <div className="title text-center w-full lg:text-left ">{title}</div>
+        <div className="big-card-desc body-normal opacity-60 text-center lg:text-left">
           {desc}
         </div>
-        <div className="big-card-tags w-full hidden justify-center flex-wrap gap-y-3 gap-x-3 opacity-70 md:flex lg:justify-start ">
+        <div className="big-card-tags w-full hidden justify-center flex-wrap gap-y-2 gap-x-3 opacity-70 md:flex lg:justify-start ">
           <div className="big-card-tag-item body-normal bg-light-bg p-3">{tag1}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag2}</div>
           <div className="big-card-tag-item body-normal  bg-light-bg p-3">{tag3}</div>

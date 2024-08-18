@@ -7,27 +7,12 @@ function projectCardSmall({
   desc
 }) {
   return (
-    <div className="project-small-card-container  flex flex-col justify-center items-center p-5 cursor-pointer bg-body lg:h-[30vw]" onClick={subToggle}>
-      <div className="project-small-card-img w-full h-[15vh] overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
-       
+    <div className="project-small-card-container  flex flex-col justify-start items-center p-5 cursor-pointer bg-body lg:min-h-[30vw]" onClick={subToggle}>
+      <div className="project-small-card-img w-full min-h-[20vh] overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
       </div>
-      <div className="project-small-card-body w-full h-full flex flex-col items-center justify-center p-5 gap-y-3">
-        <div className="project-small-title title pt-2">{title}</div>
+      <div className="project-small-card-body w-full h-full flex flex-col items-center justify-center p-5 gap-y-3 lg:gap-y-0">
+        <div className="project-small-title title pt-2 lg:pb-4">{title}</div>
         <div className="small-card-desc body-normal opacity-60 text-center">{desc}</div>
-      
-        {/* <div className="project-small-card-Button w-full flex justify-center">
-        <a
-            className="label project-small-card cta-btn"
-            href={"/"}
-            download={true}
-          >
-            View Demo
-            <span className="label cta-btn-icon">
-            <MdOutlineArrowOutward />
-            </span>
-          </a>
-          
-        </div> */}
       </div>
     </div>
   );

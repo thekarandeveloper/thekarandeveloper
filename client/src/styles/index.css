@@ -213,6 +213,11 @@ form .submit-button:hover {
     flex-direction: row;
   }
 
+  
+}
+
+/* lg */
+@media (min-width: 1024px) {
   .modal-container {
     transform: translateX(100%);
     transition: 0.6s;
@@ -224,10 +229,6 @@ form .submit-button:hover {
   .modal-body-container {
     padding-bottom: 6vh;
   }
-}
-
-/* lg */
-@media (min-width: 1024px) {
   .review {
     flex-direction: row;
   }
@@ -252,6 +253,7 @@ form .submit-button:hover {
     padding-top: 3.8rem;
   }
   .section-body {
-    gap: 4rem;
+
+    row-gap: 2rem;
   }
 }

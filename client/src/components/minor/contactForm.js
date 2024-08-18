@@ -60,7 +60,7 @@ function TestimonialCard({ toggle }) {
           onChange={handleOptionChange}
           checked={selectedOption === "Video"}
         />
-        <label for="video-option" className="label cursor-pointer">Video Meeting</label>
+        <label for="video-option" className="label cursor-pointer w-full">Video Meeting</label>
       </div>
 
       {selectedOption === "Email" && (

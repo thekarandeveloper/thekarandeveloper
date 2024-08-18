@@ -6,11 +6,11 @@ function ArticleCardSmall({
   desc
 }) {
   return (
-    <div className="article-small-card-container h-[50vh] flex flex-col justify-center items-center p-5 cursor-pointer bg-body lg:flex-row lg:h-[15vh]" onClick={subToggle}>
-      <div className="small-card-img w-full h-full overflow-hidden rounded-lg lg:w-[20vw]" style={{backgroundImage:`url(${imgname})`}}>
+    <div className="article-small-card-container h-[50vh] flex flex-col justify-start items-start p-5 cursor-pointer bg-body lg:flex-row lg:h-full" onClick={subToggle}>
+      <div className="small-card-img w-full h-[25vh] lg:h-full overflow-hidden rounded-lg lg:w-[20vw]" style={{backgroundImage:`url(${imgname})`}}>
       </div>
-      <div className="small-card-body w-full h-full flex flex-col justify-center items-center p-4 gap-y-1 lg:items-start">
-        <div className="body-normal small-title pb-1 font-bold text-center">{title}</div>
+      <div className="small-card-body w-full flex flex-col justify-center mt-6 md:mt-0 items-center p-4 gap-y-1 lg:items-start">
+        <div className="title pb-2 text-center font-[500] lg:text-left lg:w-[70%]">{title}</div>
         <div className="body-normal small-card-desc opacity-60 text-center lg:text-left text-sm">{desc}</div>
       </div>
     </div>
