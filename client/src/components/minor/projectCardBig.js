@@ -12,14 +12,14 @@ function projectCardBig({
 }) {
   return (
     <div
-      className="w-full h-fit bg-body flex flex-col justify-center items-center p-4 cursor-pointer md:col-span-2 lg:flex-row  gap-x-4 lg:h-full"
+      className="w-full h-fit bg-body flex flex-col justify-center items-center p-4 cursor-pointer md:col-span-2  gap-x-4 lg:h-full"
       onClick={subToggle}
     >
       <div
-        className="w-full h-[25vh] rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0 lg:h-full "
+        className="w-full h-[25vh] rounded-large bg-no-repeat bg-cover mb-6  lg:mb-0 lg:h-full "
         style={{ backgroundImage: `url(${imgname})` }}
       ></div>
-      <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-8">
+      <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-6 pt-6">
         <div className="title text-center w-full lg:text-left ">{title}</div>
         <div className="big-card-desc body-normal opacity-60 text-center lg:text-left">
           {desc}
