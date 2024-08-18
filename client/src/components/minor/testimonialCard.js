@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import { FaStar } from "react-icons/fa6";
 function TestimonialCard({ profileImg, userName, category, desc }) {
   return (
-    <div className="test-card-container w-[65vw]  p-7 inline-flex flex-col justify-start items-center gap-y-8 bg-[#052566] flex-shrink-0 lg:w-[80%] lg:flex-row gap-x-6 lg:items-start">
+    <div className="test-card-container w-[65vw]  md:p-7 inline-flex flex-col justify-start items-center md:gap-y-8 bg-[#052566] flex-shrink-0 lg:w-[80%] lg:flex-row gap-x-6 lg:items-start">
       <div
-        className="test-card-profile  overflow-hidden flex justify-center items-center rounded-full bg-fill p-6"
+        className="test-card-profile  overflow-hidden flex justify-center items-center rounded-full bg-fill p-6 m-5"
         style={{ backgroundImage: `url(${profileImg})` }}
       ></div>
       <div className="test-card-body w-[80%] flex flex-col justify-between items-center gap-y-2 body-normal lg:items-start">
@@ -28,7 +28,7 @@ function TestimonialCard({ profileImg, userName, category, desc }) {
             </div>
           </div>
         </div>
-        <div className="test-card-desc label text-center pt-7 lg:text-left ">{desc}</div>
+        <div className="test-card-desc label text-center pt-4 lg:text-left ">{desc}</div>
       </div>
     </div>
   );

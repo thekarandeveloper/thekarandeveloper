@@ -16,7 +16,7 @@ function projectCardBig({
       onClick={subToggle}
     >
       <div
-        className="w-full h-full rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0"
+        className="w-full h-[15vh] rounded-large bg-no-repeat bg-cover mb-6 lg:w-[25vw] lg:mb-0"
         style={{ backgroundImage: `url(${imgname})` }}
       ></div>
       <div className="w-full h-full flex flex-col items-start justify-center p-2 gap-y-8">

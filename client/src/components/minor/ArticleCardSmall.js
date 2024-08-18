@@ -10,7 +10,7 @@ function ArticleCardSmall({
       <div className="small-card-img w-full h-full overflow-hidden rounded-lg lg:w-[20vw]" style={{backgroundImage:`url(${imgname})`}}>
       </div>
       <div className="small-card-body w-full h-full flex flex-col justify-center items-center p-4 gap-y-1 lg:items-start">
-        <div className="body-normal small-title pb-1 font-bold ">{title}</div>
+        <div className="body-normal small-title pb-1 font-bold text-center">{title}</div>
         <div className="body-normal small-card-desc opacity-60 text-center lg:text-left text-sm">{desc}</div>
       </div>
     </div>

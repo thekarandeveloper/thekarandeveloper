@@ -8,7 +8,7 @@ function projectCardSmall({
 }) {
   return (
     <div className="project-small-card-container  flex flex-col justify-center items-center p-5 cursor-pointer bg-body lg:h-[30vw]" onClick={subToggle}>
-      <div className="project-small-card-img w-full h-full overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
+      <div className="project-small-card-img w-full h-[15vh] overflow-hidden rounded-lg" style={{backgroundImage:`url(${imgname})`}}>
        
       </div>
       <div className="project-small-card-body w-full h-full flex flex-col items-center justify-center p-5 gap-y-3">

@@ -73,10 +73,10 @@ function ArticleCard() {
                 onClick={() => openModal("All Articles",
                   <AllProjects/>, "View LinkedIn", "Link"
                   )}
-                className="title hidden lg:flex bg-dark-bg text-body"
+                className="title lg:flex bg-dark-bg text-body"
               >
                 {buttonItem.label}&emsp;
-                <span>
+                <span className="hidden">
                   {React.createElement(BsReactIcons[buttonItem.icon], {
                     className: "heading",
                   })}

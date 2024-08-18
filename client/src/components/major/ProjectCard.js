@@ -88,10 +88,10 @@ function ProjectCard() {
                 onClick={() => openModal("All Projects",
                   <AllProjects/>, "View Github", "Link"
                   )}
-                className="title hidden lg:flex bg-dark-bg text-body"
+                className="title lg:hidden lg:flex bg-dark-bg text-body"
               >
                 {buttonItem.name}&emsp;
-                <span>
+                <span className="hidden">
                   {React.createElement(BsReactIcons[buttonItem.icon], {
                     className: "heading",
                   })}

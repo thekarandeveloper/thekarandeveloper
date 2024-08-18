@@ -149,7 +149,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
               >
                 <IoClose />
               </div>
-              <div className="heading text-[1.2rem] h-full pb-4 md:order-1 flex items-center md:pb-0 md:cursor-pointer w-full justify-center border border-gray border-0 border-b-[1px] rounded-none sticky">
+              <div className="heading text-[1.2rem] h-full pb-4 md:order-1 flex items-center md:pb-0 md:cursor-pointer w-full justify-center border border-gray border-0 border-b-[1px] rounded-none sticky text-center px-4">
                 <span className="current">{modalData.title}</span>
               </div>
               <div className="action-button fixed left-0 right-0 bottom-0 text-body bg-body flex justify-center items-center h-25 p-5">
