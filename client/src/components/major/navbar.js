@@ -24,7 +24,7 @@ function Navbar() {
               .map((buttonItem) => (
                 <div
                   className="toggleNavContainer bg-primary p-4 lg:hidden"
-                  onClick={()=> openModal('Explore', <NavbarContent/>, `Contact `, 'link', "" )}
+                  onClick={()=> openModal('Explore', <NavbarContent subtoggle={closeModal}/>, `Contact `, 'link', "" )}
                 >
                   {React.createElement(BsReactIcons[buttonItem.icon], {
                     className: "heading",
