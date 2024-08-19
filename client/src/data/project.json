@@ -14,41 +14,41 @@
                     "id": 1,
                     "name": "Menstrual iOS App",
                     "image": "../../assets/media/projects/p0.png",
-                    "desc": "A comprehensive menstrual health app designed to support women's health through cycle monitoring, summary reports, a supportive community, tailored diet and exercise plans, and emergency assistance.",
+                    "desc": "A comprehensive menstrual health app designed to support women's health with features like chat system, symptoms tracking, symptoms analyzer, PCOD level analyzer, and symptom summary creator. Built using Firebase Realtime Database and Swift UI Kit.",
                     "tags": [
                         "Mobile Apps",
                         "Swift",
                         "Firebase"
                     ],
-                    "technology": "Developed using Swift and SwiftUI, integrated with Firebase Realtime Database for seamless data management and real-time updates. Utilizes collection views, table views, delegates, closures, and Swift Graph for rich UI and UX.",
-                    "challenges": "Ensuring data accuracy and privacy, creating an intuitive user interface, and implementing real-time data synchronization were key challenges addressed during the development.",
+                    "technology": "Developed with Swift UI Kit, integrated with Firebase Realtime Database. The app includes cycle monitoring, community support, and tailored health plans.",
+                    "challenges": "Analyzing real-life problems faced by women, designing specific solutions, and ensuring accurate data analysis were major challenges.",
                     "url": "https://example.com/sakhi"
                 },
                 {
                     "id": 2,
                     "name": "Contact Manager",
                     "image": "../../assets/media/projects/p1.png",
-                    "desc": "A powerful MERN stack application that can manage over 1 million entries with full CRUD operations, including duplicate detection for all entries.",
+                    "desc": "A MERN stack application that manages over 5 million contact entries, featuring blazing-fast search, duplication detection, and CSV import.",
                     "tags": [
                         "Web Apps",
                         "MERN",
                         "Database Management"
                     ],
-                    "technology": "Built using MongoDB for handling a large volume of data, Express.js and Node.js for server-side logic, and React for the frontend. It includes robust duplicate detection and efficient data handling capabilities.",
-                    "challenges": "Managing and optimizing performance for a large dataset, ensuring quick CRUD operations, and implementing effective duplicate detection were significant challenges successfully managed.",
+                    "technology": "Built using MongoDB, Express.js, React, and Node.js, with React Virtualization and Tailwind for the frontend. Features include high-performance data handling and real-time CRUD operations.",
+                    "challenges": "Optimizing performance for large datasets and ensuring efficient search and duplicate detection were key challenges.",
                     "url": "https://example.com/contact-manager"
                 },
                 {
                     "id": 3,
                     "name": "Blog Platform",
                     "image": "../../assets/media/projects/p3.png",
-                    "desc": "A dynamic blog platform that allows users to create, share, and comment on posts. Built with React for a responsive user experience.",
+                    "desc": "A dynamic blog platform allowing users to create, share, and comment on posts, built with React and Pure CSS for a responsive experience.",
                     "tags": [
                         "Web Apps",
                         "React",
                         "Dynamic Content"
                     ],
-                    "technology": "Developed using React for the frontend and Node.js with PostgreSQL for the backend. The platform supports user authentication and features a content management system that handles dynamic content efficiently.",
+                    "technology": "Developed using React for the frontend and JSON for handling dynamic data. It includes user authentication and a content management system.",
                     "challenges": "Implementing a robust comment moderation system and efficiently managing user-generated content were key challenges.",
                     "url": "https://example.com/blog"
                 },
@@ -56,42 +56,42 @@
                     "id": 4,
                     "name": "Sorting Visualizer",
                     "image": "../../assets/media/projects/p2.png",
-                    "desc": "A JavaScript project that visualizes various sorting algorithms, demonstrating how they work in real-time.",
+                    "desc": "A MERN stack application that visualizes and compares 5 different sorting algorithms in real-time, with interactive controls and performance tracking for 100+ sorting operations.",
                     "tags": [
                         "Web Apps",
                         "JavaScript",
                         "Algorithms"
                     ],
-                    "technology": "Developed using vanilla JavaScript to visualize sorting algorithms, providing an interactive educational tool for understanding DSA concepts.",
-                    "challenges": "Ensuring the accuracy of algorithm implementation and providing an intuitive visual representation were key challenges.",
+                    "technology": "Built using the MERN stack to visualize sorting algorithms, providing an interactive educational tool for understanding DSA concepts.",
+                    "challenges": "Visualizing algorithm performance in the frontend and handling real-time data were significant challenges.",
                     "url": "https://example.com/sorting-visualizer"
                 },
                 {
                     "id": 5,
                     "name": "Text Recognizer (OCR)",
                     "image": "../../assets/media/projects/p4.png",
-                    "desc": "A Python-based OCR project that uses Tesseract to recognize and extract text from images with high accuracy.",
+                    "desc": "A Python-based OCR project that uses Tesseract to recognize and extract text from images with high accuracy, even in low-quality images.",
                     "tags": [
                         "Python",
                         "OCR",
                         "Tesseract"
                     ],
-                    "technology": "Built with Python and integrated with Tesseract OCR to accurately recognize and extract text from images. The system is designed for high precision in character recognition.",
-                    "challenges": "Ensuring high accuracy in text recognition, especially with varying image qualities, was a significant challenge.",
+                    "technology": "Developed with Python and Tesseract OCR to accurately recognize and extract text from images.",
+                    "challenges": "Handling low-quality images and ensuring high accuracy in text recognition were key challenges.",
                     "url": "https://example.com/ocr"
                 },
                 {
                     "id": 6,
                     "name": "Expense Tracker",
                     "image": "../../assets/media/projects/p1.png",
-                    "desc": "A user-friendly expense tracker helping users to manage their finances by tracking income and expenses.",
+                    "desc": "A user-friendly expense tracker that helps users manage their finances by tracking income and expenses. Built with React Native and Firebase.",
                     "tags": [
                         "Mobile Apps",
                         "React Native",
                         "Firebase"
                     ],
                     "technology": "Developed using React Native for cross-platform compatibility, integrated with Firebase for data storage and authentication.",
-                    "challenges": "Ensuring accurate financial calculations and providing a secure user experience were key challenges that were successfully tackled.",
+                    "challenges": "Ensuring accurate financial calculations and providing a secure user experience were key challenges.",
                     "url": "https://example.com/expense"
                 }
             ]

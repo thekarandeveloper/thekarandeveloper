@@ -14,7 +14,7 @@
                     "id": 1,
                     "name": "Amit Sharma",
                     "category": "Entrepreneur",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan developed a robust e-commerce platform for our business. His attention to detail and coding skills are very impressive.",
                     "ratings": 5
                 },
@@ -22,7 +22,7 @@
                     "id": 2,
                     "name": "Priya Singh",
                     "category": "Digital Marketer",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan is very efficient in understanding and executing the work. He made our website user-friendly and aesthetically pleasing.",
                     "ratings": 4
                 },
@@ -30,7 +30,7 @@
                     "id": 3,
                     "name": "Ravi Kumar",
                     "category": "Software Engineer",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Working with Karan has been a great experience. His knowledge and problem-solving approach are very impressive.",
                     "ratings": 4
                 },
@@ -38,7 +38,7 @@
                     "id": 4,
                     "name": "Anjali Verma",
                     "category": "Graphic Designer",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan's design and coding skills are of very high quality. He completed our project efficiently and effectively.",
                     "ratings": 5
                 },
@@ -46,7 +46,7 @@
                     "id": 5,
                     "name": "Vikas Gupta",
                     "category": "Content Creator",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan was very helpful in developing my blog platform. His focus and commitment are appreciable.",
                     "ratings": 4
                 },
@@ -54,7 +54,7 @@
                     "id": 6,
                     "name": "Nidhi Mehta",
                     "category": "Project Manager",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan's project management skills and technical knowledge made our project a success. His work is always of high quality and timely.",
                     "ratings": 5
                 },
@@ -62,7 +62,7 @@
                     "id": 7,
                     "name": "Rohan Desai",
                     "category": "Startup Founder",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan provided an innovative solution for our startup. His coding skills and creativity are remarkable.",
                     "ratings": 5
                 },
@@ -70,7 +70,7 @@
                     "id": 8,
                     "name": "Sneha Patel",
                     "category": "UI/UX Designer",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Working with Karan was a wonderful experience. He flawlessly implemented the UI/UX design.",
                     "ratings": 4
                 },
@@ -78,7 +78,7 @@
                     "id": 9,
                     "name": "Arjun Khanna",
                     "category": "Tech Blogger",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan's technical expertise and dedication made our project complete very smoothly. Working with him was a lot of fun.",
                     "ratings": 5
                 },
@@ -86,7 +86,7 @@
                     "id": 10,
                     "name": "Maya Joshi",
                     "category": "Freelancer",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/contact.png",
                     "desc": "Karan's skills and professionalism took my freelance projects to the next level. His work is always top-notch.",
                     "ratings": 5
                 }

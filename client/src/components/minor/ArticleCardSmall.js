@@ -11,7 +11,7 @@ function ArticleCardSmall({
       </div>
       <div className="small-card-body w-full flex flex-col justify-center mt-6 md:mt-0 items-center p-4 gap-y-1 lg:items-start">
         <div className="title pb-2 text-center font-[500] lg:text-left lg:w-full">{title}</div>
-        <div className="body-normal small-card-desc opacity-60 text-center lg:text-left text-sm">{desc}</div>
+        <div className="body-normal small-card-desc h-6 opacity-60 text-center lg:text-left text-sm overflow-hidden ">{desc}</div>
       </div>
     </div>
   );

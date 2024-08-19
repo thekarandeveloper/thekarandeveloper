@@ -14,7 +14,7 @@
                     "id": 1,
                     "name": "Create a Simple calculator using vanilla JS",
                     "image": "../../assets/media/articles/a1.png",
-                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality, Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "This article provides a step-by-step guide to creating a basic calculator using HTML, CSS, and JavaScript. It covers project planning, UI prototyping, responsive design with CSS, and adding dynamic functionality through JavaScript. Ideal for beginners, it helps in strengthening core concepts of web development.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -28,7 +28,7 @@
                     "id": 2,
                     "name": "Create To-do List",
                     "image": "../../assets/media/articles/a2.png",
-                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "Creating this To-do app as a beginner was a challenging yet rewarding experience. It pushed me to understand the intricacies of DOM manipulations, animations, and implementing a dark theme. Let's dive into how I built this project and what I've learned along the way.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -36,13 +36,13 @@
                         "CMS",
                         "CMS"
                     ],
-                    "url":"https://dev.to/karandeveloper/create-a-simple-calculator-using-vanilla-javascript-step-by-step-2fpa"
+                    "url":"https://dev.to/karandeveloper/creating-todo-list-using-vanilla-javascript-2l7l"
                 },
                 {
                     "id": 3,
                     "name": "Create a custom Toggle Switch using CSS",
                     "image": "../../assets/media/articles/a3.png",
-                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "I developed a custom animated toggle switch using CSS, focusing on a smooth user experience with responsive animations. The design involves hiding the checkbox input, styling the label to resemble a switch, and animating the toggle ball with CSS transitions. This project showcases my ability to combine HTML and CSS to create modern, interactive UI components..",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -50,13 +50,13 @@
                         "CMS",
                         "CMS"
                     ],
-                    "url":"https://dev.to/karandeveloper/create-a-simple-calculator-using-vanilla-javascript-step-by-step-2fpa"
+                    "url":"https://dev.to/karandeveloper/how-to-create-a-custom-toggle-switch-using-css-4pmi"
                 },
                 {
                     "id": 4,
-                    "name": "4Explore My Work",
+                    "name": "Temperature Converter Tutorial",
                     "image": "../../assets/media/articles/a4.png",
-                    "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
+                    "content": "This project tutorial walks you through the process of building a Temperature Converter website using Bootstrap 4.6 and jQuery. The project converts temperatures between Fahrenheit, Celsius, and Kelvin, offering a practical learning experience for beginners in web development.",
                     "tags": [
                         "Mobile Apps",
                         "CMS",
@@ -64,7 +64,7 @@
                         "CMS",
                         "CMS"
                     ],
-                    "url":"https://dev.to/karandeveloper/create-a-simple-calculator-using-vanilla-javascript-step-by-step-2fpa"
+                    "url":"https://www.codementor.io/blog/temperature-converter-cpcfuc9e14"
                 },
                 {
                     "id": 5,
