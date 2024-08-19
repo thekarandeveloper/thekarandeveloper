@@ -11,7 +11,8 @@ import ModalActionButton from "../minor/ModalActionButton";
 import { useGlobalContext } from "../../context/GlobalDataManager";
 function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   const {modalData, closeModal} = useGlobalContext();
-
+  const [startY, setStartY] = useState(0);
+  const [translateY, setTranslateY] = useState(0);
   const modalRef = useRef(null);
   // For the Modal View
 
@@ -24,7 +25,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
       body.style.overflow = 'hidden'
     }
     else if (modalData.isOpen ===  false){
-      body.style.overflow = 'auto'
+      body.style.overflow = 'scroll'
     }
    
     // if (modalOpen && modalRef.current) {
@@ -60,6 +61,34 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     // }
   }, [modalData.isOpen]);
 
+
+  const handleTouchStart = (e) => {
+
+    setStartY(e.touches[0].clientY)
+
+  }
+  const handleTouchMove = (e) => {
+    const deltaY = e.touches[0].clientY - startY;
+    if (deltaY > 0){
+      setTranslateY(deltaY);
+    }
+  }
+
+  const handleTouchEnd = (e) => {
+    
+    if (translateY > 100) {
+      closeModal();
+      setStartY(0);
+      setTranslateY(0);
+      // modalRef.current.style.transition = "transform 0.3s ease-in-out";
+      // modalRef.current.style.transform = `translateY(100%)`;
+      setTimeout(() => {
+        // modalClose();
+      }, 300);
+    } else {
+      // setTranslateY(0);
+    }
+  }
   // Modal Body
   // function renderComponent(component, item) {
   //   var currentComponent = "";
@@ -151,9 +180,13 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
             onClick={closeModal}
           ></div>
-          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl lg:h-full lg:max-h-full lg:w-[50vw] md:rounded-r-none">
+          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl lg:h-full lg:max-h-full lg:w-[50vw] md:rounded-r-none" 
+          onTouchEnd={handleTouchEnd} 
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
             <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 lg:flex-row lg:justify-between lg:items-center lg:p-4 lg:bg-dark-bg lg:text-body lg:mb-5 sticky lg:ml-5 lg:mt-5 pt-5 lg:right-5 lg:w-[93%] ">
-              <div className="close w-10 h-1 bg-slate-400 lg:hidden"></div>
+              <div className="close w-10 h-1 bg-slate-400 lg:hidden" onClick={()=> closeModal()}></div>
               <div
                 className="close-button heading hidden lg:block lg:order-2 hover:bg-primary cursor-pointer rounded-md"
                 onClick={closeModal}
@@ -173,7 +206,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 </button>
               </div>
             </div>
-            <div className="modal-body h-full overflow-y-scroll  p-7">
+            <div className="modal-body h-full  max-h-[80vh] overflow-y-scroll  p-7" >
                 {modalData.content[modalData.content.length - 1]}
             </div>
           </div>
