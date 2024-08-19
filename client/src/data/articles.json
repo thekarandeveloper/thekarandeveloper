@@ -13,7 +13,7 @@
                 {
                     "id": 1,
                     "name": "Create a Simple calculator using vanilla JS",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articles/a1.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality, Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -26,7 +26,7 @@
                 {
                     "id": 2,
                     "name": "Create To-do List",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articles/a2.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -39,7 +39,7 @@
                 {
                     "id": 3,
                     "name": "Create a custom Toggle Switch using CSS",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articles/a3.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",
@@ -52,7 +52,7 @@
                 {
                     "id": 4,
                     "name": "4Explore My Work",
-                    "image": "../../assets/media/bg.png",
+                    "image": "../../assets/media/articles/a4.png",
                     "content": "Karan, a meticulous full-stack developer, harmonizes design and code with a focus on quality.",
                     "tags": [
                         "Mobile Apps",

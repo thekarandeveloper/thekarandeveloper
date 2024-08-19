@@ -13,7 +13,7 @@
                 {
                     "id": 1,
                     "name": "Menstrual iOS App",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p0.png",
                     "desc": "A comprehensive menstrual health app designed to support women's health through cycle monitoring, summary reports, a supportive community, tailored diet and exercise plans, and emergency assistance.",
                     "tags": [
                         "Mobile Apps",
@@ -27,7 +27,7 @@
                 {
                     "id": 2,
                     "name": "Contact Manager",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p1.png",
                     "desc": "A powerful MERN stack application that can manage over 1 million entries with full CRUD operations, including duplicate detection for all entries.",
                     "tags": [
                         "Web Apps",
@@ -41,7 +41,7 @@
                 {
                     "id": 3,
                     "name": "Blog Platform",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p3.png",
                     "desc": "A dynamic blog platform that allows users to create, share, and comment on posts. Built with React for a responsive user experience.",
                     "tags": [
                         "Web Apps",
@@ -55,7 +55,7 @@
                 {
                     "id": 4,
                     "name": "Sorting Visualizer",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p2.png",
                     "desc": "A JavaScript project that visualizes various sorting algorithms, demonstrating how they work in real-time.",
                     "tags": [
                         "Web Apps",
@@ -69,7 +69,7 @@
                 {
                     "id": 5,
                     "name": "Text Recognizer (OCR)",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p4.png",
                     "desc": "A Python-based OCR project that uses Tesseract to recognize and extract text from images with high accuracy.",
                     "tags": [
                         "Python",
@@ -83,7 +83,7 @@
                 {
                     "id": 6,
                     "name": "Expense Tracker",
-                    "image": "../../assets/media/banner-project.png",
+                    "image": "../../assets/media/projects/p1.png",
                     "desc": "A user-friendly expense tracker helping users to manage their finances by tracking income and expenses.",
                     "tags": [
                         "Mobile Apps",
