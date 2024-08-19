@@ -175,7 +175,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
     <React.Fragment>
     {modalData.isOpen && (  
       <div ref={modalRef}>
-        <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none md:justify-end">
+        <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none">
           <div
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
             onClick={closeModal}
@@ -206,7 +206,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 </button>
               </div>
             </div>
-            <div className="modal-body h-full  max-h-[80vh] overflow-y-scroll  p-7" >
+            <div className="modal-body h-[80vh] overflow-y-scroll  p-7 " >
                 {modalData.content[modalData.content.length - 1]}
             </div>
           </div>
