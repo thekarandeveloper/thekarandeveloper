@@ -56,7 +56,7 @@ function ArticleCard() {
             .slice(1, 4)
             .map((dataItem) => (
               <ArticleCardSmall
-                subToggle={() => openModal(`${dataItem.name}`, <ArticleContent banner={dataItem.image}/>, "View Full Article", "link")}
+                subToggle={() => openModal(`${dataItem.name}`, <ArticleContent banner={dataItem.image}/>, "View Full Article", "link", dataItem.url)}
                 imgname={dataItem.image}
                 title={dataItem.name}
                 desc={dataItem.content}
@@ -71,7 +71,7 @@ function ArticleCard() {
             .map((buttonItem) => (
               <button
                 onClick={() => openModal("All Articles",
-                  <AllProjects/>, "View LinkedIn", "Link"
+                  <AllProjects/>, "View LinkedIn", "link", ""
                   )}
                 className="title lg:flex bg-dark-bg text-body"
               >

@@ -10,7 +10,7 @@ import { openURL } from "../../scripts/utility";
 import ModalActionButton from "../minor/ModalActionButton";
 import { useGlobalContext } from "../../context/GlobalDataManager";
 function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
-  const {modalData, closeModal} = useGlobalContext();
+  const {modalData, closeModal, handleCtaAction} = useGlobalContext();
   const [startY, setStartY] = useState(0);
   const [translateY, setTranslateY] = useState(0);
   const modalRef = useRef(null);
@@ -200,7 +200,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 <button
                   className="modal-button bg-primary h-12 w-full 2xl:h-[6vh] title  hover:bg-dark-bg"
                   target="blank"
-                  onClick={renderActionButton}
+                  onClick={() => handleCtaAction()}
                 >
                   {modalData.ctaLabel}
                 </button>

@@ -49,7 +49,7 @@ function ProjectCard() {
              tag1={data.items[0].tags[0]}
              tag2={data.items[0].tags[1]}
              tag3={data.items[0].tags[2]}
-             challenges={data.items[0].challenges}/>, 'Demo', 'link', "" )}
+             challenges={data.items[0].challenges}/>, 'Demo', 'link', data.items[0].url )}
             imgname={data.items[0].image}
             title={data.items[0].name}
             desc={data.items[0].desc}
@@ -71,7 +71,7 @@ function ProjectCard() {
              tag1={item.tags[0]}
              tag2={item.tags[1]}
              tag3={item.tags[2]}
-             challenges={item.challenges}/>, 'View Demo', "link","" )}
+             challenges={item.challenges}/>, 'View Demo', "link",item.url )}
                 imgname={item.image}
                 title={item.name}
                 desc={item.desc}
