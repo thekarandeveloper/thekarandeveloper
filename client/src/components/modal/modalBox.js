@@ -16,39 +16,49 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
   // For the Modal View
 
   useEffect(() => {
+    
     const body = document.body;
-    if (modalOpen && modalRef.current) {
-      const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
-      const modalContainer =
-        modalRef.current.querySelectorAll(".modal-container");
-      modalOverlays.forEach((overlay) => {
-        overlay.classList.add("modal-overlay-view");
-        console.log(category);
-        console.log(selectedItem);
-      });
-      setTimeout(() => {
-        modalContainer.forEach((container) => {
-          container.classList.add("modal-container-view");
-          body.classList.add("hide-scroll");
-        });
-      }, 200);
-    } else if (!modalOpen && modalRef.current) {
-      const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
-      const modalContainer =
-        modalRef.current.querySelectorAll(".modal-container");
-      modalContainer.forEach((container) => {
-        container.classList.remove("modal-container-view");
-        body.classList.remove("hide-scroll");
-      });
-
-      setTimeout(() => {
-        modalOverlays.forEach((overlay) => {
-          overlay.classList.remove("modal-overlay-view");
-          console.log("check");
-        });
-      }, 500);
+    
+    if (modalData.isOpen === true) {
+      // body.classList.add("hide-scroll");
+      body.style.overflow = 'hidden'
     }
-  }, [modalOpen]);
+    else if (modalData.isOpen ===  false){
+      body.style.overflow = 'auto'
+    }
+   
+    // if (modalOpen && modalRef.current) {
+    //   const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
+    //   const modalContainer =
+    //     modalRef.current.querySelectorAll(".modal-container");
+    //   modalOverlays.forEach((overlay) => {
+    //     overlay.classList.add("modal-overlay-view");
+    //     console.log(category);
+    //     console.log(selectedItem);
+    //   });
+    //   setTimeout(() => {
+    //     modalContainer.forEach((container) => {
+    //       container.classList.add("modal-container-view");
+          
+    //     });
+    //   }, 200);
+    // } else if (!modalOpen && modalRef.current) {
+    //   const modalOverlays = modalRef.current.querySelectorAll(".modal-overlay");
+    //   const modalContainer =
+    //     modalRef.current.querySelectorAll(".modal-container");
+    //   modalContainer.forEach((container) => {
+    //     container.classList.remove("modal-container-view");
+        
+    //   });
+
+    //   setTimeout(() => {
+    //     modalOverlays.forEach((overlay) => {
+    //       overlay.classList.remove("modal-overlay-view");
+    //       console.log("check");
+    //     });
+    //   }, 500);
+    // }
+  }, [modalData.isOpen]);
 
   // Modal Body
   // function renderComponent(component, item) {
@@ -134,14 +144,15 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
 
   return (
     <React.Fragment>
-    {modalData.isOpen && (  <div ref={modalRef}>
+    {modalData.isOpen && (  
+      <div ref={modalRef}>
         <div className="modal-overlay w-full h-full fixed bottom-o left-0 m-0 bg-dark-bg-200 opacity-1 z-10 rounded-none md:justify-end">
           <div
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
             onClick={closeModal}
           ></div>
           <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl lg:h-full lg:max-h-full lg:w-[50vw] md:rounded-r-none">
-            <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 lg:flex-row lg:justify-between lg:items-center lg:p-4 lg:bg-dark-bg lg:text-body lg:mb-5 sticky lg:ml-5 lg:mt-5 pt-5 lg:right-5 lg:w-[93%]">
+            <div className="modal-header w-full flex flex-col justify-center items-center gap-y-6 lg:flex-row lg:justify-between lg:items-center lg:p-4 lg:bg-dark-bg lg:text-body lg:mb-5 sticky lg:ml-5 lg:mt-5 pt-5 lg:right-5 lg:w-[93%] ">
               <div className="close w-10 h-1 bg-slate-400 lg:hidden"></div>
               <div
                 className="close-button heading hidden lg:block lg:order-2 hover:bg-primary cursor-pointer rounded-md"
@@ -162,7 +173,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 </button>
               </div>
             </div>
-            <div className="modal-body overflow-y-auto h-fit p-7">
+            <div className="modal-body h-full overflow-y-scroll  p-7">
                 {modalData.content[modalData.content.length - 1]}
             </div>
           </div>
