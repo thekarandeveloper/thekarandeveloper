@@ -22,7 +22,7 @@
                     ],
                     "technology": "Developed with Swift UI Kit, integrated with Firebase Realtime Database. The app includes cycle monitoring, community support, and tailored health plans.",
                     "challenges": "Analyzing real-life problems faced by women, designing specific solutions, and ensuring accurate data analysis were major challenges.",
-                    "url": "https://example.com/sakhi"
+                    "url": "https://www.karankumar.dev/"
                 },
                 {
                     "id": 2,
@@ -36,7 +36,7 @@
                     ],
                     "technology": "Built using MongoDB, Express.js, React, and Node.js, with React Virtualization and Tailwind for the frontend. Features include high-performance data handling and real-time CRUD operations.",
                     "challenges": "Optimizing performance for large datasets and ensuring efficient search and duplicate detection were key challenges.",
-                    "url": "https://example.com/contact-manager"
+                    "url": "https://contact-manager-rosy.vercel.app/"
                 },
                 {
                     "id": 3,
@@ -50,7 +50,7 @@
                     ],
                     "technology": "Developed using React for the frontend and JSON for handling dynamic data. It includes user authentication and a content management system.",
                     "challenges": "Implementing a robust comment moderation system and efficiently managing user-generated content were key challenges.",
-                    "url": "https://example.com/blog"
+                    "url": "https://dr-singh-homoeo.vercel.app/"
                 },
                 {
                     "id": 4,
@@ -64,7 +64,7 @@
                     ],
                     "technology": "Built using the MERN stack to visualize sorting algorithms, providing an interactive educational tool for understanding DSA concepts.",
                     "challenges": "Visualizing algorithm performance in the frontend and handling real-time data were significant challenges.",
-                    "url": "https://example.com/sorting-visualizer"
+                    "url": "https://sorting-visualizer-beryl.vercel.app/"
                 },
                 {
                     "id": 5,
@@ -78,21 +78,7 @@
                     ],
                     "technology": "Developed with Python and Tesseract OCR to accurately recognize and extract text from images.",
                     "challenges": "Handling low-quality images and ensuring high accuracy in text recognition were key challenges.",
-                    "url": "https://example.com/ocr"
-                },
-                {
-                    "id": 6,
-                    "name": "Expense Tracker",
-                    "image": "../../assets/media/projects/p1.png",
-                    "desc": "A user-friendly expense tracker that helps users manage their finances by tracking income and expenses. Built with React Native and Firebase.",
-                    "tags": [
-                        "Mobile Apps",
-                        "React Native",
-                        "Firebase"
-                    ],
-                    "technology": "Developed using React Native for cross-platform compatibility, integrated with Firebase for data storage and authentication.",
-                    "challenges": "Ensuring accurate financial calculations and providing a secure user experience were key challenges.",
-                    "url": "https://example.com/expense"
+                    "url": "https://ocr-tool-seven.vercel.app/"
                 }
             ]
         }
