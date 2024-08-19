@@ -180,7 +180,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
             className="blank-area h-[20vh] w-full md:h-full  fixed left-0"
             onClick={closeModal}
           ></div>
-          <div className="modal-container z-10000 w-full h-fit max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl lg:h-full lg:max-h-full lg:w-[50vw] md:rounded-r-none" 
+          <div className="modal-container z-10000 w-full h-full max-h-[80vh] bg-body fixed bottom-0 rounded-t-xl lg:h-full lg:max-h-full lg:w-[50vw] md:rounded-r-none" 
           onTouchEnd={handleTouchEnd} 
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
@@ -206,7 +206,7 @@ function ModalBox({ modalOpen, modalClose, category, selectedItem }) {
                 </button>
               </div>
             </div>
-            <div className="modal-body h-[80vh] overflow-y-scroll  p-7 " >
+            <div className="modal-body w-full h-[70vh]  max-h-[50vh] lg:max-h-[80vh] overflow-y-scroll  p-7" >
                 {modalData.content[modalData.content.length - 1]}
             </div>
           </div>

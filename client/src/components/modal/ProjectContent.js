@@ -11,7 +11,7 @@ function ProjectContent({
 }) {
   return (
     <div className="modal-body-container project flex flex-col gap-y-5 ">
-      <div className="modal-body-banner w-full h-full  bg-highlight my-5">
+      <div className="modal-body-banner w-full h-fit  bg-highlight my-5">
         <div className="mockup h-[27vh] xl:h-[40vh] flex justify-center items-center bg-contain my-8"  style={{ backgroundImage: `url(${mockup})`}}></div>
       </div>
       <div className="modal-body-section  bg-light-bg p-4 xl:p-8">
