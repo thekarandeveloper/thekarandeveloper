@@ -56,7 +56,7 @@ function Navbar() {
                   <button
                     className="label nav cta-btn q-36 mx-5 px-4 rounded-lg bg-primary hover:bg-body hover:text-dark-bg"
                     // onClick={() => toggle(data, buttonItem)}
-                    onClick={()=> openModal('Contact Now', <ContactFormContent/>, 'Submit', 'Submit', "" )}
+                    onClick={()=> openModal('Contact Now', <ContactFormContent/>, 'Submit', 'submit', "" )}
                   >
                     {buttonItem.name}{" "} {console.log("Modal Data", modalData.content)}
                     <span className="label cta-btn-icon">

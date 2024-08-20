@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MessageWithIcon from "../minor/MessageWithIcon";
 // const nodemailer = require("nodemailer");
+import { useGlobalContext } from "../../context/GlobalDataManager";
 
 function TestimonialCard({ toggle }) {
   const [selectedOption, setSelectedOption] = useState("Email");
+  const {formData, setForm, resetForm, openCustomWindow} = useGlobalContext() // Here set the gloabal context
+const [email, setEmail] =  useState("")
+const [subject, setSubject] =  useState("")
+
+const [message, setMessage] =  useState("")
+
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
     console.log(selectedOption);
   };
+
+  
+
 
 // const transporter = nodemailer.createTransport({
 //   host: "smtp.ethereal.email",
@@ -36,7 +46,16 @@ function TestimonialCard({ toggle }) {
 // }
 
 // main().catch(console.error);
-
+const handleEmailChecked = (e) =>{
+  e.target.checked = true
+  setSelectedOption("Email")
+}
+useEffect(()=>{
+if (selectedOption === "Video" ){
+    openCustomWindow("https://calendly.com/karankumarcv/30min","Schedule Meeting with karan")
+} 
+  // openCustomWindow()
+}, [selectedOption])
   return (
     <form className="w-full h-full flex flex-col justify-between items-center gap-y-10">
       <div className="flex w-full gap-x-3 h-6 justify-start items-center  accent-dark-bg">
@@ -46,7 +65,7 @@ function TestimonialCard({ toggle }) {
           name="contact-option"
           value={"Email"}
           checked={selectedOption === "Email"}
-          onChange={handleOptionChange}
+          onChange={(e) => handleEmailChecked(e)}
         />
         <label for="email-option" className="mr-4 label">
           Email
@@ -57,8 +76,10 @@ function TestimonialCard({ toggle }) {
           type="radio"
           name="contact-option"
           value={"Video"}
-          onChange={handleOptionChange}
-          checked={selectedOption === "Video"}
+          onChange={() => setSelectedOption("Video")}
+          // onChange={(e) => setForm((prevData) => ({...prevData, subject: (e.target.checked ? e.target.value : "" )}))}
+          
+          
         />
         <label for="video-option" className="label cursor-pointer w-full">Video Meeting</label>
       </div>
@@ -69,34 +90,44 @@ function TestimonialCard({ toggle }) {
           <input
             className="user-email "
             type="email"
-            placeholder="YourEmail@gmail.com"
+            name="email"
+            placeholder="Your Name "
+            onChange={(e) => setForm({ name: e.target.value })}
+            
           ></input>
-          <select className="user-topic">
+           <input
+            className="user-email "
+            type="email"
+            name="email"
+            placeholder="youremail@email.com"
+            onChange={(e) => setForm({ email: e.target.value })}
+            
+          ></input>
+          <select className="user-topic"
+           onChange={(e) => setForm({ subject: e.target.value })}
+          >
             <option value={""} className="default-option">
               What topic you want to talk ?
             </option>
-            <option value={"Website"}>Website</option>
-            <option value={"App"}>App</option>
-            <option value={"Desktop Apps"}>Desktop Apps</option>
-            <option value={"iOS Apps"}>iOS Apps</option>
+            <option value={"Creelance"}>Freelance Work</option>
+            <option value={"Hire"}>Full Time Hire</option>
+            <option value={"Part-Time"}>Part Time</option>
+            <option value={"talk"}>Casual Talk</option>
           </select>
           <textarea
             className="user-message h-full"
             placeholder="How I can help you ?"
             spellCheck={false}
+            onChange={(e) => setForm({ message: `${e.target.value} `})}
+
           ></textarea>
         </div>
       )}
 
       {selectedOption === "Video" && (
+        
         <MessageWithIcon description=" Redirecting You to Calendly to Schedule Meeting with Karan"></MessageWithIcon>
       )}
-      {/* <button
-        className="submit-button cursor-pointer flex justify-center items-center"
-        onClick={sendEmail}
-      >
-        Send
-      </button> */}
     </form>
   );
 }
