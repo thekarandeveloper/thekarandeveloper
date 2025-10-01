@@ -34,11 +34,13 @@ export default function Navbar() {
   ]
 
   return (
-    <nav
-      className={`sticky top-0 left-0 w-full h-26 z-50 flex justify-between items-center px-6 transition-all duration-300 backdrop-blur-sm ${
-        scrolled ? "bg-accent/80 py-2" : "bg-accent py-4"
-      }`}
-    >
+   <nav
+  className={`sticky top-0 left-0 w-full z-50 flex justify-between items-center px-6 
+    transition-colors duration-300 backdrop-blur-sm 
+    border-b border-white/20
+    ${scrolled ? "bg-black/60" : "bg-accent"}`}
+  style={{ height: scrolled ? "64px" : "100px", transition: "height 0.3s ease" }}
+>
       {/* Logo */}
       <div>
         <a href="#" className={`text-2xl font-semibold transition-all duration-300 ${scrolled ? "text-lg" : "text-2xl"}`}>
@@ -52,7 +54,7 @@ export default function Navbar() {
           <li key={link.href} className="flex-1">
             <Link
               href={link.href}
-              className={`w-45 h-10 flex items-center justify-center text-center py-2 px-4 rounded-md transition-colors duration-200 ${
+              className={`w-45 ${scrolled ? "h-8"  : "h-10"} flex items-center justify-center text-center py-2 px-4 rounded-md transition-colors duration-200 ${
                 pathname === link.href || currentHash === link.href
                   ? "bg-[#636366] text-white font-regular"
                   : "text-gray-300 hover:bg-[#303030] hover:text-white"
