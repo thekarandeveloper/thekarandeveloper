@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 transition-all duration-300 backdrop-blur-sm ${
+      className={`sticky top-0 left-0 w-full h-26 z-50 flex justify-between items-center px-6 transition-all duration-300 backdrop-blur-sm ${
         scrolled ? "bg-accent/80 py-2" : "bg-accent py-4"
       }`}
     >
@@ -52,7 +52,7 @@ export default function Navbar() {
           <li key={link.href} className="flex-1">
             <Link
               href={link.href}
-              className={`w-45 h-10 block text-center py-2 px-4 rounded-md transition-colors duration-200 ${
+              className={`w-45 h-10 flex items-center justify-center text-center py-2 px-4 rounded-md transition-colors duration-200 ${
                 pathname === link.href || currentHash === link.href
                   ? "bg-[#636366] text-white font-regular"
                   : "text-gray-300 hover:bg-[#303030] hover:text-white"
@@ -65,7 +65,7 @@ export default function Navbar() {
       </ul>
 
       {/* Resume Button */}
-      <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-32 h-10 rounded-3xl cursor-pointer hover:bg-blue-700">
+      <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
         <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
         Resume
       </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="flex items-center justify-center p-2 bg-[#0071E3] text-white w-full rounded-3xl cursor-pointer hover:bg-blue-700 mt-2">
+          <div className="flex items-center justify-center p-2 bg-[#0071E3] text-white w-full rounded-3xl cursor-pointer hover:bg-blue-700">
             <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
             Resume
           </div>
