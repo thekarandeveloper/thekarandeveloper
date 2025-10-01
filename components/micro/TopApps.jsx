@@ -10,9 +10,10 @@ export default function TopApps({
   imagePosition = "left", // "left" or "right"
   caseStudyLink,
   appStoreLink,
+  border = "true"
 }) {
   return (
-    <div className={`flex flex-col md:flex-row items-center w-full h-full pt-20 gap-10 ${imagePosition === "right" ? "md:flex-row-reverse" : ""}  border-b-1 border-b-gray-700`}>
+    <div className={`flex flex-col md:flex-row items-center w-full h-full pt-20 gap-10 ${imagePosition === "right" ? "md:flex-row-reverse" : ""} ${border == "true" ? "border-b-1 border-b-gray-700":""}`}>
       
       {/* Image */}
       <div className="w-full md:w-1/2 flex justify-center">

@@ -8,7 +8,7 @@ export default function BannerApps(){
 
     return (
         <section className="w-full px-20 ">
-        <div className="bg-[#141414] py-20 rounded-4xl">
+        <div className="bg-[#141414] pt-20 rounded-4xl">
 
         <div className="w-full flex flex-row px-20 border-b-1 border-b-gray-700 py-8">
         <Header
@@ -32,6 +32,8 @@ export default function BannerApps(){
   imagePosition="left"
   appStoreLink="https://apps.apple.com/app/id123456"
   caseStudyLink="https://medium.com/@karankumar/sakhi-case-study"
+  border="false"
+
 />
 <TopApps
   name="Sakhi - Your Menstrual Companion"
@@ -40,6 +42,7 @@ export default function BannerApps(){
   imagePosition="right"
   appStoreLink="https://apps.apple.com/app/id123456"
   caseStudyLink="https://medium.com/@karankumar/sakhi-case-study"
+  border="false"
 />
 
             </div>
