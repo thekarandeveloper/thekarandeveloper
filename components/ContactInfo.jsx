@@ -6,6 +6,7 @@ import InfoCard from "./micro/InfoCard";
 import ActionButton from "./micro/Button";
 import { ArrowDownToLineIcon } from "lucide-react";
 import Image from "next/image";
+import ContactCard from "../components/ContactCard"
 
 export default function ContactInfo() {
   return (
@@ -20,17 +21,17 @@ export default function ContactInfo() {
 
       {/* Contact Grid */}
 
-      <div className="flex flex-col mt-10 gap-4">
+      <div className="flex flex-col mt-10 gap-4 px-30">
         {/* First row */}
 
-        <div className="flex flex-row px-30 gap-4">
+        <div className="flex flex-row gap-4">
          <InfoCard  width="70%" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
          <InfoCard  width="30%" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
           
         </div>
-         <div className="flex flex-row px-30 gap-4">
+         <div className="flex flex-row gap-4">
          <InfoCard  width="30%" heading={"Heading"} description={"desc"} Icon={Plus} onIconClick={() => alert("Grey clicked!")}></InfoCard>
-         <div className="relative w-[70%] h-70 bg-gray-100 flex flex-row justify-between rounded-3xl p-10">
+         <div className="relative w-[70%] h-60 bg-gray-100 flex flex-row justify-between rounded-3xl p-10">
             
            <div className="flex flex-col gap-4">
              <div className="text-[40px] py-2 font-extralight text-black">
@@ -52,6 +53,8 @@ export default function ContactInfo() {
             </div>
           </div>
         </div>
+      <ContactCard ></ContactCard>
+
       </div>
     </div>
   );
