@@ -18,7 +18,7 @@ export default function BannerApps(){
         }
         align="left"
         />
-          <ActionButton className="hidden md:block" label={"App Store"} Icon={ArrowDownToLineIcon} color="white"  onClick={() => alert("Grey clicked!")}></ActionButton>
+          <ActionButton className="hidden md:flex" label={"App Store"} Icon={ArrowDownToLineIcon} color="white"  onClick={() => alert("Grey clicked!")}></ActionButton>
         </div>
        
            
