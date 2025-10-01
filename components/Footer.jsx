@@ -10,7 +10,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="px-8 md:px-20 py-6 border-t border-gray-700 bg-black text-white">
+    <footer className="hidden md:block px-8 md:px-20 py-6 border-t border-gray-700 bg-black text-white">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         
         {/* Left Side */}
