@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="bg-black text-white w-full">
 
       {/* Intro Section */}
-      <section className="max-w-4xl mx-auto py-24 border-b border-white/10">
+      <section className="max-w-4xl mx-auto py-15 md:py-24 border-b border-white/10">
         <Header
           heading="About Me"
           subHeading="Who I Am"
