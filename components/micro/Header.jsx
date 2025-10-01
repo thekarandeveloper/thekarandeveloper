@@ -24,7 +24,7 @@ export default function Header({
       : "items-center text-center"
 
   return (
-    <div className={`w-full flex flex-col justify-center gap-2 px-4 ${alignmentClasses}`}>
+    <div className={`w-full flex flex-col justify-center gap-2 ${alignmentClasses}`}>
       
       {/* Heading */}
       {heading && (

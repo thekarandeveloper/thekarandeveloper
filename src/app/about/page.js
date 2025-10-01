@@ -1,22 +1,25 @@
 "use client"
 import Header from "../../../components/micro/Header"
 import ContactCard from "../../../components/ContactCard"
+
 export default function AboutPage() {
   return (
     <div className="bg-black text-white w-full">
+
       {/* Intro Section */}
-      <section className="px-6 md:px-20 py-24 border-b border-white/10">
+      <section className="max-w-4xl mx-auto py-24 border-b border-white/10">
         <Header
           heading="About Me"
           subHeading="Who I Am"
           desc="I'm Karan, an iOS and web developer passionate about building apps that make life easier and smarter. With a design-first mindset and a love for clean, functional code, I focus on creating experiences that feel effortless and inspiring."
           align="left"
+          className= "px-0"
         />
       </section>
 
       {/* Journey Section */}
-      <section className="px-6 md:px-20 py-24 border-b border-white/10">
-        <div className="max-w-4xl mx-auto">
+      <section className="px-6 md:px-20 ">
+        <div className="max-w-4xl mx-auto py-24 border-b border-white/10">
           <h2 className="text-3xl md:text-4xl font-light mb-10">My Journey</h2>
           <div className="space-y-12">
             <div>
@@ -48,40 +51,21 @@ export default function AboutPage() {
       </section>
 
       {/* Skills Section */}
-      <section className="px-6 md:px-10 py-24">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light mb-12">What I Work With</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-lg font-light">
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Swift / iOS
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Next.js
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Astro
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Tailwind
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Figma
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Firebase
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Framer
-            </div>
-            <div className="bg-[#1D1D1F] rounded-xl p-6 hover:bg-[#2C2C2E] transition">
-              Git & GitHub
-            </div>
-          </div>
+     <section className="px-6 md:px-20">
+      <div className="max-w-4xl mx-auto text-left  py-24 border-b border-white/10">
+        <h2 className="text-4xl font-light mb-6">My Core Specialty</h2>
+        <h3 className="text-3xl font-semibold mb-4">iOS Development & Mobile UX</h3>
+        <p className="text-gray-400 text-lg">
+          Building smooth, reliable, and user-focused iOS apps that solve real problems. Combining Swift development with design-first thinking to create experiences people love.
+        </p>
+      </div>
+    </section>
+      {/* Contact Section */}
+      <section className="px-6 md:px-20 py-10 border-b border-white/10">
+        <div className="max-w-4xl mx-auto">
+          <ContactCard label="Let’s Connect" email="karan.kumar@email.com" />
         </div>
       </section>
-
-
-      <ContactCard></ContactCard>
     </div>
   )
 }
