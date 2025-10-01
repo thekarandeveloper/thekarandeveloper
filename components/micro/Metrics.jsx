@@ -40,9 +40,13 @@ export default function MetricCard({ number, desc, duration = 2000 }) {
   }
 
   return (
-    <div ref={ref} className="flex flex-col gap-4 text-center py-10 px-20">
-      <div className="text-[55px] font-bold">+{count}</div>
-      <div className="text-lg w-70 font-light">{desc}</div>
+   <div className="flex flex-col gap-2 md:gap-4 text-center py-6 md:py-10 px-4 sm:px-10 md:px-20">
+      <div className="text-[30px] sm:text-[50px] md:text-[55px] font-bold">
+        +{count}
+      </div>
+      <div className="text-xs sm:text-base md:text-lg font-light max-w-xs sm:max-w-md md:max-w-2xl mx-auto">
+        {desc}
+      </div>
     </div>
   )
 }
