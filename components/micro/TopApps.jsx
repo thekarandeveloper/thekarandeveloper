@@ -1,38 +1,53 @@
+"use client"
+
 import Image from "next/image"
 import { ArrowDownToLineIcon } from "lucide-react"
-
-export default function TopApps(){
-
-    const imageLocation = "/apps/sakhi.png"
-
-    return (
-        <div className="flex justify-between items-center w-full h-full py-20">
-
-        <div className="w-[50%]">
-        <Image src={imageLocation} className="w-full h-full" width={300} height={600}></Image>
-
-        </div>
-        <div className="flex flex-col gap-5 w-[50%] pr-20">
-                <div className="text-md">
-                    Sakhi - Your Menstrual Companion
-                </div>
-                 <div className="text-2xl">
-                  “Codevarsity helped me master mobile app development with expert guidance and hands-on projects, making learning seamless and practical.”
-                </div>
-
-                <div className="flex justify-start gap-4">
-                    <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
-        <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
-        Resume
-      </div>
+import ActionButton from "./Button"
+export default function TopApps({
+  name,
+  desc,
+  imageSrc,
+  imagePosition = "left", // "left" or "right"
+  caseStudyLink,
+  appStoreLink,
+}) {
+  return (
+    <div className={`flex flex-col md:flex-row items-center w-full h-full pt-20 gap-10 ${imagePosition === "right" ? "md:flex-row-reverse" : ""}`}>
       
-      <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
-        <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
-        Resume
+      {/* Image */}
+      <div className="w-full md:w-1/2 flex justify-center">
+        <Image
+          src={imageSrc}
+          alt={name}
+          width={300}
+          height={600}
+          className="w-full h-full rounded-xl object-cover"
+        />
       </div>
-                </div>
 
+      {/* Content */}
+      <div className={`flex flex-col gap-2 w-full md:w-1/2 pr-0 ${imagePosition === "right" ? "md:pl-20" : "md:pr-20"} text-center md:text-left`}>
+        
+        {name && <div className="text-md font-bold">{name}</div>}
+
+        {desc && <div className="text-2xl font-light">{desc}</div>}
+
+        {/* CTA Buttons */}
+        <div className="flex justify-center md:justify-start gap-4 mt-4">
+          {appStoreLink && (
+             <ActionButton label={"App Store"} Icon={ArrowDownToLineIcon} color="blue" onClick={"nothing"}></ActionButton>
+
+          )}
+
+          {caseStudyLink && (
+
+               <ActionButton label={"Case Study"} Icon={ArrowDownToLineIcon} color="blue" onClick={"nothing"}></ActionButton>
+
+          
+          )}
         </div>
-        </div>
-    )
+
+      </div>
+    </div>
+  )
 }

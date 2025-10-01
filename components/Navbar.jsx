@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ArrowDownToLineIcon, Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
-
+import ActionButton from "./micro/Button"
 export default function Navbar() {
   const pathname = usePathname()
   const [currentHash, setCurrentHash] = useState("")
@@ -100,10 +100,10 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="flex items-center justify-center p-2 bg-[#0071E3] text-white w-full rounded-3xl cursor-pointer hover:bg-blue-700">
-            <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
-            Resume
-          </div>
+
+          <ActionButton label={"Resume"} Icon={ArrowDownToLineIcon} className="w-4 h-4 mr-2" color="blue" onClick={"nothing"}></ActionButton>
+
+        
         </div>
       )}
     </nav>
