@@ -19,7 +19,7 @@ export default function ActionButton({
   return (
     <button
       onClick={onClick}
-      className={`flex items-center justify-center p-2 h-10 w-40 px-4 rounded-3xl cursor-pointer transition-colors ${colorClasses[color]} ${className}`}
+      className={`flex items-center justify-center p-2 h-10 w-full md:w-40 px-4 rounded-3xl cursor-pointer transition-colors ${colorClasses[color]} ${className}`}
     >
       {Icon && <Icon className="w-4 h-4 mr-2" />}
       {label}

@@ -54,7 +54,7 @@ export default function TopApps({
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-row md:flex-col sm:flex-row justify-center md:justify-start gap-3 mt-4">
+        <div className="flex flex-row sm:flex-row justify-center md:justify-start gap-3 mt-4">
           {appStoreLink && (
             <ActionButton
               label="App Store"

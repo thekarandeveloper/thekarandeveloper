@@ -36,7 +36,7 @@ export default function ContactInfo() {
          <div className="relative w-full md:w-[70%] bg-gray-100 flex flex-col md:flex-row justify-between rounded-3xl p-6 pb-0 md:pb-10">
       
       {/* Text Content */}
-      <div className="flex flex-col gap-4 md:w-1/2 text-center md:text-left">
+      <div className="flex flex-col gap-4 md:w-3/4 text-center md:text-left">
         <div className="text-[28px] sm:text-[40px] py-2 font-extralight text-black ">
           Building Apps
         </div>
@@ -50,17 +50,12 @@ export default function ContactInfo() {
             color="blue" 
             onClick={() => alert("Grey clicked!")} 
           />
-          <ActionButton 
-            label="Resume" 
-            Icon={ArrowDownToLineIcon} 
-            color="blue" 
-            onClick={() => alert("Grey clicked!")} 
-          />
+        
         </div>
       </div>
 
       {/* Image */}
-      <div className="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-end">
+      <div className="md:absolute md:bottom-0 md:right-10 w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-end">
         <Image 
           src="/Karan.png" 
           width={250} 

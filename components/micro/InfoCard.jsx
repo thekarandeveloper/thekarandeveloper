@@ -16,7 +16,7 @@ export default function InfoCard({
     >
       {/* Icon at top-right */}
       {Icon && (
-        <div className="w-full flex justify-center my-4 md:my-0  md:justify-end order-2 md:order-1">
+        <div className="w-full flex justify-center my-4 md:my-0  md:justify-end order-1 md:order-0">
           <button
             onClick={onIconClick}
             className="bg-gray-300 rounded-full p-3 sm:p-4 text-black flex items-center justify-center"
@@ -27,7 +27,7 @@ export default function InfoCard({
       )}
 
       {/* Heading and Description */}
-      <div className="mt-4 text-center md:text-left">
+      <div className="mt-8 text-center md:text-left">
         {heading && (
           <div className="text-[28px] sm:text-[40px] font-extralight text-black py-2 sm:py-4">
             {heading}
