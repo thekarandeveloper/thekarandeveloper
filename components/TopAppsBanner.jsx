@@ -9,16 +9,16 @@ export default function BannerApps(){
     return (
         <section className="w-full px-20 ">
         <div className="bg-[#141414]  rounded-4xl overflow-hidden">
-        <div className="w-full flex flex-row px-20 border-b-0 border-b-gray-700 py-8 bg-[#2a2a2a] pt-20 ">
+        <div className="w-full flex flex-row px-20 border-b-0 border-b-gray-700 py-20 bg-[#2a2a2a] pt-20 ">
         <Header
         heading={"Building Apps"}
-        subHeading={"Solving Problems"}
+        // subHeading={"Solving Problems"}
         desc={
           "All-in-one platform to plan, collaborate and deliver faster and smarter, collaborate and deliver — faster and smarter."
         }
         align="left"
         />
-          <ActionButton label={"App Store"} Icon={ArrowDownToLineIcon} color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
+          <ActionButton label={"App Store"} Icon={ArrowDownToLineIcon} color="white"  onClick={() => alert("Grey clicked!")}></ActionButton>
         </div>
        
            
