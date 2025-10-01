@@ -20,13 +20,17 @@ export default function Navbar() {
   }, [])
 
   // Track scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20) // adjust threshold
+ useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 50 && !scrolled) {
+      setScrolled(true)
+    } else if (window.scrollY < 20 && scrolled) {
+      setScrolled(false)
     }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }
+  window.addEventListener("scroll", handleScroll)
+  return () => window.removeEventListener("scroll", handleScroll)
+}, [scrolled])
 
   const links = [
     { href: "", label: "Work" },
