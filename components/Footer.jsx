@@ -6,12 +6,12 @@ export default function Footer() {
     <section className="px-20">
 <div className="w-full h-12 flex justify-between items-center py-20 border-t border-gray-200">
       {/* Left Side */}
-      <div className="text-sm text-gray-600">
+      <div className="text-sm text-white">
         © 2023 Karan Kumar. All rights reserved.
       </div>
 
       {/* Social */}
-      <div className="flex space-x-4 text-gray-600">
+      <div className="flex space-x-4 text-white">
         <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
           <linkedin className="w-5 h-5 hover:text-amber-600 transition-colors" />
         </a>
