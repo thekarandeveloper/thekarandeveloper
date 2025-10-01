@@ -21,7 +21,7 @@ export default function TopApps({
           alt={name}
           width={300}
           height={650}
-          className="w-full h-full rounded-xl object-cover"
+          className="w-full h-full  object-cover"
         />
       </div>
 
