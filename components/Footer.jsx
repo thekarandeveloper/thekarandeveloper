@@ -1,29 +1,43 @@
-import { linkedin, github, x } from "lucide-react";
+"use client"
+
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
+
+const socials = [
+  { name: "LinkedIn", icon: FaLinkedin, url: "https://linkedin.com/in/yourprofile" },
+  { name: "GitHub", icon: FaGithub, url: "https://github.com/yourprofile" },
+  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/yourprofile" },
+]
 
 export default function Footer() {
   return (
+    <footer className="px-8 md:px-20 py-6 border-t border-gray-700 bg-black text-white">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        {/* Left Side */}
+        <div className="text-sm">
+          © {new Date().getFullYear()} Karan Kumar. All rights reserved.
+        </div>
 
-    <section className="px-20">
-<div className="w-full h-12 flex justify-between items-center py-20 border-t border-gray-200">
-      {/* Left Side */}
-      <div className="text-sm text-white">
-        © 2023 Karan Kumar. All rights reserved.
-      </div>
+        {/* Social Icons */}
+        <div className="flex gap-4 text-white">
+          {socials.map((social) => {
+            const Icon = social.icon
+            return (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-500 transition-colors"
+                aria-label={social.name}
+              >
+                <Icon className="w-6 h-6" />
+              </a>
+            )
+          })}
+        </div>
 
-      {/* Social */}
-      <div className="flex space-x-4 text-white">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-          <linkedin className="w-5 h-5 hover:text-amber-600 transition-colors" />
-        </a>
-        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          <github className="w-5 h-5 hover:text-amber-600 transition-colors" />
-        </a>
-        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          <x className="w-5 h-5 hover:text-amber-600 transition-colors" />
-        </a>
       </div>
-    </div>
-    </section>
-    
-  );
+    </footer>
+  )
 }
