@@ -1,8 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+/* Font family fallback: SF Pro > Helvetica > Inter > System */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: #fff;
+  line-height: 24px;
+  background-color: #000;
 }
 
 @theme inline {
@@ -17,10 +28,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
