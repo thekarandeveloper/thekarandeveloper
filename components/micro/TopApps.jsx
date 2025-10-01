@@ -12,7 +12,7 @@ export default function TopApps({
   appStoreLink,
 }) {
   return (
-    <div className={`flex flex-col md:flex-row items-center w-full h-full pt-20 gap-10 ${imagePosition === "right" ? "md:flex-row-reverse" : ""}`}>
+    <div className={`flex flex-col md:flex-row items-center w-full h-full pt-20 gap-10 ${imagePosition === "right" ? "md:flex-row-reverse" : ""}  border-b-1 border-b-gray-700`}>
       
       {/* Image */}
       <div className="w-full md:w-1/2 flex justify-center">
@@ -20,7 +20,7 @@ export default function TopApps({
           src={imageSrc}
           alt={name}
           width={300}
-          height={600}
+          height={650}
           className="w-full h-full rounded-xl object-cover"
         />
       </div>

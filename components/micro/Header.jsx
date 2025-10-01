@@ -8,7 +8,8 @@ export default function Header({
   desc, 
   ctaLabel, 
   onCtaClick,
-  ctaColor = "blue" // default is blue
+  ctaColor = "blue", // default is blue
+  align = "center"   // default center, can be "left"
 }) {
   // Choose button style based on ctaColor
   const buttonClasses = {
@@ -16,8 +17,14 @@ export default function Header({
     white: "bg-white text-black hover:bg-gray-200",
   }
 
+  // Alignment classes
+  const alignmentClasses =
+    align === "left"
+      ? "items-start text-left"
+      : "items-center text-center"
+
   return (
-    <div className="w-full flex flex-col justify-center gap-2 items-center text-center px-4">
+    <div className={`w-full flex flex-col justify-center gap-2 px-4 ${alignmentClasses}`}>
       
       {/* Heading */}
       {heading && (
@@ -44,7 +51,7 @@ export default function Header({
       {ctaLabel && onCtaClick && (
         <button
           onClick={onCtaClick}
-          className={`mt-4 md:flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
+          className={`mt-4 flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
         >
           {ctaLabel}
         </button>
