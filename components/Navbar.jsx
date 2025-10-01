@@ -33,8 +33,8 @@ export default function Navbar() {
 }, [scrolled])
 
   const links = [
-    { href: "", label: "Work" },
-    { href: "#about", label: "About" },
+    { href: "/", label: "Work" },
+    { href: "/about", label: "About" },
   ]
 
   return (

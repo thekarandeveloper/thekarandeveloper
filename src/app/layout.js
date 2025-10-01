@@ -1,10 +1,6 @@
+// app/layout.js
 import "../../styles/globals.css"
 import Navbar from "../../components/Navbar"
-import HeroSection from "../../components/HeroSection"
-import IphoneCarousel from "../../components/micro/carousel"
-import TextMetrics from "../../components/metrics"
-import BannerApps from "../../components/TopAppsBanner"
-import ContactInfo from "../../components/ContactInfo"
 import Footer from "../../components/Footer"
 import { ModalProvider } from "../../context/ModalContext"
 import Modal from "../../components/Modal"
@@ -20,13 +16,9 @@ export default function RootLayout({ children }) {
       <body className="bg-black text-white">
         <ModalProvider>
           <Navbar />
-          <HeroSection />
-          <IphoneCarousel />
-          <TextMetrics />
-          <BannerApps />
-          <ContactInfo />
+          {children} {/* <- page specific content inject hoga */}
           <Footer />
-          <Modal /> {/* Global modal component */}
+          <Modal />
         </ModalProvider>
       </body>
     </html>
