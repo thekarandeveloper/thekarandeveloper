@@ -4,6 +4,8 @@ import HeroSection from "../../components/HeroSection"
 import IphoneCarousel from "../../components/micro/carousel"
 import TextMetrics from "../../components/metrics"
 import BannerApps from "../../components/TopAppsBanner"
+import ContactInfo from "../../components/ContactInfo"
+import Footer from "../../components/Footer"
 export const metadata = {
   title: "Karan’s Portfolio",
   description: "iOS Developer Portfolio",
@@ -18,6 +20,8 @@ export default function RootLayout({ children }) {
       <IphoneCarousel/>
       <TextMetrics></TextMetrics>
       <BannerApps></BannerApps>
+      <ContactInfo></ContactInfo>
+      <Footer></Footer>
       </body>
     </html>
   )
