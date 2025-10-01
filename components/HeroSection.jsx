@@ -3,7 +3,7 @@
 import Header from "./micro/Header"
 import { Play } from "lucide-react"
 import { useModal } from "../context/ModalContext"
-
+import { modalContent } from "../data/ModalContent";
 export default function HeroSection() {
   const { openModal } = useModal()
 
@@ -22,10 +22,7 @@ export default function HeroSection() {
         }
         onCtaClick={() =>
           openModal(
-            <div className="text-center">
-              <h2 className="text-2xl font-bold">Hello from Hero!</h2>
-              <p>This is dynamic content in a global modal.</p>
-            </div>
+           modalContent.hero
           )
         }
         ctaColor="white"
