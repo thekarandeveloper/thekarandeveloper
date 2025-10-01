@@ -1,73 +1,54 @@
+"use client"
+
+import Header from "./micro/Header";
+import { Plus } from "lucide-react";
+import InfoCard from "./micro/InfoCard";
+import ActionButton from "./micro/Button";
+import { ArrowDownToLineIcon } from "lucide-react";
+import Image from "next/image";
+
 export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-center py-20">
-      <div className="rounded-2xl w-full h-full p-20">
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-[50px] py-8 font-extralight">Building Apps</div>
-          <div className="text-[50px] py-8 font-extralight">
-            Solving Problems
-          </div>
-          <div className="text-md font-extralight w-100 text-center">
-            All-in-one platform to plan, collaborate and deliver faster and
-            smarter, collaborate and deliver — faster and smarter.
-          </div>
-        </div>
-      </div>
+       <Header
+              heading={"Building Apps"}
+              subHeading={"Solving Problems"}
+              desc={
+                "All-in-one platform to plan, collaborate and deliver faster and smarter, collaborate and deliver — faster and smarter."
+              }
+              />
 
       {/* Contact Grid */}
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-10 gap-4">
         {/* First row */}
 
-        <div className="flex flex-row px-30">
-          <div className="w-[70%] bg-blue-600 flex flex-col gap-5">
-            <div className="w-full flex justify-end">+</div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Building Apps
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
-            </div>
-          </div>
-           <div className="w-[30%] bg-white flex flex-col gap-5">
-            <div className="w-full flex justify-end">+</div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Building Apps
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
-            </div>
-          </div>
+        <div className="flex flex-row px-30 gap-4">
+         <InfoCard  width="70%" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
+         <InfoCard  width="30%" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
+          
         </div>
-         <div className="flex flex-row px-30">
-          <div className="w-[70%] bg-blue-600 flex flex-col gap-5">
-            <div className="w-full flex justify-end">+</div>
-            <div className="text-[50px] py-8 font-extralight text-black">
+         <div className="flex flex-row px-30 gap-4">
+         <InfoCard  width="30%" heading={"Heading"} description={"desc"} Icon={Plus} onIconClick={() => alert("Grey clicked!")}></InfoCard>
+         <div className="relative w-[70%] h-70 bg-gray-100 flex flex-row justify-between rounded-3xl p-10">
+            
+           <div className="flex flex-col gap-4">
+             <div className="text-[40px] py-2 font-extralight text-black">
               Building Apps
             </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
+            <div className="text-[20px] w-120 font-extralight text-black">
+             All-in-one platform to plan, collaborate and deliver faster and smarter.
             </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
+            <div className="flex flex-row">
+ <ActionButton label={"Resassume"} Icon={ArrowDownToLineIcon} className="w-4 h-4 mr-2" color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
+              <ActionButton label={"Resume"} Icon={ArrowDownToLineIcon} className="w-4 h-4 mr-2" color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
             </div>
-          </div>
-           <div className="w-[30%] bg-white flex flex-col gap-5">
-            <div className="w-full flex justify-end">+</div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Building Apps
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
-            </div>
-            <div className="text-[50px] py-8 font-extralight text-black">
-              Solving Problems
+             
+           </div>
+           <div className="absolute bottom-0 right-10 w-full flex justify-end">
+               <Image src={"/Karan.png"} width={250} height={600}>
+
+              </Image>
             </div>
           </div>
         </div>

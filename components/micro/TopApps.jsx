@@ -35,13 +35,13 @@ export default function TopApps({
         {/* CTA Buttons */}
         <div className="flex justify-center md:justify-start gap-4 mt-4">
           {appStoreLink && (
-             <ActionButton label={"App Store"} Icon={ArrowDownToLineIcon} color="blue" onClick={"nothing"}></ActionButton>
+             <ActionButton label={"App Store"} Icon={ArrowDownToLineIcon} color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
 
           )}
 
           {caseStudyLink && (
 
-               <ActionButton label={"Case Study"} Icon={ArrowDownToLineIcon} color="blue" onClick={"nothing"}></ActionButton>
+               <ActionButton label={"Case Study"} Icon={ArrowDownToLineIcon} color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
 
           
           )}

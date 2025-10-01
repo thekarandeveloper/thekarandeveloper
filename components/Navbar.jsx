@@ -101,7 +101,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <ActionButton label={"Resume"} Icon={ArrowDownToLineIcon} className="w-4 h-4 mr-2" color="blue" onClick={"nothing"}></ActionButton>
+          <ActionButton label={"Resume"} Icon={ArrowDownToLineIcon} className="w-4 h-4 mr-2" color="blue"  onClick={() => alert("Grey clicked!")}></ActionButton>
 
         
         </div>
