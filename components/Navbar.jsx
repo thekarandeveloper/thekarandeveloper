@@ -71,17 +71,12 @@ export default function Navbar() {
       </ul>
 
       {/* Resume Button */}
-      <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
+      <div className="flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
         <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
         Resume
       </div>
 
-      {/* Mobile Hamburger */}
-      <div className="md:hidden flex items-center">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
+     
 
       {/* Mobile Menu */}
       {isOpen && (
@@ -105,7 +100,9 @@ export default function Navbar() {
 
         
         </div>
+
       )}
+      
     </nav>
   )
 }
