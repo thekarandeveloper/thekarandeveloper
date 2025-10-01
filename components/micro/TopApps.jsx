@@ -48,6 +48,10 @@ export default function TopApps({
             <div className="text-xs font-light">Installs</div>
             <div className="text-3xl font-bold">30+</div>
         </div>
+        <div className="flex flex-col w-30 p-5 gap-4 rounded-md bg-[#212121]">
+            <div className="text-xs font-light">Installs</div>
+            <div className="text-3xl font-bold">30+</div>
+        </div>
         </div>
        
 
