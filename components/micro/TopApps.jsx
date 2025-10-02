@@ -43,7 +43,7 @@ export default function TopApps({
 
         {/* Metrics */}
         {metrics.length > 0 && (
-          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4 border-b border-b-gray-700 pb-4">
+          <div className="flex flex-wrap justify-center md:justify-between mt-4 border-b border-white/10 pb-4">
             {metrics.map((metric, i) => (
               <div
                 key={i}
