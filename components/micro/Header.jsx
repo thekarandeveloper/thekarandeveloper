@@ -29,7 +29,7 @@ export default function Header({
       
       {/* Heading */}
       {heading && (
-        <h1 className="text-[42px] md:text-[50px] font-extralight leading-tight">
+        <h1 className="text-[38px] md:text-[50px] font-extralight leading-tight">
           {heading}
         </h1>
       )}
