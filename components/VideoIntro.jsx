@@ -79,7 +79,7 @@ export default function VideoWithTranscript({
         {/* Mute Button */}
         <button
           onClick={toggleMute}
-          className="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center rounded-full bg-gray-700/60 hover:bg-gray-600/70 transition cursor-pointer"
+          className="absolute bottom-4 right-4 md:left-4 w-12 h-12 flex items-center justify-center rounded-full bg-gray-700/60 hover:bg-gray-600/70 transition cursor-pointer"
         >
           {isMuted ? <VolumeX className="w-6 h-6 text-white" /> : <Volume2 className="w-6 h-6 text-white" />}
         </button>
