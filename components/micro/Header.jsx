@@ -24,7 +24,7 @@ export default function Header({
       : "items-center text-center"
 
   return (
-    <div className={`w-full flex flex-col justify-center gap-2 ${alignmentClasses}`}>
+    <div className={`w-[90%] md:w-full flex flex-col justify-center gap-2 px-4 ${alignmentClasses}`}>
       
       {/* Heading */}
       {heading && (
@@ -35,7 +35,7 @@ export default function Header({
 
       {/* SubHeading */}
       {subHeading && (
-        <h2 className="text-[42px] md:text-[50px] font-extralight leading-tight">
+        <h2 className="text-[42px] md:text-[50px] font-medium leading-tight">
           {subHeading}
         </h2>
       )}

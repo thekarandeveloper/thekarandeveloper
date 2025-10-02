@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ArrowDownToLineIcon, Menu, X } from "lucide-react"
+import { FileTextIcon, Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
 import ActionButton from "./micro/Button"
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
    <nav
   className={`sticky top-0 left-0 w-full z-50 flex justify-between items-center px-6 
     transition-colors duration-300 backdrop-blur-sm 
-    border-b border-white/20
+     border-white/20 border-b
     ${scrolled ? "bg-black/60" : "bg-accent"}`}
   style={{ height: scrolled ? "64px" : "100px", transition: "height 0.3s ease" }}
 >
@@ -71,17 +71,11 @@ export default function Navbar() {
       </ul>
 
       {/* Resume Button */}
-      <div className="hidden md:flex items-center justify-center p-4 bg-[#0071E3] text-white w-28 h-8 rounded-3xl cursor-pointer hover:bg-blue-700">
-        <ArrowDownToLineIcon className="w-4 h-4 mr-2" />
-        Resume
-      </div>
+      <ActionButton label={"Resume"} Icon={FileTextIcon} color="blue" onClick={()=>{
+         window.open("https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing", "_blank")
+      }}></ActionButton>
 
-      {/* Mobile Hamburger */}
-      <div className="md:hidden flex items-center">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
+     
 
       {/* Mobile Menu */}
       {isOpen && (
@@ -105,7 +99,9 @@ export default function Navbar() {
 
         
         </div>
+
       )}
+      
     </nav>
   )
 }

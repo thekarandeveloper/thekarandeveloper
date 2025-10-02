@@ -3,14 +3,13 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 
 const socials = [
-  { name: "LinkedIn", icon: FaLinkedin, url: "https://linkedin.com/in/yourprofile" },
-  { name: "GitHub", icon: FaGithub, url: "https://github.com/yourprofile" },
-  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/yourprofile" },
+  { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/in/karankumarux/" },
+  { name: "GitHub", icon: FaGithub, url: "https://github.com/thekarandeveloper" },
 ]
 
 export default function Footer() {
   return (
-    <footer className="px-8 md:px-20 py-6 border-t border-gray-700 bg-black text-white">
+    <footer className="hidden md:block px-8 md:px-20 py-6 border-t border-gray-700 bg-black text-white">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         
         {/* Left Side */}

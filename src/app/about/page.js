@@ -7,48 +7,54 @@ export default function AboutPage() {
     <div className="bg-black text-white w-full">
 
       {/* Intro Section */}
-      <section className="max-w-4xl mx-auto py-24 border-b border-white/10">
-        <Header
-          heading="About Me"
-          subHeading="Who I Am"
-          desc="I'm Karan, an iOS and web developer passionate about building apps that make life easier and smarter. With a design-first mindset and a love for clean, functional code, I focus on creating experiences that feel effortless and inspiring."
-          align="left"
-          className= "px-0"
-        />
+      <section className="max-w-4xl mx-auto py-15 md:py-24 border-b border-white/10">
+       <Header
+  heading="About Me"
+  subHeading="iOS Developer"
+  desc="I build iOS apps with a focus on smooth animations, clean architecture, and intuitive user experiences. My goal is to craft applications that are both functional and visually polished, blending design and code seamlessly."
+  align="left"
+  className="px-0"
+/>
       </section>
 
       {/* Journey Section */}
-      <section className="px-6 md:px-20 ">
-        <div className="max-w-4xl mx-auto py-24 border-b border-white/10">
-          <h2 className="text-3xl md:text-4xl font-light mb-10">My Journey</h2>
-          <div className="space-y-12">
-            <div>
-              <h3 className="text-xl font-semibold">2021 — Getting Started</h3>
-              <p className="text-gray-400 mt-2">
-                Began my coding journey by experimenting with small apps and websites. Learned the basics of programming and fell in love with building things.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">2022 — Exploring Design & Development</h3>
-              <p className="text-gray-400 mt-2">
-                Started combining design with development, focusing on creating intuitive user experiences. Built early prototypes and personal projects.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">2023 — Sakhi & Real-World Projects</h3>
-              <p className="text-gray-400 mt-2">
-                Co-founded Sakhi, a menstrual health and emergency assistance app, and worked on multiple freelance projects. Focused on scaling skills to production-level apps.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">2024 — Going Deeper</h3>
-              <p className="text-gray-400 mt-2">
-                Expanded into Next.js, Astro, and modern frameworks. Blending iOS and web development with a vision to build impactful products.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     <section className="px-6 md:px-20">
+  <div className="max-w-4xl mx-auto py-24 border-b border-white/10">
+    <h2 className="text-3xl md:text-4xl font-light mb-10">My Journey</h2>
+    <div className="space-y-12">
+      <div>
+        <h3 className="text-xl font-semibold">2025 — Continuous Growth</h3>
+        <p className="text-gray-400 mt-2">
+          Deepening expertise in iOS, backend integration, and animations. Focused on building apps that balance usability, performance, and a polished Apple-like design experience.
+        </p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold">2024 — Advanced Development & Finance Apps</h3>
+        <p className="text-gray-400 mt-2">
+          Expanded into SwiftData, Charts API, and modern iOS frameworks. Built MoneyMate and Bazzar apps with cloud sync, payment integration, and robust architecture for real-world usage.
+        </p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold">2023 — Sakhi & Real-World iOS Projects</h3>
+        <p className="text-gray-400 mt-2">
+          Co-founded Sakhi, a menstrual health app, and developed production-ready iOS apps. Implemented SwiftUI architecture, Core Data, Firebase integration, and push notifications for real users.
+        </p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold">2022 — Freelance & Technical Writing</h3>
+        <p className="text-gray-400 mt-2">
+          Worked as a freelance technical writer creating structured tutorials and example projects. Started blending design with development to build intuitive experiences.
+        </p>
+      </div>
+      <div>
+        <h3 className="text-xl font-semibold">2021 — Learning the Basics</h3>
+        <p className="text-gray-400 mt-2">
+          Began exploring programming and development. Experimented with small apps and websites, building foundational skills in coding and problem-solving.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Skills Section */}
      <section className="px-6 md:px-20">
