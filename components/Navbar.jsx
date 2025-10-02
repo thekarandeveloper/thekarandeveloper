@@ -41,8 +41,8 @@ export default function Navbar() {
    <nav
   className={`sticky top-0 left-0 w-full z-50 flex justify-between items-center px-6 
     transition-colors duration-300 backdrop-blur-sm 
-    border-b border-white/20
-    ${scrolled ? "bg-black/60" : "bg-accent"}`}
+     border-white/20
+    ${scrolled ? "bg-black/60 border-b" : "bg-accent"}`}
   style={{ height: scrolled ? "64px" : "100px", transition: "height 0.3s ease" }}
 >
       {/* Logo */}
