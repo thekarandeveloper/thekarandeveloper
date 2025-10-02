@@ -10,7 +10,7 @@ export const portfolioContent = [
   },
   {
     id: 2,
-    type: "Presentation",
+    type: "Presentations",
     heading: "Presented to Apple Leadership",
     description:
       "Presented Sakhi in front of Greg Joswiak (SVP, Worldwide Marketing at Apple) and 7 senior Apple delegates, sharing a product focused on menstrual health and community care.",
@@ -19,7 +19,7 @@ export const portfolioContent = [
   },
   {
     id: 3,
-    type: "Presentation",
+    type: "Presentations",
     heading: "Showcased to Developer Relations Team",
     description:
       "Presented Sakhi to Apple’s Developer Relations team at Manyata Tech Park, Bangalore. Received feedback on real-world application, design scalability, and growth opportunities.",
@@ -28,7 +28,7 @@ export const portfolioContent = [
   },
   {
     id: 4,
-    type: "Feature",
+    type: "News",
     heading: "Sakhi: Featured on Galgotias University",
     description:
       "Galgotias University proudly announces the launch of Sakhi – The Menstrual Companion App, now available on the Apple App Store, developed under the iOS Development Center guidance.",
@@ -37,7 +37,7 @@ export const portfolioContent = [
   },
   {
     id: 5,
-    type: "Podcast",
+    type: "News",
     heading: "Podcast – A Menstrual Health App by Galgotias Students",
     description:
       "Galgotias University announces the launch of Sakhi, guided by the iOS Development Center, featured in podcasts and student presentations.",

@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { MoveUpRightIcon } from "lucide-react"
 import ActionButton from "./Button"
-
+import { FiArrowUpRight } from "react-icons/fi"; // Feather
 export default function TopApps({
   name,
   desc,
@@ -61,18 +61,18 @@ export default function TopApps({
           {appStoreLink && (
             <ActionButton
               label="App Store"
-              Icon={MoveUpRightIcon}
+              Icon={FiArrowUpRight}
               color="blue"
-              onClick={() => alert("App Store clicked")}
+              onClick={() => window.open(`${appStoreLink}`)}
             />
           )}
 
           {caseStudyLink && (
             <ActionButton
               label="Case Study"
-              Icon={MoveUpRightIcon}
+              Icon={FiArrowUpRight}
               color="white"
-              onClick={() => alert("Case Study clicked")}
+              onClick={() => window.open(`${caseStudyLink}`)}
             />
           )}
         </div>

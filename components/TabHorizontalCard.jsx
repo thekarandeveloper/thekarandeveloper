@@ -6,16 +6,17 @@ import { portfolioContent } from "../data/HighlistContent";
 import Header from "./micro/Header";
 import InfoCard from "./micro/InfoCard";
 export default function TabsHorizontalCards({className}) {
-  const tabs = ["All", "Research Work", "Presentations", "News", "Interviews"];
+  const tabs = ["All", "Research", "Presentations", "News"];
   const [activeTab, setActiveTab] = useState(tabs[0] || "");
   const [isOpen, setIsOpen] = useState(false);
 
- const filteredContent =
-  activeTab === "All"
-    ? [...portfolioContent].sort((a, b) => b.id - a.id)  // reverse by id
-    : [...portfolioContent]
-        .filter((item) => item.type === activeTab)
-        .sort((a, b) => b.id - a.id); // reverse by id
+ const filteredContent = [...portfolioContent]
+  .filter((item) => 
+    activeTab === "All" 
+      ? true 
+      : item.type.trim().toLowerCase() === activeTab.trim().toLowerCase()
+  )
+  .sort((a, b) => b.id - a.id);
   return (
     <section className={`py-24 bg-black text-white ${className}`}>
       {/* Section Header */}
@@ -88,6 +89,7 @@ export default function TabsHorizontalCards({className}) {
                 Icon={ArrowUpRightIcon}
                 imageSrc={item.imageSrc}
                 onIconClick={()=>{window.open(`${item.link}`, "_blank")}}
+                link={item.link}
             >
             </InfoCard>
 
