@@ -40,7 +40,7 @@ export default function BannerApps(){
 <TopApps
   name="MoneyMate - Your Personal CA"
   desc="A simple, secure finance app to track expenses, visualise budgets, and get quick insights, built with SwiftUI and SwiftData for offline-first reliability."
-  imageSrc="/apps/moneymate-ss.png"
+  imageSrc="/apps/moneyMate.png"
   imagePosition="right"
   appStoreLink="https://apps.apple.com/us/app/money-mate-your-personal-ca/id6752692573"
   metrics={[
