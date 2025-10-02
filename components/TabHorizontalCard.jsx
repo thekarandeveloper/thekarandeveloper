@@ -78,7 +78,7 @@ export default function TabsHorizontalCards() {
     </div>
 
       {/* Horizontal Scroll Cards */}
-      <div className="flex gap-6 overflow-x-scroll scrollbar-hide py-4">
+      <div className="flex gap-6 overflow-x-scroll scrollbar-hide pb-4">
         {filteredContent.map((item) => (
 
             <InfoCard
