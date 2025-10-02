@@ -50,19 +50,35 @@ export default function IphoneCarousel() {
         style={{ willChange: "transform" }}
       >
         {displayImages.map((src, i) => (
-          <div
-            key={i}
-            className="flex-shrink-0 w-40 md:w-80 lg:w-60 rounded-xl overflow-hidden shadow-lg"
-          >
-            <Image
-              src={src}
-              alt={`iPhone Mockup ${i + 1}`}
-              className="rounded-xl"
-              width={200}
-              height={600}
-              loading="eager"
-            />
-          </div>
+         <div
+  key={i}
+  className="flex-shrink-0 w-40 md:w-80 lg:w-60 rounded-xl overflow-hidden shadow-lg"
+>
+  <div className="relative w-full h-[600px] md:h-[450px]">
+    {/* Absolute mockup image */}
+    <Image
+      src={src}
+      alt={`iPhone Mockup ${i + 1}`}
+      width={600}
+      height={400}
+      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+      loading="eager"
+    />
+
+    <Image
+      src={"/mockup.png"}
+      alt={`iPhone Mockup ${i + 1}`}
+      width={600}
+      height={400}
+      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+      loading="eager"
+    />
+
+    {/* Example: overlay content */}
+    
+
+  </div>
+</div>
         ))}
       </div>
     </div>
