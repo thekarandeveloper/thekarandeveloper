@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi, I'm Karan Kumar 👋
 
-## Getting Started
+iOS Developer | SwiftUI Enthusiast | UX-Focused Mobile Apps
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### About Me
+I'm passionate about building **iOS apps** that are **beautiful, smooth, and user-focused**. I specialize in **SwiftUI**, clean architecture, and scalable backend integration. My apps combine **intuitive UX** with **high-performance code**.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I love taking ideas from concept to production and have **experience presenting apps to Apple delegates**.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🚀 Skills
+**Languages:** Swift • Objective-C • Java • JavaScript • HTML • CSS  
+**iOS Development:** SwiftUI • UIKit • Core Data • Combine • Storyboards/XIB  
+**Frameworks & Libraries:** MapKit • AVFoundation • UserNotifications • HealthKit • ARKit  
+**Backend & API:** Firebase • RESTful APIs • GraphQL • Alamofire  
+**Database:** Core Data • Realm • SQLite • MongoDB  
+**Testing & Tools:** XCTest • XCUITest • Instruments • TestFlight • Xcode • Git • Figma  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 📱 Featured Projects
+#### [Sakhi - Menstrual Health App](https://apps.apple.com/us/app/sakhi-menstrual-companion/id6747256551)
+A production-ready iOS app for menstrual tracking, health insights, and community support. Built using **SwiftUI + Firebase + Core Data**.  
+![Sakhi](https://user-images.githubusercontent.com/yourprofile/sakhi-screenshot.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### [MoneyMate - Personal Finance App](https://github.com/thekarandeveloper/MoneyMate)
+Track expenses, visualize budgets, and manage finances with **charts, offline sync, and SwiftData + Firebase integration**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### [Bazzar - E-commerce App](https://github.com/thekarandeveloper/Bazzar)
+Full-featured mobile shopping app with **cart, wishlist, Razorpay payments, and Apple/Google sign-in**.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📫 Connect with Me
+- [LinkedIn](https://www.linkedin.com/in/karandeveloper/)  
+- [GitHub](https://github.com/thekarandeveloper)  
+- Email: contact.karankumar23@email.com  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
