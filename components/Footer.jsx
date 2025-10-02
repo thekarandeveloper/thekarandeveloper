@@ -3,9 +3,8 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 
 const socials = [
-  { name: "LinkedIn", icon: FaLinkedin, url: "https://linkedin.com/in/yourprofile" },
-  { name: "GitHub", icon: FaGithub, url: "https://github.com/yourprofile" },
-  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/yourprofile" },
+  { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/in/karankumarux/" },
+  { name: "GitHub", icon: FaGithub, url: "https://github.com/thekarandeveloper" },
 ]
 
 export default function Footer() {
