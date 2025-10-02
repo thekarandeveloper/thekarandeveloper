@@ -1,3 +1,3 @@
 iOS Developer specializing in SwiftUI, smooth animations, and intuitive mobile experiences. Passionate about building apps that are functional, polished, and user-centric.  
 
-[Portfolio](https://karankumar.work) • [LinkedIn](https://www.linkedin.com/in/karandeveloper/) • [GitHub](https://github.com/thekarandeveloper) • [Resume](https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing)
+[Portfolio](https://karankumar.work) • [LinkedIn](https://www.karankumar.work/linkedin) • [Resume](https://www.karankumar.work/resume)
