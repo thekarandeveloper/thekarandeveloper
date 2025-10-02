@@ -38,12 +38,16 @@ export default function BannerApps(){
   border="false"
 />
 <TopApps
-  name="Sakhi - Your Menstrual Companion"
-  desc="Codevarsity helped me master mobile app development with expert guidance and hands-on projects, making learning seamless and practical."
-  imageSrc="/apps/app2.png"
+  name="MoneyMate - Your Personal CA"
+  desc="A simple, secure finance app to track expenses, visualise budgets, and get quick insights, built with SwiftUI and SwiftData for offline-first reliability."
+  imageSrc="/apps/moneymate-ss.png"
   imagePosition="right"
-  appStoreLink="https://apps.apple.com/app/id123456"
-  caseStudyLink="https://medium.com/@karankumar/sakhi-case-study"
+  appStoreLink="https://apps.apple.com/us/app/money-mate-your-personal-ca/id6752692573"
+  metrics={[
+    { title: "Downloads", value: "100+" },
+    { title: "Active Users", value: "60%" },
+    { title: "Avg. Session", value: "4m+" },
+  ]}
   border="false"
 />
 
