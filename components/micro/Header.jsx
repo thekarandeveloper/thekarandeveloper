@@ -35,7 +35,7 @@ export default function Header({
 
       {/* SubHeading */}
       {subHeading && (
-        <h2 className="text-[42px] md:text-[50px] font-extralight leading-tight">
+        <h2 className="text-[42px] md:text-[50px] font-medium leading-tight">
           {subHeading}
         </h2>
       )}
