@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Copy } from "lucide-react"
 
-export default function ContactCard({ label = "Reach Me At", email = "karan@example.com" }) {
+export default function ContactCard({ label = "Reach Me At", email = "contact.karankumar23@gmail.com" }) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
@@ -23,7 +23,7 @@ export default function ContactCard({ label = "Reach Me At", email = "karan@exam
 
         {/* Email + Copy Button */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="text-2xl md:text-3xl font-light text-white">
+          <span className="text-2xl md:text-3xl font-medium text-white">
             {email}
           </span>
           <button

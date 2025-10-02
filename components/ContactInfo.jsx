@@ -12,12 +12,9 @@ export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-center py-20">
        <Header
-              heading={"Building Apps"}
-              subHeading={"Solving Problems"}
-              desc={
-                "All-in-one platform to plan, collaborate and deliver faster and smarter, collaborate and deliver — faster and smarter."
-              }
-              />
+        heading={"Get to Know Me"}
+        desc={"Curious about my approach to iOS development, animations, or the apps I’ve built? Here’s how you can reach out, explore my work, or connect directly."}
+        />
 
       {/* Contact Grid */}
 
