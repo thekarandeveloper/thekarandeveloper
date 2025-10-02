@@ -5,6 +5,7 @@ import { Plus } from "lucide-react";
 import InfoCard from "./micro/InfoCard";
 import ActionButton from "./micro/Button";
 import { ArrowDownToLineIcon } from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
 import ContactCard from "../components/ContactCard"
 
@@ -12,8 +13,8 @@ export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-center py-20">
        <Header
-        heading={"Get to Know Me"}
-        desc={"Curious about my approach to iOS development, animations, or the apps I’ve built? Here’s how you can reach out, explore my work, or connect directly."}
+        heading={"Highlights"}
+        desc={"Articles and features that showcase my work, research, and projects in the public spotlight"}
         />
 
       {/* Contact Grid */}
@@ -22,7 +23,18 @@ export default function ContactInfo() {
         {/* First row */}
 
         <div className="flex flex-col  md:flex-row gap-4">
-         <InfoCard  className="w-full md:w-[70%]" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
+       <InfoCard
+  className="w-full md:w-[70%]"
+  heading="Research Work"
+  description="Comparative Analysis of Menstrual Cycle Prediction Algorithms in Mobile Menstrual Tracker Apps, published at ICETCS 2024."
+  Icon={ArrowUpRightIcon}
+  onIconClick={() => {
+    window.open(
+      "https://www.researchgate.net/publication/388094969_Comparative_Analysis_of_Menstrual_Cycle_Prediction_Algorithms_in_Mobile_Menstrual_Tracker_Apps",
+      "_blank"
+    );
+  }}
+/>
          <InfoCard className="hidden md:block w-full md:w-[30%]" heading={"Heading"} description={"desc"} Icon={Plus}  onClick={() => alert("Grey clicked!")}></InfoCard>
           
         </div>

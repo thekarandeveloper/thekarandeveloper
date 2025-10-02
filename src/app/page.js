@@ -4,7 +4,7 @@ import IphoneCarousel from "../../components/micro/carousel"
 import TextMetrics from "../../components/metrics"
 import BannerApps from "../../components/TopAppsBanner"
 import ContactInfo from "../../components/ContactInfo"
-
+import TabsHorizontalCards from "../../components/TabHorizontalCard"
 export default function HomePage() {
   return (
     <>
@@ -12,7 +12,7 @@ export default function HomePage() {
       <IphoneCarousel />
       <TextMetrics />
       <BannerApps />
-      <ContactInfo />
+      <TabsHorizontalCards />
        
     </>
   )

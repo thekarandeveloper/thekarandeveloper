@@ -1,44 +1,69 @@
-"use client"
+"use client";
 
-import React from "react"
+import React, { useState, useEffect, useRef } from "react";
 
 export default function InfoCard({
   heading,
   description,
   Icon,
   onIconClick,
-  width = "full", // can pass percentage like '70%'
+  imageSrc,
+  width = "full",
   className = "",
+  lines = 3, // number of lines to clamp
 }) {
+  const ref = useRef(null);
+  const [displayText, setDisplayText] = useState(description);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const lineHeight = parseFloat(getComputedStyle(el).lineHeight);
+    const maxHeight = lineHeight * lines;
+
+    let truncated = description;
+    el.innerText = truncated;
+
+    while (el.scrollHeight > maxHeight && truncated.length > 0) {
+      truncated = truncated.slice(0, -1);
+      el.innerText = truncated + "...";
+    }
+
+    setDisplayText(el.innerText);
+  }, [description, lines]);
+
   return (
     <div
-      className={`bg-gray-100 flex flex-col items-center md:items-start justify-between rounded-3xl p-4 sm:p-6 ${className}`}
+      className={`min-w-75 max-w-75 h-85 flex-shrink-0 flex flex-col bg-[#272727] rounded-3xl overflow-hidden ${className}`}
+      style={{ width: width === "full" ? "100%" : width }}
     >
-      {/* Icon at top-right */}
-      {Icon && (
-        <div className="w-full flex justify-center my-4 md:my-0  md:justify-end order-1 md:order-0">
-          <button
-            onClick={onIconClick}
-            className="bg-gray-300 rounded-full p-3 sm:p-4 text-black flex items-center justify-center"
-          >
-            <Icon className="w-4 sm:w-5 h-4 sm:h-5" />
-          </button>
-        </div>
-      )}
+      {/* Top: Image or Placeholder */}
+      <div className="min-h-[50%] flex-1 flex items-center justify-center bg-gray-200 relative">
+        {imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={heading}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gray-200"></div>
+        )}
+      </div>
 
-      {/* Heading and Description */}
-      <div className="mt-8 text-center md:text-left">
+      {/* Bottom: Content */}
+      <div className="h-[50%] gap-2 flex-1 p-6 flex flex-col justify-start items-start text-left text-white">
         {heading && (
-          <div className="text-[28px] sm:text-[40px] font-extralight text-black py-2 sm:py-4">
+          <h3 className="flex items-start justify-start py-0 text-xl md:text-xl font-medium">
             {heading}
-          </div>
+          </h3>
         )}
         {description && (
-          <div className="text-[16px] sm:text-[20px] font-extralight text-black max-w-full">
-            {description}
-          </div>
+          <p ref={ref} className="text-base md:text-sm font-light">
+            {displayText}
+          </p>
         )}
       </div>
     </div>
-  )
+  );
 }
