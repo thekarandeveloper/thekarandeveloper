@@ -34,9 +34,11 @@ export default function RootLayout({ children }) {
         <title>Karan Kumar | iOS Developer Portfolio</title>
         <meta name="description" content="iOS Developer Portfolio showcasing live apps, SwiftUI projects, and animations." />
         <link rel="icon" href="/favicon.ico" />
+      
         {/* Hotjar */}
         <Script
           id="hotjar"
+          src="https://t.contentsquare.net/uxa/661bfff0e4fa6.js"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
