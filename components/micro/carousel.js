@@ -63,7 +63,7 @@ export default function IphoneCarousel() {
     autoPlay
     loop
     playsInline
-    className="w-[90%] h-[92%] object-cover rounded-[30px] translate-y-6"
+    className="w-[90%] h-[92%] object-cover rounded-[20px] md:rounded-[30px] translate-y-3 md:translate-y-6"
   />
 </div>
 
