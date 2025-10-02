@@ -18,8 +18,8 @@ export const metadata = {
     apple: "KaranFullProfile.png.png" // iOS home screen
   },
   openGraph: {
-    title: "Karan Kumar | iOS Developer",
-    description: "Portfolio showcasing iOS apps with SwiftUI + animations.",
+   title: "Karan Kumar | iOS Developer",
+description: "Showcasing production-ready iOS applications with SwiftUI, seamless animations, and practical user-focused solutions.",
     url: "https://karankumar.work",
     siteName: "Karan's Portfolio",
     images: [
