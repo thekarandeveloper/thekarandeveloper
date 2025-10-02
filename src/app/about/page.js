@@ -84,7 +84,7 @@ export default function AboutPage() {
         </p>
       </div>
     </section>
-    <section className=" max-w-4xl mx-auto">
+    <section className=" max-w-4xl mx-auto px-4">
  <TabsHorizontalCards className={"px-0 md:px-0"} />
       
     </section>

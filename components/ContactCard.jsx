@@ -13,7 +13,7 @@ export default function ContactCard({ label = "Reach Me At", email = "contact.ka
   }
 
   return (
-    <div className="flex justify-center py-10">
+    <div className="flex justify-center pb-20">
       <div className="w-full bg-[#1D1D1F] rounded-2xl p-10 text-center border border-white/10 shadow-soft">
         
         {/* Label */}
