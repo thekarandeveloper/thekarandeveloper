@@ -39,10 +39,7 @@ export function ModalProvider({ children }) {
   }, [isOpen])
 
   // Mobile swipe-to-dismiss
-  const handleTouchStart = (e) => {
-    startY.current = e.touches[0].clientY
-  }
-
+  const handleTouchStart = (e) => { startY.current = e.touches[0].clientY }
   const handleTouchMove = (e) => {
     if (!modalRef.current) return
     currentY.current = e.touches[0].clientY - startY.current
@@ -50,14 +47,10 @@ export function ModalProvider({ children }) {
       modalRef.current.style.transform = `translateY(${currentY.current}px)`
     }
   }
-
   const handleTouchEnd = () => {
     if (!modalRef.current) return
-    if (currentY.current > 100) {
-      closeModal()
-    } else {
-      modalRef.current.style.transform = `translateY(0)`
-    }
+    if (currentY.current > 100) closeModal()
+    else modalRef.current.style.transform = `translateY(0)`
     currentY.current = 0
   }
 
@@ -72,13 +65,14 @@ export function ModalProvider({ children }) {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            className={`bg-white text-black rounded-2xl shadow-xl p-6 transform transition-transform duration-300 ease-in-out overflow-y-auto 
-              w-full md:w-[80vw] 
-              h-[90vh] md:h-[86vh] 
+            className={`bg-white text-black rounded-t-3xl w-full md:w-[80vw] max-h-[90vh] transform transition-transform duration-300 ease-in-out overflow-hidden
               ${isAnimating ? "translate-y-0" : "translate-y-full"}`}
           >
-            {/* Modal Header */}
-            <div className="flex justify-between items-center mb-4">
+            {/* Grab handle */}
+            {/* <div className="w-12 h-1.5 bg-white rounded-full mx-auto my-3" /> */}
+
+            {/* Header (Sticky) */}
+            <div className="flex justify-between items-center px-8 py-8 border-gray-200 sticky top-0 bg-white z-10">
               {modalData?.heading && (
                 <h2 className="text-2xl md:text-[35px] font-bold">{modalData.heading}</h2>
               )}
@@ -90,8 +84,10 @@ export function ModalProvider({ children }) {
               </button>
             </div>
 
-            {/* Modal Content */}
-            {modalData?.component}
+            {/* Scrollable Content */}
+            <div className="p-8 pt-0 overflow-y-auto" style={{ maxHeight: "calc(90vh - 70px)" }}>
+              {modalData?.component}
+            </div>
           </div>
         </div>
       )}
