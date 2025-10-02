@@ -8,7 +8,7 @@ import TabsHorizontalCards from "../../components/TabHorizontalCard"
 
 
 export const metadata = {
-  title: "Karan Kumar | iOS Developer Portfolio",
+  title: "Karan Kumar | Work Portfolio",
   description: "iOS Developer specializing in SwiftUI, animations, and backend systems.",
   manifest: "/manifest.json",
   themeColor: "#000000",

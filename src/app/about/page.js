@@ -1,7 +1,25 @@
-"use client"
+// "use client"
 import Header from "../../../components/micro/Header"
 import ContactCard from "../../../components/ContactCard"
 import TabsHorizontalCards from "../../../components/TabHorizontalCard"
+
+
+export const metadata = {
+  title: "Karan Kumar | About",
+  description: "About Karan - iOS Developer Portfolio",
+  openGraph: {
+    title: "Karan Kumar | About",
+    description: "iOS developer portfolio and journey",
+    url: "https://karankumar.work/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@karandeveloper",
+    creator: "@karandeveloper",
+  }
+};
+
+
 export default function AboutPage() {
   return (
     <div className="bg-black text-white w-full">
