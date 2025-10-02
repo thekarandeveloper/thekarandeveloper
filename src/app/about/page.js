@@ -73,7 +73,7 @@ export default function AboutPage() {
       {/* Contact Section */}
       <section className="px-6 md:px-20 pb-10 border-b border-white/10">
         <div className="max-w-4xl mx-auto">
-          <ContactCard label="Let’s Connect" email="karan.kumar@email.com" />
+          <ContactCard label="Let’s Connect" email="contact.karankumar23@email.com" />
         </div>
       </section>
     </div>
