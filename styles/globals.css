@@ -54,3 +54,17 @@ body {
 .scrollbar-hide::-webkit-scrollbar-thumb:hover {
   background: #454545; /* thumb hover color */
 }
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-borderGlow {
+  animation: borderGlow 4s linear infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}

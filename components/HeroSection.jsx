@@ -17,9 +17,10 @@ export default function HeroSection() {
 }
         ctaLabel={
           <div className="flex items-center gap-2">
-            <Play className="w-4 h-4" /> Know Karan
+            <Play className="w-4 h-4" /> Meet Karan
           </div>
         }
+       animateButton = {true}
         onCtaClick={() =>
           openModal(
            modalContent.hero

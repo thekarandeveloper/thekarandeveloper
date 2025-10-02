@@ -9,7 +9,8 @@ export default function Header({
   ctaLabel, 
   onCtaClick,
   ctaColor = "blue", // default is blue
-  align = "center"   // default center, can be "left"
+  align = "center",   // default center, can be "left"
+  animateButton = false // new prop for button animation
 }) {
   // Choose button style based on ctaColor
   const buttonClasses = {
@@ -49,12 +50,20 @@ export default function Header({
 
       {/* CTA */}
       {ctaLabel && onCtaClick && (
-        <button
-          onClick={onCtaClick}
-          className={`mt-4 flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
-        >
-          {ctaLabel}
-        </button>
+        <div className="relative mt-4 inline-block">
+          {/* Subtle glowing ring - Apple style */}
+          {animateButton && (
+            <div className="absolute -inset-2 rounded-[28px] bg-white/30 blur-lg animate-pulse"></div>
+          )}
+          
+          {/* Actual Button */}
+          <button
+            onClick={onCtaClick}
+            className={`relative flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
+          >
+            {ctaLabel}
+          </button>
+        </div>
       )}
     </div>
   )
