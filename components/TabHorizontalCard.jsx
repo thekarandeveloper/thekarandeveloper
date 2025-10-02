@@ -7,7 +7,8 @@ import Header from "./micro/Header";
 import InfoCard from "./micro/InfoCard";
 export default function TabsHorizontalCards() {
   const tabs = ["All", "Research Work", "Presentations", "News", "Interviews"];
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState(tabs[0] || "");
+  const [isOpen, setIsOpen] = useState(false);
 
   const filteredContent =
     activeTab === "All"
@@ -26,21 +27,55 @@ export default function TabsHorizontalCards() {
         />
 
       {/* Tabs */}
-      <div className="flex justify-start gap-6 mb-8 overflow-x-auto scrollbar-hide border-b-1 border-b-white/20 mt-4">
+       <div className="w-full mb-8 mt-4">
+      {/* Desktop: Horizontal tabs */}
+      <div className="hidden md:flex justify-start gap-6 overflow-x-auto scrollbar-hide border-b border-white/20">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 font-light transition-colors whitespace-nowrap ${
               activeTab === tab
-                ? "border-b-1  text-white border-b-white shadow-md"
-                : " text-gray-400 hover:text-white"
+                ? "border-b-2 text-white border-b-white shadow-md"
+                : "text-gray-400 hover:text-white"
             }`}
           >
             {tab}
           </button>
         ))}
       </div>
+
+      {/* Mobile: Dropdown */}
+      <div className="md:hidden relative">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full flex justify-between items-center px-4 py-2 bg-[#141414] text-white rounded-lg border border-white/20"
+        >
+          {activeTab}
+          <span className="ml-2 transform transition-transform duration-200">
+            {isOpen ? "▲" : "▼"}
+          </span>
+        </button>
+        {isOpen && (
+          <div className="absolute z-50 mt-2 w-full bg-[#141414] rounded-lg border border-white/20 flex flex-col">
+            {tabs.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => {
+                  setActiveTab(tab);
+                  setIsOpen(false);
+                }}
+                className={`px-4 py-2 text-left text-white hover:bg-white/10 transition-colors ${
+                  activeTab === tab ? "bg-white/10 font-semibold" : "font-light"
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
 
       {/* Horizontal Scroll Cards */}
       <div className="flex gap-6 overflow-x-scroll scrollbar-hide py-4">
