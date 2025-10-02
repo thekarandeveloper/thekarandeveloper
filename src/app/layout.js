@@ -10,7 +10,6 @@ import { Briefcase, User, BookOpen } from "lucide-react";
 
 
 
-
 export default function RootLayout({ children }) {
   const tabs = [
     { href: "/", label: "Work", Icon: Briefcase },
