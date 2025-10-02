@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { FileTextIcon, Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
 import ActionButton from "./micro/Button"
+import { logEvent } from "../lib/ga"; 
 export default function Navbar() {
   const pathname = usePathname()
   const [currentHash, setCurrentHash] = useState("")
@@ -71,10 +72,25 @@ export default function Navbar() {
       </ul>
 
       {/* Resume Button */}
-      <ActionButton label={"Resume"} Icon={FileTextIcon} color="blue" onClick={()=>{
-         window.open("https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing", "_blank")
-      }}></ActionButton>
+     <ActionButton
+  label={"Resume"}
+  Icon={FileTextIcon}
+  color="blue"
+  onClick={() => {
+    // 1. Log event
+    logEvent({
+      category: "CTA",        // group of actions
+      action: "Click",        // what the user did
+      label: "Resume Button"  // descriptive label
+    });
 
+    // 2. Open resume link
+    window.open(
+      "https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing",
+      "_blank"
+    );
+  }}
+/>
      
 
       {/* Mobile Menu */}
