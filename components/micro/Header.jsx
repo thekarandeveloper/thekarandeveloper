@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-
+import ActionButton from "./Button"
 export default function Header({ 
   heading, 
   subHeading, 
@@ -59,7 +59,7 @@ export default function Header({
           {/* Actual Button */}
           <button
             onClick={onCtaClick}
-            className={`relative flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
+            className={` relative flex items-center justify-center px-6 py-2 rounded-3xl cursor-pointer transition-colors ${buttonClasses[ctaColor]}`}
           >
             {ctaLabel}
           </button>

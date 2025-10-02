@@ -7,7 +7,7 @@ export default function ActionButton({
   Icon, 
   onClick, 
   color = "blue", // default color
-  className = "" 
+  className = ""
 }) {
 
   const colorClasses = {
@@ -19,7 +19,7 @@ export default function ActionButton({
   return (
     <button
       onClick={onClick}
-    className={`min-w-25 md:min-w-35 inline-flex items-center justify-center p-2 h-8 md:h-10 px-4 rounded-3xl cursor-pointer transition-colors ${colorClasses[color]} ${className}`}
+    className={`${className} min-w-25 md:min-w-35 inline-flex items-center justify-center p-2 h-8 md:h-10 px-4 rounded-3xl cursor-pointer transition-colors ${colorClasses[color]}`}
     >
       {Icon && <Icon className="w-4 h-4 mr-2" />}
       {label}

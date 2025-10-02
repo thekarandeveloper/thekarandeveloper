@@ -18,7 +18,13 @@ export default function BannerApps(){
         }
         align="left"
         />
-          <ActionButton className="hidden md:flex" label={"All Projects"} Icon={FaGithub} color="white"  onClick={() => window.open("https://github.com/thekarandeveloper", "_blank")}></ActionButton>
+
+        <div className="hidden md:block">
+   <ActionButton 
+          className="hidden md:inline-flex ml-auto"
+          label={"All Projects"} Icon={FaGithub} color="white"  onClick={() => window.open("https://github.com/thekarandeveloper", "_blank")}></ActionButton>
+        </div>
+       
         </div>
        
            
