@@ -1,7 +1,7 @@
 "use client"
 import Header from "../../../components/micro/Header"
 import ContactCard from "../../../components/ContactCard"
-
+import TabsHorizontalCards from "../../../components/TabHorizontalCard"
 export default function AboutPage() {
   return (
     <div className="bg-black text-white w-full">
@@ -66,8 +66,12 @@ export default function AboutPage() {
         </p>
       </div>
     </section>
+    <section className=" max-w-4xl mx-auto">
+ <TabsHorizontalCards className={"px-0 md:px-0"} />
+      
+    </section>
       {/* Contact Section */}
-      <section className="px-6 md:px-20 py-10 border-b border-white/10">
+      <section className="px-6 md:px-20 pb-10 border-b border-white/10">
         <div className="max-w-4xl mx-auto">
           <ContactCard label="Let’s Connect" email="karan.kumar@email.com" />
         </div>

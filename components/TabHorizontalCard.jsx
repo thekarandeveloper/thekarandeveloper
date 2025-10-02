@@ -5,7 +5,7 @@ import { ArrowUpRightIcon } from "lucide-react";
 import { portfolioContent } from "../data/HighlistContent";
 import Header from "./micro/Header";
 import InfoCard from "./micro/InfoCard";
-export default function TabsHorizontalCards() {
+export default function TabsHorizontalCards({className}) {
   const tabs = ["All", "Research Work", "Presentations", "News", "Interviews"];
   const [activeTab, setActiveTab] = useState(tabs[0] || "");
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function TabsHorizontalCards() {
       : portfolioContent.filter((item) => item.type === activeTab);
 
   return (
-    <section className="px-6 md:px-20 py-24 bg-black text-white">
+    <section className={`py-24 bg-black text-white ${className}`}>
       {/* Section Header */}
 
 

@@ -12,7 +12,7 @@ export default function HomePage() {
       <IphoneCarousel />
       <TextMetrics />
       <BannerApps />
-      <TabsHorizontalCards />
+      <TabsHorizontalCards className={"px-6 md:px-20"}/>
        
     </>
   )
