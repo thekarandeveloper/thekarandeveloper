@@ -9,7 +9,7 @@ export default function BannerApps(){
     return (
         <section className="w-full px-5  md:px-20 ">
         <div className="bg-[#141414]  rounded-4xl overflow-hidden pb-10 md:pb-0">
-        <div className="w-full flex  flex-col md:flex-row px-5 md:px-20 border-b-0 border-b-gray-700 py-20 bg-[#2a2a2a] pt-20 ">
+        <div className="w-full flex  flex-col md:flex-row px-5 md:px-20 border-b-0 border-b-gray-700 py-12 md:py-20 bg-[#2a2a2a] ">
         <Header
         heading={"Selected Work"}
         // subHeading={"Solving Problems"}
