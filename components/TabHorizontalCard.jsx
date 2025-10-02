@@ -10,11 +10,12 @@ export default function TabsHorizontalCards({className}) {
   const [activeTab, setActiveTab] = useState(tabs[0] || "");
   const [isOpen, setIsOpen] = useState(false);
 
-  const filteredContent =
-    activeTab === "All"
-      ? portfolioContent
-      : portfolioContent.filter((item) => item.type === activeTab);
-
+ const filteredContent =
+  activeTab === "All"
+    ? [...portfolioContent].sort((a, b) => b.id - a.id)  // reverse by id
+    : [...portfolioContent]
+        .filter((item) => item.type === activeTab)
+        .sort((a, b) => b.id - a.id); // reverse by id
   return (
     <section className={`py-24 bg-black text-white ${className}`}>
       {/* Section Header */}
@@ -85,6 +86,7 @@ export default function TabsHorizontalCards({className}) {
                 heading={item.heading}
                 description={item.description}
                 Icon={ArrowUpRightIcon}
+                imageSrc={item.imageSrc}
                 onIconClick={()=>{window.open(`${item.link}`, "_blank")}}
             >
             </InfoCard>
