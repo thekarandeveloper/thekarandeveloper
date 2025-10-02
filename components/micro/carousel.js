@@ -4,10 +4,9 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const mockups = [
-  "/Sakhi.mov",
-  "/mockups/4.png",
-  "/mockups/5.png",
-  "/mockups/6.png",
+  "/appDemo/1.mp4",
+  "/appDemo/2.mp4",
+  "/appDemo/3.mp4",
 ];
 
 export default function IphoneCarousel() {
