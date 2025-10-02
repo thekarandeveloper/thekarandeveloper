@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ArrowDownToLineIcon } from "lucide-react"
+import { MoveUpRightIcon } from "lucide-react"
 import ActionButton from "./Button"
 
 export default function TopApps({
@@ -11,7 +11,8 @@ export default function TopApps({
   imagePosition = "left", // "left" or "right"
   caseStudyLink,
   appStoreLink,
-  border = "true"
+  border = "true",
+  metrics = [], // [{ title: "Installs", value: "30+" }, ...]
 }) {
   return (
     <div
@@ -41,24 +42,26 @@ export default function TopApps({
         {desc && <div className="text-lg md:text-2xl font-light">{desc}</div>}
 
         {/* Metrics */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4 border-b border-b-gray-700 pb-4">
-          {[1, 2, 3, 4].map((_, i) => (
-            <div
-              key={i}
-              className="flex flex-col w-[45%] sm:w-30 p-4 gap-2 rounded-md bg-[#212121] text-center"
-            >
-              <div className="text-xs font-light">Installs</div>
-              <div className="text-2xl md:text-3xl font-bold">30+</div>
-            </div>
-          ))}
-        </div>
+        {metrics.length > 0 && (
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4 border-b border-b-gray-700 pb-4">
+            {metrics.map((metric, i) => (
+              <div
+                key={i}
+                className="flex flex-col md:w-40 sm:w-30 p-4 gap-2 rounded-md bg-[#212121]"
+              >
+                <div className="text-xs font-light">{metric.title}</div>
+                <div className="text-2xl md:text-3xl font-bold">{metric.value}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* CTA Buttons */}
         <div className="flex flex-row sm:flex-row justify-center md:justify-start gap-3 mt-4">
           {appStoreLink && (
             <ActionButton
               label="App Store"
-              Icon={ArrowDownToLineIcon}
+              Icon={MoveUpRightIcon}
               color="blue"
               onClick={() => alert("App Store clicked")}
             />
@@ -67,7 +70,7 @@ export default function TopApps({
           {caseStudyLink && (
             <ActionButton
               label="Case Study"
-              Icon={ArrowDownToLineIcon}
+              Icon={MoveUpRightIcon}
               color="white"
               onClick={() => alert("Case Study clicked")}
             />
