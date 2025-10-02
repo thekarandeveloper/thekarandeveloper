@@ -29,3 +29,28 @@ body {
     --foreground: #ededed;
   }
 }
+
+/* styles/globals.css or component-level CSS */
+.scrollbar-hide {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #444444 #000; /* thumb color, track color */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.scrollbar-hide::-webkit-scrollbar {
+  height: 8px; /* horizontal scrollbar height */
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: #000; /* track color */
+  border-radius: 4px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: #323232; /* thumb color */
+  border-radius: 4px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb:hover {
+  background: #454545; /* thumb hover color */
+}
