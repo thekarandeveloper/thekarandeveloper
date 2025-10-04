@@ -17,6 +17,11 @@ const nextConfig = {
         destination: 'https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing',
         permanent: true,
       },
+       {
+        source: '/bazzar/appstore',
+        destination: 'https://github.com/thekarandeveloper/Bazzar',
+        permanent: true,
+      },
     ];
   },
 };
