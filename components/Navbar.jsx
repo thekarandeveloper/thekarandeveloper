@@ -86,7 +86,7 @@ export default function Navbar() {
 
     // 2. Open resume link
     window.open(
-      "https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing",
+      "https://drive.google.com/file/d/1jtU-lzKuDveeA5oUfHZvrWMBo1l2BmsU/view?usp=sharing",
       "_blank"
     );
   }}
