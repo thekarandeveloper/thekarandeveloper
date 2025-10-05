@@ -4,14 +4,12 @@ import { Play } from "lucide-react";
 import VideoWithTranscript from "../components/VideoIntro";
 
 const introScript = [
-  "Hi, I'm Karan Kumar, it's really nice to meet you.",
-  "Before we get started, let me introduce myself.",
-  "I'm an iOS developer, specialized in working with SwiftUI.",
-  "As you can see in my projects, I have hands-on experience.",
-  "I also have experience presenting my apps to the Apple team.",
-  "I'm really looking forward to talking to you.",
-  "Please feel free to explore my work.",
-  "Let's sit down for a coffee, my email is right there."
+  "Hey, I’m Karan an iOS developer who",
+  "loves building apps that feel smooth, fast, and genuinely enjoyable to use.",
+"I focus on frontend experience crafting clean interfaces, meaningful animations", 
+"and small details that make an app feel premium and human.",
+"I’ve built and shipped a few production apps, each teaching me", 
+"how design, performance, and real-world use come together. Thanks a lot for checking out my work."
 ];
 
 export const modalContent = {
