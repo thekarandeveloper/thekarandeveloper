@@ -66,14 +66,14 @@ export default function VideoWithTranscript({
       style={{ minHeight: "400px" }}
     >
       {/* Left: Video */}
-      <div className="w-full md:w-1/2 relative flex justify-center rounded-3xl overflow-hidden items-center bg-black">
+     <div className="w-full md:w-1/2 relative flex justify-center rounded-3xl overflow-hidden bg-black">
         <video
           ref={videoRef}
           src={videoSrc}
           autoPlay
           muted={isMuted}
           loop
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover block scale-102"
         />
 
         {/* Mute Button */}
