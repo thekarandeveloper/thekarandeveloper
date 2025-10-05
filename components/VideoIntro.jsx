@@ -72,6 +72,7 @@ export default function VideoWithTranscript({
           src={videoSrc}
           autoPlay
           muted={isMuted}
+          preload="auto"
           loop
           className="w-full h-full object-cover block scale-102"
         />

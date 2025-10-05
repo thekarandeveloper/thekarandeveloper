@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+       <link rel="preload" href="IntroVideo.mp4" as="video" type="video/mp4" />
       <body className="bg-black text-white">
         <ModalProvider>
           <Navbar />
