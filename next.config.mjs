@@ -14,7 +14,7 @@ const nextConfig = {
       },
       {
         source: '/resume',
-        destination: 'https://drive.google.com/file/d/1RtbtafuqySA1fmiqqaC6Ust2480T7sPb/view?usp=sharing',
+        destination: 'https://drive.google.com/file/d/1jtU-lzKuDveeA5oUfHZvrWMBo1l2BmsU/view?usp=sharing',
         permanent: true,
       },
       {
