@@ -59,14 +59,15 @@ export function ModalProvider({ children }) {
       {children}
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50">
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/50" >
           <div
             ref={modalRef}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            className={`bg-white text-black rounded-t-3xl w-full md:w-[80vw] max-h-[90vh] transform transition-transform duration-300 ease-in-out overflow-hidden
+            className={`bg-white text-black rounded-t-3xl w-full md:w-[80vw] min-h-[550px] max-h-[90px] transform transition-transform duration-300 ease-in-out overflow-hidden
               ${isAnimating ? "translate-y-0" : "translate-y-full"}`}
+              
           >
             {/* Grab handle */}
             {/* <div className="w-12 h-1.5 bg-white rounded-full mx-auto my-3" /> */}

@@ -2,7 +2,7 @@
 import { Play } from "lucide-react";
 // import MyCustomComponent from "./MyCustomComponent";
 import VideoWithTranscript from "../components/VideoIntro";
-
+import ContactModalContent from "../components/contactModalCard";
 const introScript = [
   "Hey, I’m Karan an iOS developer who",
   "loves building apps that feel smooth, fast, and genuinely enjoyable to use.",
@@ -27,9 +27,11 @@ export const modalContent = {
 />
     ),
   },
-//   project: {
-//     heading: "Project Details",
-//     component: <MyCustomComponent />,
-//   },
+  contact: {
+    heading: "Let's Chat",
+    component:(
+      <ContactModalContent></ContactModalContent>
+    ),
+  },
   
 };

@@ -1,7 +1,7 @@
 "use client"
 
 import Header from "./micro/Header"
-import { Play } from "lucide-react"
+import { Mail } from "lucide-react"
 import { useModal } from "../context/ModalContext"
 import { modalContent } from "../data/ModalContent";
 export default function HeroSection() {
@@ -17,13 +17,13 @@ export default function HeroSection() {
 }
         ctaLabel={
           <div className="flex items-center gap-2">
-            <Play className="w-4 h-4" /> Meet Karan
+            <Mail className="w-4 h-4" /> Say Hello
           </div>
         }
        animateButton = {true}
         onCtaClick={() =>
           openModal(
-           modalContent.hero
+           modalContent.contact
           )
         }
         ctaColor="white"
