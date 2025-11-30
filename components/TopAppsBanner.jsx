@@ -32,7 +32,7 @@ export default function BannerApps(){
 <TopApps
   name="Sakhi"
   desc="A menstrual health and emergency assistance app designed to help women track their cycles, receive timely reminders, and access support when needed."
-  imageSrc="/apps/Sakhi-ss.png"
+  imageSrc="/apps/first.webp"
   imagePosition="left"
   appStoreLink="https://apps.apple.com/us/app/sakhi-menstrual-companion/id6747256551"
   caseStudyLink="https://www.behance.net/gallery/229409515/Sakhi-Menstrual-Companion"
@@ -46,7 +46,7 @@ export default function BannerApps(){
 <TopApps
   name="MoneyMate - Your Personal CA"
   desc="A simple, secure finance app to track expenses, visualise budgets, and get quick insights, built with SwiftUI and SwiftData for offline-first reliability."
-  imageSrc="/apps/moneyMate.png"
+  imageSrc="/apps/second.webp"
   imagePosition="right"
   appStoreLink="https://apps.apple.com/us/app/money-mate-your-personal-ca/id6752692573"
   metrics={[

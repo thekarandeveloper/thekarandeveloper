@@ -8,11 +8,11 @@ export default function TopApps({
   name,
   desc,
   imageSrc,
-  imagePosition = "left", // "left" or "right"
+  imagePosition = "left", 
   caseStudyLink,
   appStoreLink,
   border = "true",
-  metrics = [], // [{ title: "Installs", value: "30+" }, ...]
+  metrics = [], 
 }) {
   return (
     <div
@@ -25,8 +25,8 @@ export default function TopApps({
         <Image
           src={imageSrc}
           alt={name}
-          width={250}
-          height={550}
+          width={650}
+          height={750}
           className="w-full max-w-[550px] h-auto object-cover rounded-xl"
         />
       </div>
