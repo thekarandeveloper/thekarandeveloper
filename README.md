@@ -1,29 +1,8 @@
-<div align="center">
 
-<br />
-
-# Karan Kumar
-
-**iOS Developer · Building [@Swipe](https://swipe.pe) (YC S21) · Delhi, India**
-
-<br />
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/karandeveloper)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:contact.karankumar23@gmail.com)
-
-<br />
-
-</div>
-
----
 
 ## About
 
-I build iOS apps, from the first line of code to the App Store listing.
-
-2.5 years of shipping real products. Two live apps. One recognized by Apple delegates and covered in *Indian Express*. Currently working on core features at Swipe, a fast-growing YC-backed fintech.
-
-I use AI to move faster. Every architecture decision and design call is still mine.
+I've spent the last 2.5 years building iOS apps from scratch writing code, designing interfaces, and shipping them to real users. Two apps live on the App Store. Sakhi crossed 500+ downloads, got recognized by Apple delegates, and was covered in Indian Express. Using AI to work faster and smarter, but every architecture decision and design call is still mine.
 
 ---
 
