@@ -1,2 +1,1 @@
-
-iOS developer at Swipe (YC S21). I build and ship production features including payment flows, access control, and UI performance. Previously shipped Sakhi, an iOS app with 500+ downloads and Apple delegate recognition.
+iOS developer at Swipe (YC S21), building fintech features used by thousands of active users. Shipped a feature-gating system across 20+ features, a full StoreKit in-app purchase flow, and cut app startup time by ~25%. Previously shipped Sakhi, a production iOS app with 500+ downloads and published research behind it.
