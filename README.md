@@ -1,3 +1,3 @@
-	•	iOS developer at Swipe (YC S21), building fintech features used by thousands of users.
-	•	Shipped feature-gating for 20+ features, full StoreKit in-app purchase flow, and cut app startup time by ~25%.
-	•	Previously launched Sakhi (500+ downloads) and published related research.
+- iOS developer at Swipe (YC S21), building fintech features used by thousands of users.
+- Shipped feature-gating for 20+ features, full StoreKit in-app purchase flow, and cut app startup time by ~25%.
+- Previously launched Sakhi (500+ downloads) and published related research.
